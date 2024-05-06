@@ -31,9 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCJob));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbJobName = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lbCompanyName = new System.Windows.Forms.Label();
+            this.lbSalary = new System.Windows.Forms.Label();
+            this.lbLocation = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,45 +57,45 @@
             this.lbJobName.TabIndex = 1;
             this.lbJobName.Text = "Tên công việc";
             // 
-            // label1
+            // lbCompanyName
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Gray;
-            this.label1.Location = new System.Drawing.Point(132, 45);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 17);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Tên công ti";
+            this.lbCompanyName.AutoSize = true;
+            this.lbCompanyName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCompanyName.ForeColor = System.Drawing.Color.Gray;
+            this.lbCompanyName.Location = new System.Drawing.Point(132, 45);
+            this.lbCompanyName.Name = "lbCompanyName";
+            this.lbCompanyName.Size = new System.Drawing.Size(79, 17);
+            this.lbCompanyName.TabIndex = 2;
+            this.lbCompanyName.Text = "Tên công ti";
             // 
-            // label2
+            // lbSalary
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label2.Location = new System.Drawing.Point(132, 81);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 16);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Mức lương";
+            this.lbSalary.AutoSize = true;
+            this.lbSalary.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.lbSalary.Location = new System.Drawing.Point(132, 81);
+            this.lbSalary.Name = "lbSalary";
+            this.lbSalary.Size = new System.Drawing.Size(68, 16);
+            this.lbSalary.TabIndex = 3;
+            this.lbSalary.Text = "Mức lương";
             // 
-            // label3
+            // lbLocation
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label3.Location = new System.Drawing.Point(263, 81);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(60, 16);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Địa điểm";
+            this.lbLocation.AutoSize = true;
+            this.lbLocation.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.lbLocation.Location = new System.Drawing.Point(263, 81);
+            this.lbLocation.Name = "lbLocation";
+            this.lbLocation.Size = new System.Drawing.Size(60, 16);
+            this.lbLocation.TabIndex = 4;
+            this.lbLocation.Text = "Địa điểm";
             // 
             // UCJob
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lbLocation);
+            this.Controls.Add(this.lbSalary);
+            this.Controls.Add(this.lbCompanyName);
             this.Controls.Add(this.lbJobName);
             this.Controls.Add(this.pictureBox1);
             this.Name = "UCJob";
@@ -112,8 +112,8 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lbJobName;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lbCompanyName;
+        private System.Windows.Forms.Label lbSalary;
+        private System.Windows.Forms.Label lbLocation;
     }
 }

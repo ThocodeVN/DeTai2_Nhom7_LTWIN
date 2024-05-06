@@ -48,10 +48,10 @@
             this.gunaGradientPanel1.Controls.Add(this.pictureBox1);
             this.gunaGradientPanel1.Controls.Add(this.btnInfor);
             this.gunaGradientPanel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.gunaGradientPanel1.GradientColor1 = System.Drawing.Color.White;
-            this.gunaGradientPanel1.GradientColor2 = System.Drawing.Color.White;
+            this.gunaGradientPanel1.GradientColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(250)))), ((int)(((byte)(178)))));
+            this.gunaGradientPanel1.GradientColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(250)))), ((int)(((byte)(178)))));
             this.gunaGradientPanel1.GradientColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(250)))), ((int)(((byte)(178)))));
-            this.gunaGradientPanel1.GradientColor4 = System.Drawing.Color.White;
+            this.gunaGradientPanel1.GradientColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(250)))), ((int)(((byte)(178)))));
             this.gunaGradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.gunaGradientPanel1.Name = "gunaGradientPanel1";
             this.gunaGradientPanel1.Size = new System.Drawing.Size(204, 707);

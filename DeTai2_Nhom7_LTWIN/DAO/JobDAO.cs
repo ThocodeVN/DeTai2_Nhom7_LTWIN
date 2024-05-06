@@ -27,6 +27,20 @@ namespace DeTai2_Nhom7_LTWIN.DAO
             return listJobDTO;
         }
 
+        public List<JobDTO> GetListJob_Emp(EmployerDTO emp)
+        {
+            List<Job> listJob = db.Jobs.ToList();
+            List<JobDTO> listJobDTO = new List<JobDTO>();
+            var query = from q in db.Jobs select q;
+            query = query.Where(e => e.EmpID == emp.Id);
+            foreach (var job in query)
+            {
+                JobDTO j = getOneJob(job.JobID);
+                listJobDTO.Add(j);
+            }
+            return listJobDTO;
+        }
+
         public void Create(JobDTO job)
         {
             try
@@ -38,7 +52,7 @@ namespace DeTai2_Nhom7_LTWIN.DAO
                     Description = job.Description,
                     Require = job.Require,
                     Salary = job.Salary,
-                    Location = job.Locaton,
+                    Location = job.Location,
                     LastDate = job.LastDate,
                     TimeWork = job.TimeWork,
                     Benefit = job.Benefit,
@@ -67,7 +81,7 @@ namespace DeTai2_Nhom7_LTWIN.DAO
                 jb.Description = job.Description;
                 jb.Require = job.Require;
                 jb.Salary = job.Salary;
-                jb.Location = job.Locaton;
+                jb.Location = job.Location;
                 jb.LastDate = job.LastDate;
                 jb.TimeWork = job.TimeWork;
                 jb.Benefit = job.Benefit;

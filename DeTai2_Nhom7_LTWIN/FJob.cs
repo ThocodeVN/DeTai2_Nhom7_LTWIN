@@ -12,36 +12,34 @@ using System.Windows.Forms;
 
 namespace DeTai2_Nhom7_LTWIN
 {
-    public partial class FUserUI : Form
+    public partial class FJob : Form
     {
+        EmployerDTO empDTO;
         JobDAO jobDAO = new JobDAO();
-        CandidateDTO can;
-        List<UCJob> listUc;
-
-        List<string> local = new List<string>();
-        List<string> type = new List<string>();
-        public FUserUI(CandidateDTO can)
+        public FJob(EmployerDTO emp)
         {
             InitializeComponent();
-            this.can = can;
+            this.empDTO = emp;
         }
 
-        private void btnInfor_Click(object sender, EventArgs e)
-        {
-            FUserInfor fUser = new FUserInfor();
-            fUser.Show();
-        }
-
-        private void FUserUI_Load(object sender, EventArgs e)
+        private void FJob_Load(object sender, EventArgs e)
         {
             fpnlJob.Controls.Clear();
             List<JobDTO> listJob = new List<JobDTO>();
-            listJob = jobDAO.GetListJob();
+            listJob = jobDAO.GetListJob_Emp(empDTO);
             foreach (JobDTO job in listJob)
             {
-                UCJob uCJob = new UCJob(job, can);
+                UCJob uCJob = new UCJob(job, null, empDTO);
                 fpnlJob.Controls.Add(uCJob);
             }
+        }
+
+        private void btnCreateJob_Click(object sender, EventArgs e)
+        {
+            FCreateJob fCreateJob = new FCreateJob(empDTO);
+            this.Hide();
+            this.Show();
+            fCreateJob.ShowDialog();
         }
     }
 }

@@ -96,6 +96,12 @@
     <Compile Include="Employer.cs">
       <DependentUpon>Data.tt</DependentUpon>
     </Compile>
+    <Compile Include="FJob.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FJob.Designer.cs">
+      <DependentUpon>FJob.cs</DependentUpon>
+    </Compile>
     <Compile Include="FManageCV.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -215,6 +221,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FInforJob.resx">
       <DependentUpon>FInforJob.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FJob.resx">
+      <DependentUpon>FJob.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FLogin.resx">
       <DependentUpon>FLogin.cs</DependentUpon>

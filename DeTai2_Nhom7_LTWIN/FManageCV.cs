@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DeTai2_Nhom7_LTWIN.DAO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,12 @@ namespace DeTai2_Nhom7_LTWIN.DTO
 {
     public partial class FManageCV : Form
     {
-        public FManageCV()
+        CandidateDTO canDTO;
+        
+        public FManageCV(CandidateDTO canDTO)
         {
             InitializeComponent();
+            this.canDTO = canDTO;
         }
 
         private void btnCreateCV_Click(object sender, EventArgs e)

@@ -45,20 +45,10 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.fpnlJob = new System.Windows.Forms.FlowLayoutPanel();
-            this.ucJob1 = new DeTai2_Nhom7_LTWIN.UCJob();
-            this.ucJob2 = new DeTai2_Nhom7_LTWIN.UCJob();
-            this.ucJob3 = new DeTai2_Nhom7_LTWIN.UCJob();
-            this.ucJob4 = new DeTai2_Nhom7_LTWIN.UCJob();
-            this.ucJob5 = new DeTai2_Nhom7_LTWIN.UCJob();
-            this.ucJob6 = new DeTai2_Nhom7_LTWIN.UCJob();
-            this.ucJob7 = new DeTai2_Nhom7_LTWIN.UCJob();
-            this.ucJob8 = new DeTai2_Nhom7_LTWIN.UCJob();
-            this.ucJob9 = new DeTai2_Nhom7_LTWIN.UCJob();
             this.gunaGradientPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.fpnlJob.SuspendLayout();
             this.SuspendLayout();
             // 
             // gunaGradientPanel1
@@ -475,101 +465,11 @@
             // fpnlJob
             // 
             this.fpnlJob.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.fpnlJob.Controls.Add(this.ucJob1);
-            this.fpnlJob.Controls.Add(this.ucJob2);
-            this.fpnlJob.Controls.Add(this.ucJob3);
-            this.fpnlJob.Controls.Add(this.ucJob4);
-            this.fpnlJob.Controls.Add(this.ucJob5);
-            this.fpnlJob.Controls.Add(this.ucJob6);
-            this.fpnlJob.Controls.Add(this.ucJob7);
-            this.fpnlJob.Controls.Add(this.ucJob8);
-            this.fpnlJob.Controls.Add(this.ucJob9);
-            this.fpnlJob.Location = new System.Drawing.Point(38, 292);
+            this.fpnlJob.Location = new System.Drawing.Point(51, 292);
             this.fpnlJob.Name = "fpnlJob";
             this.fpnlJob.Padding = new System.Windows.Forms.Padding(10);
             this.fpnlJob.Size = new System.Drawing.Size(1324, 542);
             this.fpnlJob.TabIndex = 5;
-            // 
-            // ucJob1
-            // 
-            this.ucJob1.BackColor = System.Drawing.Color.White;
-            this.ucJob1.Location = new System.Drawing.Point(20, 20);
-            this.ucJob1.Margin = new System.Windows.Forms.Padding(10);
-            this.ucJob1.Name = "ucJob1";
-            this.ucJob1.Size = new System.Drawing.Size(410, 119);
-            this.ucJob1.TabIndex = 0;
-            // 
-            // ucJob2
-            // 
-            this.ucJob2.BackColor = System.Drawing.Color.White;
-            this.ucJob2.Location = new System.Drawing.Point(450, 20);
-            this.ucJob2.Margin = new System.Windows.Forms.Padding(10);
-            this.ucJob2.Name = "ucJob2";
-            this.ucJob2.Size = new System.Drawing.Size(410, 119);
-            this.ucJob2.TabIndex = 1;
-            // 
-            // ucJob3
-            // 
-            this.ucJob3.BackColor = System.Drawing.Color.White;
-            this.ucJob3.Location = new System.Drawing.Point(880, 20);
-            this.ucJob3.Margin = new System.Windows.Forms.Padding(10);
-            this.ucJob3.Name = "ucJob3";
-            this.ucJob3.Size = new System.Drawing.Size(410, 119);
-            this.ucJob3.TabIndex = 2;
-            // 
-            // ucJob4
-            // 
-            this.ucJob4.BackColor = System.Drawing.Color.White;
-            this.ucJob4.Location = new System.Drawing.Point(20, 159);
-            this.ucJob4.Margin = new System.Windows.Forms.Padding(10);
-            this.ucJob4.Name = "ucJob4";
-            this.ucJob4.Size = new System.Drawing.Size(410, 119);
-            this.ucJob4.TabIndex = 3;
-            // 
-            // ucJob5
-            // 
-            this.ucJob5.BackColor = System.Drawing.Color.White;
-            this.ucJob5.Location = new System.Drawing.Point(450, 159);
-            this.ucJob5.Margin = new System.Windows.Forms.Padding(10);
-            this.ucJob5.Name = "ucJob5";
-            this.ucJob5.Size = new System.Drawing.Size(410, 119);
-            this.ucJob5.TabIndex = 4;
-            // 
-            // ucJob6
-            // 
-            this.ucJob6.BackColor = System.Drawing.Color.White;
-            this.ucJob6.Location = new System.Drawing.Point(880, 159);
-            this.ucJob6.Margin = new System.Windows.Forms.Padding(10);
-            this.ucJob6.Name = "ucJob6";
-            this.ucJob6.Size = new System.Drawing.Size(410, 119);
-            this.ucJob6.TabIndex = 5;
-            // 
-            // ucJob7
-            // 
-            this.ucJob7.BackColor = System.Drawing.Color.White;
-            this.ucJob7.Location = new System.Drawing.Point(20, 298);
-            this.ucJob7.Margin = new System.Windows.Forms.Padding(10);
-            this.ucJob7.Name = "ucJob7";
-            this.ucJob7.Size = new System.Drawing.Size(410, 119);
-            this.ucJob7.TabIndex = 6;
-            // 
-            // ucJob8
-            // 
-            this.ucJob8.BackColor = System.Drawing.Color.White;
-            this.ucJob8.Location = new System.Drawing.Point(450, 298);
-            this.ucJob8.Margin = new System.Windows.Forms.Padding(10);
-            this.ucJob8.Name = "ucJob8";
-            this.ucJob8.Size = new System.Drawing.Size(410, 119);
-            this.ucJob8.TabIndex = 7;
-            // 
-            // ucJob9
-            // 
-            this.ucJob9.BackColor = System.Drawing.Color.White;
-            this.ucJob9.Location = new System.Drawing.Point(880, 298);
-            this.ucJob9.Margin = new System.Windows.Forms.Padding(10);
-            this.ucJob9.Name = "ucJob9";
-            this.ucJob9.Size = new System.Drawing.Size(410, 119);
-            this.ucJob9.TabIndex = 8;
             // 
             // FUserUI
             // 
@@ -585,13 +485,13 @@
             this.Name = "FUserUI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Top CV - Tiến đến thành công";
+            this.Load += new System.EventHandler(this.FUserUI_Load);
             this.gunaGradientPanel1.ResumeLayout(false);
             this.gunaGradientPanel1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.fpnlJob.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -614,14 +514,5 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnInfor;
         private System.Windows.Forms.FlowLayoutPanel fpnlJob;
-        private UCJob ucJob1;
-        private UCJob ucJob2;
-        private UCJob ucJob3;
-        private UCJob ucJob4;
-        private UCJob ucJob5;
-        private UCJob ucJob6;
-        private UCJob ucJob7;
-        private UCJob ucJob8;
-        private UCJob ucJob9;
     }
 }

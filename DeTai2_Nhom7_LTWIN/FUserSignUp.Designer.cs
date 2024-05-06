@@ -115,6 +115,10 @@
             this.cbxSex.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cbxSex.ForeColor = System.Drawing.Color.Black;
             this.cbxSex.FormattingEnabled = true;
+            this.cbxSex.Items.AddRange(new object[] {
+            "Nam",
+            "Nữ",
+            "Khác"});
             this.cbxSex.Location = new System.Drawing.Point(136, 81);
             this.cbxSex.Name = "cbxSex";
             this.cbxSex.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
@@ -217,6 +221,7 @@
             this.btnSignUp.TabIndex = 33;
             this.btnSignUp.Text = "Đăng kí";
             this.btnSignUp.UseVisualStyleBackColor = false;
+            this.btnSignUp.Click += new System.EventHandler(this.btnSignUp_Click);
             // 
             // txtHome
             // 

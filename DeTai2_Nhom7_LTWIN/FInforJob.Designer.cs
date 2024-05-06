@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FInforJob));
-            this.label19 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
+            this.lbEducation = new System.Windows.Forms.Label();
+            this.lbTypeJob = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.lbTExp = new System.Windows.Forms.Label();
+            this.lbAddress = new System.Windows.Forms.Label();
+            this.lbCompanyName = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lbNameJob = new System.Windows.Forms.Label();
@@ -53,14 +53,16 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lbLastDate = new System.Windows.Forms.Label();
             this.btnSubmit = new Guna.UI.WinForms.GunaButton();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lbExp = new System.Windows.Forms.Label();
+            this.lbLoc = new System.Windows.Forms.Label();
+            this.lbSalary = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.lbTimeWork = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -68,23 +70,23 @@
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label19
+            // lbEducation
             // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(5, 294);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(57, 16);
-            this.label19.TabIndex = 14;
-            this.label19.Text = "Học vấn";
+            this.lbEducation.AutoSize = true;
+            this.lbEducation.Location = new System.Drawing.Point(5, 257);
+            this.lbEducation.Name = "lbEducation";
+            this.lbEducation.Size = new System.Drawing.Size(57, 16);
+            this.lbEducation.TabIndex = 14;
+            this.lbEducation.Text = "Học vấn";
             // 
-            // label18
+            // lbTypeJob
             // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(5, 166);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(94, 16);
-            this.label18.TabIndex = 13;
-            this.label18.Text = "Loại công việc";
+            this.lbTypeJob.AutoSize = true;
+            this.lbTypeJob.Location = new System.Drawing.Point(5, 166);
+            this.lbTypeJob.Name = "lbTypeJob";
+            this.lbTypeJob.Size = new System.Drawing.Size(94, 16);
+            this.lbTypeJob.TabIndex = 13;
+            this.lbTypeJob.Text = "Loại công việc";
             // 
             // label16
             // 
@@ -99,42 +101,42 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Controls.Add(this.label19);
-            this.panel4.Controls.Add(this.label18);
-            this.panel4.Controls.Add(this.label17);
+            this.panel4.Controls.Add(this.lbEducation);
+            this.panel4.Controls.Add(this.lbTypeJob);
+            this.panel4.Controls.Add(this.lbTExp);
             this.panel4.Controls.Add(this.label16);
             this.panel4.Location = new System.Drawing.Point(744, 222);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(280, 588);
             this.panel4.TabIndex = 7;
             // 
-            // label17
+            // lbTExp
             // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(5, 73);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(79, 16);
-            this.label17.TabIndex = 12;
-            this.label17.Text = "Kinh nghiệm";
+            this.lbTExp.AutoSize = true;
+            this.lbTExp.Location = new System.Drawing.Point(5, 73);
+            this.lbTExp.Name = "lbTExp";
+            this.lbTExp.Size = new System.Drawing.Size(79, 16);
+            this.lbTExp.TabIndex = 12;
+            this.lbTExp.Text = "Kinh nghiệm";
             // 
-            // label9
+            // lbAddress
             // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label9.Location = new System.Drawing.Point(3, 117);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(60, 16);
-            this.label9.TabIndex = 2;
-            this.label9.Text = "Địa điểm";
+            this.lbAddress.AutoSize = true;
+            this.lbAddress.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.lbAddress.Location = new System.Drawing.Point(3, 117);
+            this.lbAddress.Name = "lbAddress";
+            this.lbAddress.Size = new System.Drawing.Size(60, 16);
+            this.lbAddress.TabIndex = 2;
+            this.lbAddress.Text = "Địa điểm";
             // 
-            // label8
+            // lbCompanyName
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(105, 13);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(73, 16);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "Tên công ti";
+            this.lbCompanyName.AutoSize = true;
+            this.lbCompanyName.Location = new System.Drawing.Point(105, 13);
+            this.lbCompanyName.Name = "lbCompanyName";
+            this.lbCompanyName.Size = new System.Drawing.Size(73, 16);
+            this.lbCompanyName.TabIndex = 1;
+            this.lbCompanyName.Text = "Tên công ti";
             // 
             // pictureBox1
             // 
@@ -147,8 +149,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.label9);
-            this.panel2.Controls.Add(this.label8);
+            this.panel2.Controls.Add(this.lbAddress);
+            this.panel2.Controls.Add(this.lbCompanyName);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Location = new System.Drawing.Point(719, 12);
             this.panel2.Name = "panel2";
@@ -177,7 +179,7 @@
             this.btnSubmit2.ForeColor = System.Drawing.Color.White;
             this.btnSubmit2.Image = ((System.Drawing.Image)(resources.GetObject("btnSubmit2.Image")));
             this.btnSubmit2.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnSubmit2.Location = new System.Drawing.Point(21, 637);
+            this.btnSubmit2.Location = new System.Drawing.Point(23, 714);
             this.btnSubmit2.Name = "btnSubmit2";
             this.btnSubmit2.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(195)))), ((int)(((byte)(41)))));
             this.btnSubmit2.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -192,6 +194,8 @@
             // 
             this.panel3.AutoScroll = true;
             this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.lbTimeWork);
+            this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.btnSubmit2);
             this.panel3.Controls.Add(this.lbHowApply);
             this.panel3.Controls.Add(this.label15);
@@ -213,7 +217,7 @@
             // 
             this.lbHowApply.AutoSize = true;
             this.lbHowApply.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbHowApply.Location = new System.Drawing.Point(16, 612);
+            this.lbHowApply.Location = new System.Drawing.Point(18, 689);
             this.lbHowApply.Name = "lbHowApply";
             this.lbHowApply.Size = new System.Drawing.Size(514, 40);
             this.lbHowApply.TabIndex = 10;
@@ -223,7 +227,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(16, 591);
+            this.label15.Location = new System.Drawing.Point(18, 668);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(194, 21);
             this.label15.TabIndex = 9;
@@ -233,7 +237,7 @@
             // 
             this.lbLocation.AutoSize = true;
             this.lbLocation.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbLocation.Location = new System.Drawing.Point(12, 551);
+            this.lbLocation.Location = new System.Drawing.Point(14, 628);
             this.lbLocation.Name = "lbLocation";
             this.lbLocation.Size = new System.Drawing.Size(418, 20);
             this.lbLocation.TabIndex = 8;
@@ -243,7 +247,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(12, 530);
+            this.label14.Location = new System.Drawing.Point(14, 607);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(166, 21);
             this.label14.TabIndex = 7;
@@ -322,11 +326,11 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.lbLastDate);
             this.panel1.Controls.Add(this.btnSubmit);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.lbExp);
+            this.panel1.Controls.Add(this.lbLoc);
+            this.panel1.Controls.Add(this.lbSalary);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
@@ -336,15 +340,15 @@
             this.panel1.Size = new System.Drawing.Size(698, 190);
             this.panel1.TabIndex = 4;
             // 
-            // label7
+            // lbLastDate
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label7.Location = new System.Drawing.Point(77, 117);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(94, 16);
-            this.label7.TabIndex = 7;
-            this.label7.Text = "Hạn nộp hồ sơ";
+            this.lbLastDate.AutoSize = true;
+            this.lbLastDate.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.lbLastDate.Location = new System.Drawing.Point(77, 117);
+            this.lbLastDate.Name = "lbLastDate";
+            this.lbLastDate.Size = new System.Drawing.Size(94, 16);
+            this.lbLastDate.TabIndex = 7;
+            this.lbLastDate.Text = "Hạn nộp hồ sơ";
             // 
             // btnSubmit
             // 
@@ -370,32 +374,32 @@
             this.btnSubmit.TabIndex = 0;
             this.btnSubmit.Text = "Ứng tuyển ngay";
             // 
-            // label6
+            // lbExp
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(555, 83);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(44, 16);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "label6";
+            this.lbExp.AutoSize = true;
+            this.lbExp.Location = new System.Drawing.Point(555, 83);
+            this.lbExp.Name = "lbExp";
+            this.lbExp.Size = new System.Drawing.Size(44, 16);
+            this.lbExp.TabIndex = 6;
+            this.lbExp.Text = "label6";
             // 
-            // label5
+            // lbLoc
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(307, 83);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(44, 16);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "label5";
+            this.lbLoc.AutoSize = true;
+            this.lbLoc.Location = new System.Drawing.Point(307, 83);
+            this.lbLoc.Name = "lbLoc";
+            this.lbLoc.Size = new System.Drawing.Size(44, 16);
+            this.lbLoc.TabIndex = 5;
+            this.lbLoc.Text = "label5";
             // 
-            // label4
+            // lbSalary
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(77, 83);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 16);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "label4";
+            this.lbSalary.AutoSize = true;
+            this.lbSalary.Location = new System.Drawing.Point(77, 83);
+            this.lbSalary.Name = "lbSalary";
+            this.lbSalary.Size = new System.Drawing.Size(44, 16);
+            this.lbSalary.TabIndex = 4;
+            this.lbSalary.Text = "label4";
             // 
             // label3
             // 
@@ -424,6 +428,26 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Mức lương";
             // 
+            // lbTimeWork
+            // 
+            this.lbTimeWork.AutoSize = true;
+            this.lbTimeWork.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTimeWork.Location = new System.Drawing.Point(12, 553);
+            this.lbTimeWork.Name = "lbTimeWork";
+            this.lbTimeWork.Size = new System.Drawing.Size(207, 40);
+            this.lbTimeWork.TabIndex = 12;
+            this.lbTimeWork.Text = "-Từ thứ 2 đến thứ 6\r\nbắt đầu từ lúc 7h30 đến 17h";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(12, 532);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(171, 21);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "Thời gian làm việc";
+            // 
             // FInforJob
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -451,13 +475,13 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label lbEducation;
+        private System.Windows.Forms.Label lbTypeJob;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lbTExp;
+        private System.Windows.Forms.Label lbAddress;
+        private System.Windows.Forms.Label lbCompanyName;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label lbNameJob;
@@ -475,13 +499,15 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lbLastDate;
         private Guna.UI.WinForms.GunaButton btnSubmit;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lbExp;
+        private System.Windows.Forms.Label lbLoc;
+        private System.Windows.Forms.Label lbSalary;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbTimeWork;
+        private System.Windows.Forms.Label label5;
     }
 }

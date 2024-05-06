@@ -21,5 +21,21 @@ namespace DeTai2_Nhom7_LTWIN
             InitializeComponent();
             this.empDTO = employerDTO;
         }
+
+        private void btnJob_Click(object sender, EventArgs e)
+        {
+            pnlFunc.Controls.Clear();
+            FJob fjob = new FJob(empDTO);
+            fjob.TopLevel = false;
+            pnlFunc.Controls.Add(fjob);
+            fjob.Show();
+        }
+
+        private void btnComInfor_Click(object sender, EventArgs e)
+        {
+            pnlFunc.Controls.Clear();
+            UCCompanyInfor uCCompanyInfor = new UCCompanyInfor(empDTO);
+            pnlFunc.Controls.Add(uCCompanyInfor);
+        }
     }
 }

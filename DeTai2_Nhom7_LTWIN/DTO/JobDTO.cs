@@ -13,7 +13,7 @@ namespace DeTai2_Nhom7_LTWIN.DTO
         private string description;
         private string require;
         private int salary;
-        private string locaton;
+        private string location;
         private int empID;
         private DateTime lastDate;
         private string timeWork;
@@ -24,13 +24,13 @@ namespace DeTai2_Nhom7_LTWIN.DTO
         private string education;
 
 
-        public JobDTO(string title, string description, string require, int salary, string locaton, int empID, DateTime date, string timeWork, string benefit, string howApply, string experience, string type, string education)
+        public JobDTO(string title, string description, string require, int salary, string location, int empID, DateTime date, string timeWork, string benefit, string howApply, string experience, string type, string education)
         {
             Title = title;
             Description = description;
             Require = require;
             Salary = salary;
-            Locaton = locaton;
+            Location = location;
             EmpID = empID;
             LastDate = date;
             TimeWork = timeWork;
@@ -46,7 +46,7 @@ namespace DeTai2_Nhom7_LTWIN.DTO
         public string Description { get => description; set => description = value; }
         public string Require { get => require; set => require = value; }
         public int Salary { get => salary; set => salary = value; }
-        public string Locaton { get => locaton; set => locaton = value; }
+        public string Location { get => location; set => location = value; }
         public int EmpID { get => empID; set => empID = value; }
         public DateTime LastDate { get => lastDate; set => lastDate = value; }
         public string TimeWork { get => timeWork; set => timeWork = value; }

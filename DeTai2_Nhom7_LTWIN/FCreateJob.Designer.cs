@@ -30,6 +30,18 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FCreateJob));
             this.pnlFunc = new Guna.UI.WinForms.GunaGradientPanel();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.txtHome = new Guna.UI.WinForms.GunaTextBox();
+            this.txtStreet = new Guna.UI.WinForms.GunaTextBox();
+            this.txtCommune = new Guna.UI.WinForms.GunaTextBox();
+            this.txtDistrict = new Guna.UI.WinForms.GunaTextBox();
+            this.txtProvince = new Guna.UI.WinForms.GunaTextBox();
+            this.txtTimeWork = new Guna.UI.WinForms.GunaTextBox();
+            this.dtpLastDate = new Guna.UI.WinForms.GunaDateTimePicker();
+            this.cbxExp = new Guna.UI.WinForms.GunaComboBox();
+            this.cbxType = new Guna.UI.WinForms.GunaComboBox();
+            this.cbxEducation = new Guna.UI.WinForms.GunaComboBox();
+            this.txtSalary = new Guna.UI.WinForms.GunaTextBox();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -43,24 +55,12 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.btnCreateJob = new System.Windows.Forms.Button();
-            this.txtJobName = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.lbSal = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.gunaTextBox1 = new Guna.UI.WinForms.GunaTextBox();
-            this.gunaComboBox1 = new Guna.UI.WinForms.GunaComboBox();
-            this.gunaComboBox2 = new Guna.UI.WinForms.GunaComboBox();
-            this.gunaComboBox3 = new Guna.UI.WinForms.GunaComboBox();
-            this.gunaDateTimePicker1 = new Guna.UI.WinForms.GunaDateTimePicker();
-            this.gunaTextBox2 = new Guna.UI.WinForms.GunaTextBox();
-            this.txtHome = new Guna.UI.WinForms.GunaTextBox();
-            this.txtStreet = new Guna.UI.WinForms.GunaTextBox();
-            this.txtCommune = new Guna.UI.WinForms.GunaTextBox();
-            this.txtDistrict = new Guna.UI.WinForms.GunaTextBox();
-            this.txtProvince = new Guna.UI.WinForms.GunaTextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.txtJobName = new Guna.UI.WinForms.GunaTextBox();
             this.pnlFunc.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -69,18 +69,19 @@
             this.pnlFunc.AutoScroll = true;
             this.pnlFunc.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlFunc.BackgroundImage")));
             this.pnlFunc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlFunc.Controls.Add(this.txtJobName);
             this.pnlFunc.Controls.Add(this.checkBox1);
             this.pnlFunc.Controls.Add(this.txtHome);
             this.pnlFunc.Controls.Add(this.txtStreet);
             this.pnlFunc.Controls.Add(this.txtCommune);
             this.pnlFunc.Controls.Add(this.txtDistrict);
             this.pnlFunc.Controls.Add(this.txtProvince);
-            this.pnlFunc.Controls.Add(this.gunaTextBox2);
-            this.pnlFunc.Controls.Add(this.gunaDateTimePicker1);
-            this.pnlFunc.Controls.Add(this.gunaComboBox3);
-            this.pnlFunc.Controls.Add(this.gunaComboBox2);
-            this.pnlFunc.Controls.Add(this.gunaComboBox1);
-            this.pnlFunc.Controls.Add(this.gunaTextBox1);
+            this.pnlFunc.Controls.Add(this.txtTimeWork);
+            this.pnlFunc.Controls.Add(this.dtpLastDate);
+            this.pnlFunc.Controls.Add(this.cbxExp);
+            this.pnlFunc.Controls.Add(this.cbxType);
+            this.pnlFunc.Controls.Add(this.cbxEducation);
+            this.pnlFunc.Controls.Add(this.txtSalary);
             this.pnlFunc.Controls.Add(this.btnUpdate);
             this.pnlFunc.Controls.Add(this.label7);
             this.pnlFunc.Controls.Add(this.label1);
@@ -94,7 +95,6 @@
             this.pnlFunc.Controls.Add(this.label8);
             this.pnlFunc.Controls.Add(this.label5);
             this.pnlFunc.Controls.Add(this.btnCreateJob);
-            this.pnlFunc.Controls.Add(this.txtJobName);
             this.pnlFunc.Controls.Add(this.label6);
             this.pnlFunc.Controls.Add(this.lbSal);
             this.pnlFunc.Controls.Add(this.label4);
@@ -110,6 +110,327 @@
             this.pnlFunc.Size = new System.Drawing.Size(994, 898);
             this.pnlFunc.TabIndex = 5;
             this.pnlFunc.Text = "gunaGradientPanel2";
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.BackColor = System.Drawing.Color.Transparent;
+            this.checkBox1.Location = new System.Drawing.Point(862, 665);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(83, 20);
+            this.checkBox1.TabIndex = 76;
+            this.checkBox1.Text = "Mặc định";
+            this.checkBox1.UseVisualStyleBackColor = false;
+            // 
+            // txtHome
+            // 
+            this.txtHome.BaseColor = System.Drawing.Color.White;
+            this.txtHome.BorderColor = System.Drawing.Color.Silver;
+            this.txtHome.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtHome.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtHome.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtHome.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtHome.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtHome.Location = new System.Drawing.Point(755, 660);
+            this.txtHome.Name = "txtHome";
+            this.txtHome.PasswordChar = '\0';
+            this.txtHome.SelectedText = "";
+            this.txtHome.Size = new System.Drawing.Size(87, 30);
+            this.txtHome.TabIndex = 74;
+            this.txtHome.Text = "Số nhà";
+            // 
+            // txtStreet
+            // 
+            this.txtStreet.BaseColor = System.Drawing.Color.White;
+            this.txtStreet.BorderColor = System.Drawing.Color.Silver;
+            this.txtStreet.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtStreet.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtStreet.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtStreet.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtStreet.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtStreet.Location = new System.Drawing.Point(629, 660);
+            this.txtStreet.Name = "txtStreet";
+            this.txtStreet.PasswordChar = '\0';
+            this.txtStreet.SelectedText = "";
+            this.txtStreet.Size = new System.Drawing.Size(120, 30);
+            this.txtStreet.TabIndex = 73;
+            this.txtStreet.Text = "Tên đường";
+            // 
+            // txtCommune
+            // 
+            this.txtCommune.BaseColor = System.Drawing.Color.White;
+            this.txtCommune.BorderColor = System.Drawing.Color.Silver;
+            this.txtCommune.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCommune.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtCommune.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtCommune.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtCommune.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtCommune.Location = new System.Drawing.Point(491, 660);
+            this.txtCommune.Name = "txtCommune";
+            this.txtCommune.PasswordChar = '\0';
+            this.txtCommune.SelectedText = "";
+            this.txtCommune.Size = new System.Drawing.Size(120, 30);
+            this.txtCommune.TabIndex = 72;
+            this.txtCommune.Text = "Xã/phường";
+            // 
+            // txtDistrict
+            // 
+            this.txtDistrict.BaseColor = System.Drawing.Color.White;
+            this.txtDistrict.BorderColor = System.Drawing.Color.Silver;
+            this.txtDistrict.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDistrict.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtDistrict.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtDistrict.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtDistrict.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtDistrict.Location = new System.Drawing.Point(352, 660);
+            this.txtDistrict.Name = "txtDistrict";
+            this.txtDistrict.PasswordChar = '\0';
+            this.txtDistrict.SelectedText = "";
+            this.txtDistrict.Size = new System.Drawing.Size(120, 30);
+            this.txtDistrict.TabIndex = 71;
+            this.txtDistrict.Text = "Quận/huyện";
+            // 
+            // txtProvince
+            // 
+            this.txtProvince.BaseColor = System.Drawing.Color.White;
+            this.txtProvince.BorderColor = System.Drawing.Color.Silver;
+            this.txtProvince.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtProvince.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtProvince.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtProvince.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtProvince.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtProvince.Location = new System.Drawing.Point(213, 660);
+            this.txtProvince.Name = "txtProvince";
+            this.txtProvince.PasswordChar = '\0';
+            this.txtProvince.SelectedText = "";
+            this.txtProvince.Size = new System.Drawing.Size(120, 30);
+            this.txtProvince.TabIndex = 70;
+            this.txtProvince.Text = "Tỉnh/thành";
+            // 
+            // txtTimeWork
+            // 
+            this.txtTimeWork.BaseColor = System.Drawing.Color.White;
+            this.txtTimeWork.BorderColor = System.Drawing.Color.Silver;
+            this.txtTimeWork.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTimeWork.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtTimeWork.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtTimeWork.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtTimeWork.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtTimeWork.Location = new System.Drawing.Point(214, 776);
+            this.txtTimeWork.Name = "txtTimeWork";
+            this.txtTimeWork.PasswordChar = '\0';
+            this.txtTimeWork.SelectedText = "";
+            this.txtTimeWork.Size = new System.Drawing.Size(375, 32);
+            this.txtTimeWork.TabIndex = 69;
+            this.txtTimeWork.Text = "gunaTextBox2";
+            // 
+            // dtpLastDate
+            // 
+            this.dtpLastDate.BaseColor = System.Drawing.Color.White;
+            this.dtpLastDate.BorderColor = System.Drawing.Color.Silver;
+            this.dtpLastDate.CustomFormat = null;
+            this.dtpLastDate.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.dtpLastDate.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dtpLastDate.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtpLastDate.ForeColor = System.Drawing.Color.Black;
+            this.dtpLastDate.Location = new System.Drawing.Point(214, 714);
+            this.dtpLastDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtpLastDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtpLastDate.Name = "dtpLastDate";
+            this.dtpLastDate.OnHoverBaseColor = System.Drawing.Color.White;
+            this.dtpLastDate.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dtpLastDate.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dtpLastDate.OnPressedColor = System.Drawing.Color.Black;
+            this.dtpLastDate.Size = new System.Drawing.Size(375, 39);
+            this.dtpLastDate.TabIndex = 68;
+            this.dtpLastDate.Text = "Monday, May 6, 2024";
+            this.dtpLastDate.Value = new System.DateTime(2024, 5, 6, 11, 12, 26, 719);
+            // 
+            // cbxExp
+            // 
+            this.cbxExp.BackColor = System.Drawing.Color.Transparent;
+            this.cbxExp.BaseColor = System.Drawing.Color.White;
+            this.cbxExp.BorderColor = System.Drawing.Color.Silver;
+            this.cbxExp.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbxExp.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxExp.FocusedColor = System.Drawing.Color.Empty;
+            this.cbxExp.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbxExp.ForeColor = System.Drawing.Color.Black;
+            this.cbxExp.FormattingEnabled = true;
+            this.cbxExp.Items.AddRange(new object[] {
+            "Tất cả kinh nghiệm",
+            "Chưa có kinh nghiệm",
+            "Dưới 1 năm",
+            "1 năm",
+            "2 năm",
+            "3 năm",
+            "4 năm",
+            "5 năm",
+            "Trên 5 năm"});
+            this.cbxExp.Location = new System.Drawing.Point(214, 591);
+            this.cbxExp.Name = "cbxExp";
+            this.cbxExp.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.cbxExp.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.cbxExp.Size = new System.Drawing.Size(244, 31);
+            this.cbxExp.TabIndex = 66;
+            // 
+            // cbxType
+            // 
+            this.cbxType.BackColor = System.Drawing.Color.Transparent;
+            this.cbxType.BaseColor = System.Drawing.Color.White;
+            this.cbxType.BorderColor = System.Drawing.Color.Silver;
+            this.cbxType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbxType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxType.FocusedColor = System.Drawing.Color.Empty;
+            this.cbxType.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbxType.ForeColor = System.Drawing.Color.Black;
+            this.cbxType.FormattingEnabled = true;
+            this.cbxType.Items.AddRange(new object[] {
+            "Lập trình viên",
+            "Kỹ sư phần mềm",
+            "Nhân viên kinh doanh",
+            "Quản lý dự án",
+            "Chuyên viên tài chính",
+            "Kế toán viên",
+            "Nhân viên bán hàng",
+            "Marketing",
+            "Nhân viên hỗ trợ khách hàng",
+            "Chuyên viên tuyển dụng",
+            "Nhân viên quản lý sản phẩm",
+            "Giáo viên/Giảng viên",
+            "Y tá/Bác sĩ",
+            "Chuyên viên tiếp thị số",
+            "Nhà thiết kế đồ họa",
+            "Kiến trúc sư",
+            "Bác sĩ răng",
+            "Kỹ sư điện",
+            "Kỹ sư cơ khí",
+            "Kỹ sư xây dựng",
+            "Chuyên viên tư vấn",
+            "Luật sư",
+            "Chuyên gia tài chính cá nhân",
+            "Quản lý nhân sự",
+            "Kỹ thuật viên điện tử",
+            "Kỹ thuật viên mạng",
+            "Dược sĩ",
+            "Chuyên gia bảo mật thông tin",
+            "Kỹ sư robot",
+            "Nhà khoa học dữ liệu",
+            "Chuyên viên phân tích dữ liệu",
+            "Nhà sản xuất video",
+            "Chuyên viên SEO",
+            "Chuyên viên UX/UI",
+            "Chuyên gia truyền thông xã hội",
+            "Chuyên viên quảng cáo trực tuyến",
+            "Chuyên viên tài nguyên loài",
+            "Chuyên viên điều tra tội phạm",
+            "Chuyên viên truyền thông",
+            "Kiểm toán viên",
+            "Thợ làm tóc/Thợ làm nail",
+            "Dịch vụ vận chuyển và giao hàng",
+            "Chuyên viên du lịch",
+            "Nhân viên phục vụ nhà hàng",
+            "Nghệ sĩ biểu diễn",
+            "Nhà hàng cao cấp",
+            "Thợ sửa chữa ô tô",
+            "Thợ làm bánh",
+            "Thợ may",
+            "Chuyên viên bảo trì hệ thống",
+            "Chuyên viên bán lẻ",
+            "Chuyên viên quản lý tài sản",
+            "Chuyên viên về sức khỏe và thể dục",
+            "Chuyên viên quản trị mạng xã hội",
+            "Chuyên viên truyền thông số",
+            "Chuyên viên hỗ trợ kỹ thuật",
+            "Chuyên viên về phát triển cá nhân",
+            "Chuyên viên hỗ trợ hợp đồng",
+            "Chuyên viên tài chính cá nhân",
+            "Chuyên viên về nghiên cứu và phát triển",
+            "Chuyên viên bảo dưỡng",
+            "Chuyên viên về quan hệ công chúng",
+            "Chuyên viên phát triển kỹ năng",
+            "Chuyên viên hỗ trợ bán hàng",
+            "Chuyên viên về quan hệ cộng đồng",
+            "Chuyên viên hỗ trợ khách hàng trực tuyến",
+            "Chuyên viên về phát triển doanh nghiệp",
+            "Chuyên viên tư vấn nghề nghiệp",
+            "Chuyên viên bảo hiểm",
+            "Chuyên viên về phát triển nguồn nhân lực",
+            "Chuyên viên hỗ trợ kỹ thuật số",
+            "Chuyên viên tài chính cá nhân",
+            "Chuyên viên hỗ trợ quảng cáo",
+            "Chuyên viên về phát triển thương hiệu",
+            "Chuyên viên hỗ trợ hội nhập xã hội",
+            "Chuyên viên phát triển sản phẩm",
+            "Chuyên viên hỗ trợ đối tác",
+            "Chuyên viên về phát triển nhân lực",
+            "Chuyên viên quan hệ doanh nghiệp",
+            "Chuyên viên về quản lý dự án",
+            "Chuyên viên hỗ trợ văn phòng",
+            "Chuyên viên tài chính cá nhân",
+            "Chuyên viên hỗ trợ kỹ thuật số",
+            "Chuyên viên về phát triển doanh nghiệp",
+            "Chuyên viên tư vấn nghề nghiệp",
+            "Chuyên viên bảo hiểm",
+            "Chuyên viên về phát triển nguồn nhân lực",
+            "Chuyên viên hỗ trợ kỹ thuật số",
+            "Chuyên viên tài chính cá nhân",
+            "Chuyên viên hỗ trợ quảng cáo",
+            "Chuyên viên về phát triển thương hiệu",
+            "Chuyên viên hỗ trợ hội nhập xã hội",
+            "Chuyên viên phát triển sản phẩm",
+            "Chuyên viên hỗ trợ đối tác",
+            "Chuyên viên về phát triển nhân lực",
+            "Chuyên viên quan hệ doanh nghiệp",
+            "Chuyên viên về quản lý dự án",
+            "Chuyên viên hỗ trợ văn phòng",
+            "Chuyên viên hỗ trợ kỹ thuật số",
+            "Chuyên viên về phát triển doanh nghiệp"});
+            this.cbxType.Location = new System.Drawing.Point(214, 531);
+            this.cbxType.Name = "cbxType";
+            this.cbxType.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.cbxType.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.cbxType.Size = new System.Drawing.Size(375, 31);
+            this.cbxType.TabIndex = 65;
+            // 
+            // cbxEducation
+            // 
+            this.cbxEducation.BackColor = System.Drawing.Color.Transparent;
+            this.cbxEducation.BaseColor = System.Drawing.Color.White;
+            this.cbxEducation.BorderColor = System.Drawing.Color.Silver;
+            this.cbxEducation.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbxEducation.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxEducation.FocusedColor = System.Drawing.Color.Empty;
+            this.cbxEducation.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbxEducation.ForeColor = System.Drawing.Color.Black;
+            this.cbxEducation.FormattingEnabled = true;
+            this.cbxEducation.Items.AddRange(new object[] {
+            "Trung học phổ thông",
+            "Cao đẳng",
+            "Đại học"});
+            this.cbxEducation.Location = new System.Drawing.Point(214, 477);
+            this.cbxEducation.Name = "cbxEducation";
+            this.cbxEducation.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.cbxEducation.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.cbxEducation.Size = new System.Drawing.Size(375, 31);
+            this.cbxEducation.TabIndex = 64;
+            // 
+            // txtSalary
+            // 
+            this.txtSalary.BaseColor = System.Drawing.Color.White;
+            this.txtSalary.BorderColor = System.Drawing.Color.Silver;
+            this.txtSalary.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSalary.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtSalary.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtSalary.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtSalary.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtSalary.Location = new System.Drawing.Point(214, 411);
+            this.txtSalary.Name = "txtSalary";
+            this.txtSalary.PasswordChar = '\0';
+            this.txtSalary.SelectedText = "";
+            this.txtSalary.Size = new System.Drawing.Size(375, 32);
+            this.txtSalary.TabIndex = 63;
+            this.txtSalary.Text = "gunaTextBox1";
             // 
             // btnUpdate
             // 
@@ -234,13 +555,7 @@
             this.btnCreateJob.TabIndex = 43;
             this.btnCreateJob.Text = "Tạo Công Việc";
             this.btnCreateJob.UseVisualStyleBackColor = false;
-            // 
-            // txtJobName
-            // 
-            this.txtJobName.Location = new System.Drawing.Point(214, 17);
-            this.txtJobName.Name = "txtJobName";
-            this.txtJobName.Size = new System.Drawing.Size(375, 22);
-            this.txtJobName.TabIndex = 42;
+            this.btnCreateJob.Click += new System.EventHandler(this.btnCreateJob_Click);
             // 
             // label6
             // 
@@ -286,217 +601,28 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(11, 13);
+            this.label2.Location = new System.Drawing.Point(12, 18);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(150, 25);
             this.label2.TabIndex = 37;
             this.label2.Text = "Tên Công Việc:";
             // 
-            // gunaTextBox1
+            // txtJobName
             // 
-            this.gunaTextBox1.BaseColor = System.Drawing.Color.White;
-            this.gunaTextBox1.BorderColor = System.Drawing.Color.Silver;
-            this.gunaTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gunaTextBox1.FocusedBaseColor = System.Drawing.Color.White;
-            this.gunaTextBox1.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaTextBox1.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.gunaTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaTextBox1.Location = new System.Drawing.Point(214, 411);
-            this.gunaTextBox1.Name = "gunaTextBox1";
-            this.gunaTextBox1.PasswordChar = '\0';
-            this.gunaTextBox1.SelectedText = "";
-            this.gunaTextBox1.Size = new System.Drawing.Size(375, 32);
-            this.gunaTextBox1.TabIndex = 63;
-            this.gunaTextBox1.Text = "gunaTextBox1";
-            // 
-            // gunaComboBox1
-            // 
-            this.gunaComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaComboBox1.BaseColor = System.Drawing.Color.White;
-            this.gunaComboBox1.BorderColor = System.Drawing.Color.Silver;
-            this.gunaComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.gunaComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.gunaComboBox1.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.gunaComboBox1.ForeColor = System.Drawing.Color.Black;
-            this.gunaComboBox1.FormattingEnabled = true;
-            this.gunaComboBox1.Location = new System.Drawing.Point(214, 477);
-            this.gunaComboBox1.Name = "gunaComboBox1";
-            this.gunaComboBox1.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaComboBox1.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.gunaComboBox1.Size = new System.Drawing.Size(375, 31);
-            this.gunaComboBox1.TabIndex = 64;
-            // 
-            // gunaComboBox2
-            // 
-            this.gunaComboBox2.BackColor = System.Drawing.Color.Transparent;
-            this.gunaComboBox2.BaseColor = System.Drawing.Color.White;
-            this.gunaComboBox2.BorderColor = System.Drawing.Color.Silver;
-            this.gunaComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.gunaComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.gunaComboBox2.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaComboBox2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.gunaComboBox2.ForeColor = System.Drawing.Color.Black;
-            this.gunaComboBox2.FormattingEnabled = true;
-            this.gunaComboBox2.Location = new System.Drawing.Point(214, 531);
-            this.gunaComboBox2.Name = "gunaComboBox2";
-            this.gunaComboBox2.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaComboBox2.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.gunaComboBox2.Size = new System.Drawing.Size(375, 31);
-            this.gunaComboBox2.TabIndex = 65;
-            // 
-            // gunaComboBox3
-            // 
-            this.gunaComboBox3.BackColor = System.Drawing.Color.Transparent;
-            this.gunaComboBox3.BaseColor = System.Drawing.Color.White;
-            this.gunaComboBox3.BorderColor = System.Drawing.Color.Silver;
-            this.gunaComboBox3.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.gunaComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.gunaComboBox3.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaComboBox3.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.gunaComboBox3.ForeColor = System.Drawing.Color.Black;
-            this.gunaComboBox3.FormattingEnabled = true;
-            this.gunaComboBox3.Location = new System.Drawing.Point(214, 591);
-            this.gunaComboBox3.Name = "gunaComboBox3";
-            this.gunaComboBox3.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaComboBox3.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.gunaComboBox3.Size = new System.Drawing.Size(244, 31);
-            this.gunaComboBox3.TabIndex = 66;
-            // 
-            // gunaDateTimePicker1
-            // 
-            this.gunaDateTimePicker1.BaseColor = System.Drawing.Color.White;
-            this.gunaDateTimePicker1.BorderColor = System.Drawing.Color.Silver;
-            this.gunaDateTimePicker1.CustomFormat = null;
-            this.gunaDateTimePicker1.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.gunaDateTimePicker1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaDateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaDateTimePicker1.ForeColor = System.Drawing.Color.Black;
-            this.gunaDateTimePicker1.Location = new System.Drawing.Point(214, 714);
-            this.gunaDateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.gunaDateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.gunaDateTimePicker1.Name = "gunaDateTimePicker1";
-            this.gunaDateTimePicker1.OnHoverBaseColor = System.Drawing.Color.White;
-            this.gunaDateTimePicker1.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaDateTimePicker1.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaDateTimePicker1.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaDateTimePicker1.Size = new System.Drawing.Size(375, 39);
-            this.gunaDateTimePicker1.TabIndex = 68;
-            this.gunaDateTimePicker1.Text = "Monday, May 6, 2024";
-            this.gunaDateTimePicker1.Value = new System.DateTime(2024, 5, 6, 11, 12, 26, 719);
-            // 
-            // gunaTextBox2
-            // 
-            this.gunaTextBox2.BaseColor = System.Drawing.Color.White;
-            this.gunaTextBox2.BorderColor = System.Drawing.Color.Silver;
-            this.gunaTextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gunaTextBox2.FocusedBaseColor = System.Drawing.Color.White;
-            this.gunaTextBox2.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaTextBox2.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.gunaTextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaTextBox2.Location = new System.Drawing.Point(214, 776);
-            this.gunaTextBox2.Name = "gunaTextBox2";
-            this.gunaTextBox2.PasswordChar = '\0';
-            this.gunaTextBox2.SelectedText = "";
-            this.gunaTextBox2.Size = new System.Drawing.Size(375, 32);
-            this.gunaTextBox2.TabIndex = 69;
-            this.gunaTextBox2.Text = "gunaTextBox2";
-            // 
-            // txtHome
-            // 
-            this.txtHome.BaseColor = System.Drawing.Color.White;
-            this.txtHome.BorderColor = System.Drawing.Color.Silver;
-            this.txtHome.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtHome.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtHome.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.txtHome.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtHome.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtHome.Location = new System.Drawing.Point(755, 660);
-            this.txtHome.Name = "txtHome";
-            this.txtHome.PasswordChar = '\0';
-            this.txtHome.SelectedText = "";
-            this.txtHome.Size = new System.Drawing.Size(87, 30);
-            this.txtHome.TabIndex = 74;
-            this.txtHome.Text = "Số nhà";
-            // 
-            // txtStreet
-            // 
-            this.txtStreet.BaseColor = System.Drawing.Color.White;
-            this.txtStreet.BorderColor = System.Drawing.Color.Silver;
-            this.txtStreet.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtStreet.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtStreet.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.txtStreet.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtStreet.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtStreet.Location = new System.Drawing.Point(629, 660);
-            this.txtStreet.Name = "txtStreet";
-            this.txtStreet.PasswordChar = '\0';
-            this.txtStreet.SelectedText = "";
-            this.txtStreet.Size = new System.Drawing.Size(120, 30);
-            this.txtStreet.TabIndex = 73;
-            this.txtStreet.Text = "Tên đường";
-            // 
-            // txtCommune
-            // 
-            this.txtCommune.BaseColor = System.Drawing.Color.White;
-            this.txtCommune.BorderColor = System.Drawing.Color.Silver;
-            this.txtCommune.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCommune.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtCommune.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.txtCommune.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtCommune.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtCommune.Location = new System.Drawing.Point(491, 660);
-            this.txtCommune.Name = "txtCommune";
-            this.txtCommune.PasswordChar = '\0';
-            this.txtCommune.SelectedText = "";
-            this.txtCommune.Size = new System.Drawing.Size(120, 30);
-            this.txtCommune.TabIndex = 72;
-            this.txtCommune.Text = "Xã/phường";
-            // 
-            // txtDistrict
-            // 
-            this.txtDistrict.BaseColor = System.Drawing.Color.White;
-            this.txtDistrict.BorderColor = System.Drawing.Color.Silver;
-            this.txtDistrict.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtDistrict.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtDistrict.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.txtDistrict.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtDistrict.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtDistrict.Location = new System.Drawing.Point(352, 660);
-            this.txtDistrict.Name = "txtDistrict";
-            this.txtDistrict.PasswordChar = '\0';
-            this.txtDistrict.SelectedText = "";
-            this.txtDistrict.Size = new System.Drawing.Size(120, 30);
-            this.txtDistrict.TabIndex = 71;
-            this.txtDistrict.Text = "Quận/huyện";
-            // 
-            // txtProvince
-            // 
-            this.txtProvince.BaseColor = System.Drawing.Color.White;
-            this.txtProvince.BorderColor = System.Drawing.Color.Silver;
-            this.txtProvince.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtProvince.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtProvince.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.txtProvince.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtProvince.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtProvince.Location = new System.Drawing.Point(213, 660);
-            this.txtProvince.Name = "txtProvince";
-            this.txtProvince.PasswordChar = '\0';
-            this.txtProvince.SelectedText = "";
-            this.txtProvince.Size = new System.Drawing.Size(120, 30);
-            this.txtProvince.TabIndex = 70;
-            this.txtProvince.Text = "Tỉnh/thành";
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox1.Location = new System.Drawing.Point(862, 665);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(83, 20);
-            this.checkBox1.TabIndex = 76;
-            this.checkBox1.Text = "Mặc định";
-            this.checkBox1.UseVisualStyleBackColor = false;
+            this.txtJobName.BaseColor = System.Drawing.Color.White;
+            this.txtJobName.BorderColor = System.Drawing.Color.Silver;
+            this.txtJobName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtJobName.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtJobName.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtJobName.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtJobName.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtJobName.Location = new System.Drawing.Point(215, 11);
+            this.txtJobName.Name = "txtJobName";
+            this.txtJobName.PasswordChar = '\0';
+            this.txtJobName.SelectedText = "";
+            this.txtJobName.Size = new System.Drawing.Size(375, 32);
+            this.txtJobName.TabIndex = 77;
+            this.txtJobName.Text = "gunaTextBox3";
             // 
             // FCreateJob
             // 
@@ -516,12 +642,12 @@
         #endregion
 
         private Guna.UI.WinForms.GunaGradientPanel pnlFunc;
-        private Guna.UI.WinForms.GunaTextBox gunaTextBox2;
-        private Guna.UI.WinForms.GunaDateTimePicker gunaDateTimePicker1;
-        private Guna.UI.WinForms.GunaComboBox gunaComboBox3;
-        private Guna.UI.WinForms.GunaComboBox gunaComboBox2;
-        private Guna.UI.WinForms.GunaComboBox gunaComboBox1;
-        private Guna.UI.WinForms.GunaTextBox gunaTextBox1;
+        private Guna.UI.WinForms.GunaTextBox txtTimeWork;
+        private Guna.UI.WinForms.GunaDateTimePicker dtpLastDate;
+        private Guna.UI.WinForms.GunaComboBox cbxExp;
+        private Guna.UI.WinForms.GunaComboBox cbxType;
+        private Guna.UI.WinForms.GunaComboBox cbxEducation;
+        private Guna.UI.WinForms.GunaTextBox txtSalary;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label1;
@@ -535,7 +661,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnCreateJob;
-        private System.Windows.Forms.TextBox txtJobName;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lbSal;
         private System.Windows.Forms.Label label4;
@@ -547,5 +672,6 @@
         private Guna.UI.WinForms.GunaTextBox txtCommune;
         private Guna.UI.WinForms.GunaTextBox txtDistrict;
         private Guna.UI.WinForms.GunaTextBox txtProvince;
+        private Guna.UI.WinForms.GunaTextBox txtJobName;
     }
 }
