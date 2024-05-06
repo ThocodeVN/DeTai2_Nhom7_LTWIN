@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7C4BF9EC-462F-4E0B-8A3E-68DF5D120C02}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DeTai2_Nhom7_LTWIN</RootNamespace>
+    <AssemblyName>DeTai2_Nhom7_LTWIN</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI">
+      <HintPath>..\..\..\..\Downloaded\Guna.UI-Framework-Lib-master\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DTO\CandidateDTO.cs" />
+    <Compile Include="DTO\EmployerDTO.cs" />
+    <Compile Include="DTO\JobDTO.cs" />
+    <Compile Include="FCompanySignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCompanySignUp.Designer.cs">
+      <DependentUpon>FCompanySignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FCompanyUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCompanyUI.Designer.cs">
+      <DependentUpon>FCompanyUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FCreateCV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCreateCV.Designer.cs">
+      <DependentUpon>FCreateCV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FCreateJob.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCreateJob.Designer.cs">
+      <DependentUpon>FCreateJob.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FCV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCV.Designer.cs">
+      <DependentUpon>FCV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FInforJob.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FInforJob.Designer.cs">
+      <DependentUpon>FInforJob.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLogin.Designer.cs">
+      <DependentUpon>FLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FUserInfor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FUserInfor.Designer.cs">
+      <DependentUpon>FUserInfor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FUserSignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FUserSignUp.Designer.cs">
+      <DependentUpon>FUserSignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FUserUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FUserUI.Designer.cs">
+      <DependentUpon>FUserUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UCBaseInfor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCBaseInfor.Designer.cs">
+      <DependentUpon>UCBaseInfor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCCompanyInfor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCCompanyInfor.Designer.cs">
+      <DependentUpon>UCCompanyInfor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCCV.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCCV.Designer.cs">
+      <DependentUpon>UCCV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCHistoryCV.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCHistoryCV.Designer.cs">
+      <DependentUpon>UCHistoryCV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCJob.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCJob.Designer.cs">
+      <DependentUpon>UCJob.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FCompanySignUp.resx">
+      <DependentUpon>FCompanySignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FCompanyUI.resx">
+      <DependentUpon>FCompanyUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FCreateCV.resx">
+      <DependentUpon>FCreateCV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FCreateJob.resx">
+      <DependentUpon>FCreateJob.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FCV.resx">
+      <DependentUpon>FCV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FInforJob.resx">
+      <DependentUpon>FInforJob.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLogin.resx">
+      <DependentUpon>FLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FUserInfor.resx">
+      <DependentUpon>FUserInfor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FUserSignUp.resx">
+      <DependentUpon>FUserSignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FUserUI.resx">
+      <DependentUpon>FUserUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UCBaseInfor.resx">
+      <DependentUpon>UCBaseInfor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCCompanyInfor.resx">
+      <DependentUpon>UCCompanyInfor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCCV.resx">
+      <DependentUpon>UCCV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCHistoryCV.resx">
+      <DependentUpon>UCHistoryCV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCJob.resx">
+      <DependentUpon>UCJob.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
