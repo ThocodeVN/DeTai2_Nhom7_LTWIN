@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DeTai2_Nhom7_LTWIN.DAO;
+using DeTai2_Nhom7_LTWIN.DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +14,16 @@ namespace DeTai2_Nhom7_LTWIN
 {
     public partial class FUserUI : Form
     {
-        public FUserUI()
+        JobDAO job = new JobDAO();
+        CandidateDTO can;
+        List<UCJob> listUc;
+
+        List<string> local = new List<string>();
+        List<string> type = new List<string>();
+        public FUserUI(CandidateDTO can)
         {
             InitializeComponent();
+            this.can = can;
         }
 
         private void btnInfor_Click(object sender, EventArgs e)

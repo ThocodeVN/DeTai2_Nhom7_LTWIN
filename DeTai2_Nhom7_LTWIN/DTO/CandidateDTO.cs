@@ -26,7 +26,7 @@ namespace DeTai2_Nhom7_LTWIN.DTO
             Phone = phone;
             Email = email;
             Address = address;
-            accName = loginName;
+            AccName = loginName;
             Password = password;
         }
 

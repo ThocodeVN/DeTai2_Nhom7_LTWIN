@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DeTai2_Nhom7_LTWIN.DAO;
+using DeTai2_Nhom7_LTWIN.DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +14,12 @@ namespace DeTai2_Nhom7_LTWIN
 {
     public partial class FCompanyUI : Form
     {
-        public FCompanyUI()
+        EmployerDTO empDTO;
+        JobDAO job = new JobDAO();
+        public FCompanyUI(EmployerDTO employerDTO)
         {
             InitializeComponent();
+            this.empDTO = employerDTO;
         }
     }
 }

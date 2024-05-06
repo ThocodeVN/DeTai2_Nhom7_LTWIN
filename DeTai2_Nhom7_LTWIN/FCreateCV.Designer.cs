@@ -30,6 +30,30 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FCreateCV));
             this.pnlFunc = new Guna.UI.WinForms.GunaGradientPanel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnLogin = new System.Windows.Forms.Button();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.gunaDateTimePicker3 = new Guna.UI.WinForms.GunaDateTimePicker();
+            this.gunaDateTimePicker4 = new Guna.UI.WinForms.GunaDateTimePicker();
+            this.gunaTextBox4 = new Guna.UI.WinForms.GunaTextBox();
+            this.gunaTextBox5 = new Guna.UI.WinForms.GunaTextBox();
+            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.gunaDateTimePicker2 = new Guna.UI.WinForms.GunaDateTimePicker();
+            this.gunaDateTimePicker1 = new Guna.UI.WinForms.GunaDateTimePicker();
+            this.gunaTextBox3 = new Guna.UI.WinForms.GunaTextBox();
+            this.gunaTextBox2 = new Guna.UI.WinForms.GunaTextBox();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.gunaTextBox1 = new Guna.UI.WinForms.GunaTextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtHome = new Guna.UI.WinForms.GunaTextBox();
             this.txtStreet = new Guna.UI.WinForms.GunaTextBox();
@@ -48,13 +72,9 @@
             this.txtPhone = new Guna.UI.WinForms.GunaTextBox();
             this.txtName = new Guna.UI.WinForms.GunaTextBox();
             this.gunaCirclePictureBox1 = new Guna.UI.WinForms.GunaCirclePictureBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.pnlFunc.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -64,6 +84,24 @@
             this.pnlFunc.AutoScroll = true;
             this.pnlFunc.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlFunc.BackgroundImage")));
             this.pnlFunc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlFunc.Controls.Add(this.checkBox1);
+            this.pnlFunc.Controls.Add(this.panel2);
+            this.pnlFunc.Controls.Add(this.label15);
+            this.pnlFunc.Controls.Add(this.label16);
+            this.pnlFunc.Controls.Add(this.gunaDateTimePicker3);
+            this.pnlFunc.Controls.Add(this.gunaDateTimePicker4);
+            this.pnlFunc.Controls.Add(this.gunaTextBox4);
+            this.pnlFunc.Controls.Add(this.gunaTextBox5);
+            this.pnlFunc.Controls.Add(this.richTextBox3);
+            this.pnlFunc.Controls.Add(this.richTextBox2);
+            this.pnlFunc.Controls.Add(this.label14);
+            this.pnlFunc.Controls.Add(this.label13);
+            this.pnlFunc.Controls.Add(this.gunaDateTimePicker2);
+            this.pnlFunc.Controls.Add(this.gunaDateTimePicker1);
+            this.pnlFunc.Controls.Add(this.gunaTextBox3);
+            this.pnlFunc.Controls.Add(this.gunaTextBox2);
+            this.pnlFunc.Controls.Add(this.richTextBox1);
+            this.pnlFunc.Controls.Add(this.gunaTextBox1);
             this.pnlFunc.Controls.Add(this.label12);
             this.pnlFunc.Controls.Add(this.label11);
             this.pnlFunc.Controls.Add(this.label10);
@@ -79,9 +117,334 @@
             this.pnlFunc.GradientColor4 = System.Drawing.Color.White;
             this.pnlFunc.Location = new System.Drawing.Point(0, 0);
             this.pnlFunc.Name = "pnlFunc";
-            this.pnlFunc.Size = new System.Drawing.Size(1013, 766);
+            this.pnlFunc.Size = new System.Drawing.Size(1029, 766);
             this.pnlFunc.TabIndex = 6;
             this.pnlFunc.Text = "gunaGradientPanel3";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.Controls.Add(this.btnLogin);
+            this.panel2.Location = new System.Drawing.Point(396, 1036);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(200, 100);
+            this.panel2.TabIndex = 37;
+            // 
+            // btnLogin
+            // 
+            this.btnLogin.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(195)))), ((int)(((byte)(41)))));
+            this.btnLogin.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.ForeColor = System.Drawing.Color.White;
+            this.btnLogin.Location = new System.Drawing.Point(29, 22);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(137, 63);
+            this.btnLogin.TabIndex = 36;
+            this.btnLogin.Text = "Tạo CV";
+            this.btnLogin.UseVisualStyleBackColor = false;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.Transparent;
+            this.label15.Location = new System.Drawing.Point(523, 828);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(53, 16);
+            this.label15.TabIndex = 35;
+            this.label15.Text = "Kết thúc";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.Transparent;
+            this.label16.Location = new System.Drawing.Point(523, 775);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(53, 16);
+            this.label16.TabIndex = 34;
+            this.label16.Text = "Bắt đầu";
+            // 
+            // gunaDateTimePicker3
+            // 
+            this.gunaDateTimePicker3.BaseColor = System.Drawing.Color.White;
+            this.gunaDateTimePicker3.BorderColor = System.Drawing.Color.Silver;
+            this.gunaDateTimePicker3.CustomFormat = null;
+            this.gunaDateTimePicker3.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.gunaDateTimePicker3.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaDateTimePicker3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaDateTimePicker3.ForeColor = System.Drawing.Color.Black;
+            this.gunaDateTimePicker3.Location = new System.Drawing.Point(608, 814);
+            this.gunaDateTimePicker3.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.gunaDateTimePicker3.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.gunaDateTimePicker3.Name = "gunaDateTimePicker3";
+            this.gunaDateTimePicker3.OnHoverBaseColor = System.Drawing.Color.White;
+            this.gunaDateTimePicker3.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaDateTimePicker3.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaDateTimePicker3.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaDateTimePicker3.Size = new System.Drawing.Size(240, 30);
+            this.gunaDateTimePicker3.TabIndex = 33;
+            this.gunaDateTimePicker3.Text = "Monday, May 6, 2024";
+            this.gunaDateTimePicker3.Value = new System.DateTime(2024, 5, 6, 13, 12, 20, 560);
+            // 
+            // gunaDateTimePicker4
+            // 
+            this.gunaDateTimePicker4.BaseColor = System.Drawing.Color.White;
+            this.gunaDateTimePicker4.BorderColor = System.Drawing.Color.Silver;
+            this.gunaDateTimePicker4.CustomFormat = null;
+            this.gunaDateTimePicker4.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.gunaDateTimePicker4.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaDateTimePicker4.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaDateTimePicker4.ForeColor = System.Drawing.Color.Black;
+            this.gunaDateTimePicker4.Location = new System.Drawing.Point(608, 761);
+            this.gunaDateTimePicker4.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.gunaDateTimePicker4.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.gunaDateTimePicker4.Name = "gunaDateTimePicker4";
+            this.gunaDateTimePicker4.OnHoverBaseColor = System.Drawing.Color.White;
+            this.gunaDateTimePicker4.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaDateTimePicker4.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaDateTimePicker4.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaDateTimePicker4.Size = new System.Drawing.Size(240, 30);
+            this.gunaDateTimePicker4.TabIndex = 32;
+            this.gunaDateTimePicker4.Text = "Monday, May 6, 2024";
+            this.gunaDateTimePicker4.Value = new System.DateTime(2024, 5, 6, 13, 12, 20, 560);
+            // 
+            // gunaTextBox4
+            // 
+            this.gunaTextBox4.BaseColor = System.Drawing.Color.White;
+            this.gunaTextBox4.BorderColor = System.Drawing.Color.Silver;
+            this.gunaTextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox4.FocusedBaseColor = System.Drawing.Color.White;
+            this.gunaTextBox4.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaTextBox4.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.gunaTextBox4.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaTextBox4.Location = new System.Drawing.Point(155, 812);
+            this.gunaTextBox4.Name = "gunaTextBox4";
+            this.gunaTextBox4.PasswordChar = '\0';
+            this.gunaTextBox4.SelectedText = "";
+            this.gunaTextBox4.Size = new System.Drawing.Size(278, 32);
+            this.gunaTextBox4.TabIndex = 31;
+            this.gunaTextBox4.Text = "Vị trí làm việc";
+            // 
+            // gunaTextBox5
+            // 
+            this.gunaTextBox5.BaseColor = System.Drawing.Color.White;
+            this.gunaTextBox5.BorderColor = System.Drawing.Color.Silver;
+            this.gunaTextBox5.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox5.FocusedBaseColor = System.Drawing.Color.White;
+            this.gunaTextBox5.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaTextBox5.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.gunaTextBox5.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaTextBox5.Location = new System.Drawing.Point(155, 761);
+            this.gunaTextBox5.Name = "gunaTextBox5";
+            this.gunaTextBox5.PasswordChar = '\0';
+            this.gunaTextBox5.SelectedText = "";
+            this.gunaTextBox5.Size = new System.Drawing.Size(278, 32);
+            this.gunaTextBox5.TabIndex = 30;
+            this.gunaTextBox5.Text = "Tên công ty";
+            // 
+            // richTextBox3
+            // 
+            this.richTextBox3.Location = new System.Drawing.Point(155, 879);
+            this.richTextBox3.Name = "richTextBox3";
+            this.richTextBox3.Size = new System.Drawing.Size(693, 141);
+            this.richTextBox3.TabIndex = 29;
+            this.richTextBox3.Text = "";
+            // 
+            // richTextBox2
+            // 
+            this.richTextBox2.Location = new System.Drawing.Point(155, 591);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.Size = new System.Drawing.Size(693, 141);
+            this.richTextBox2.TabIndex = 28;
+            this.richTextBox2.Text = "";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.Location = new System.Drawing.Point(523, 543);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(53, 16);
+            this.label14.TabIndex = 27;
+            this.label14.Text = "Kết thúc";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Location = new System.Drawing.Point(523, 490);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(53, 16);
+            this.label13.TabIndex = 26;
+            this.label13.Text = "Bắt đầu";
+            // 
+            // gunaDateTimePicker2
+            // 
+            this.gunaDateTimePicker2.BaseColor = System.Drawing.Color.White;
+            this.gunaDateTimePicker2.BorderColor = System.Drawing.Color.Silver;
+            this.gunaDateTimePicker2.CustomFormat = null;
+            this.gunaDateTimePicker2.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.gunaDateTimePicker2.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaDateTimePicker2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaDateTimePicker2.ForeColor = System.Drawing.Color.Black;
+            this.gunaDateTimePicker2.Location = new System.Drawing.Point(608, 529);
+            this.gunaDateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.gunaDateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.gunaDateTimePicker2.Name = "gunaDateTimePicker2";
+            this.gunaDateTimePicker2.OnHoverBaseColor = System.Drawing.Color.White;
+            this.gunaDateTimePicker2.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaDateTimePicker2.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaDateTimePicker2.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaDateTimePicker2.Size = new System.Drawing.Size(240, 30);
+            this.gunaDateTimePicker2.TabIndex = 25;
+            this.gunaDateTimePicker2.Text = "Monday, May 6, 2024";
+            this.gunaDateTimePicker2.Value = new System.DateTime(2024, 5, 6, 13, 12, 20, 560);
+            // 
+            // gunaDateTimePicker1
+            // 
+            this.gunaDateTimePicker1.BaseColor = System.Drawing.Color.White;
+            this.gunaDateTimePicker1.BorderColor = System.Drawing.Color.Silver;
+            this.gunaDateTimePicker1.CustomFormat = null;
+            this.gunaDateTimePicker1.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.gunaDateTimePicker1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaDateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaDateTimePicker1.ForeColor = System.Drawing.Color.Black;
+            this.gunaDateTimePicker1.Location = new System.Drawing.Point(608, 476);
+            this.gunaDateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.gunaDateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.gunaDateTimePicker1.Name = "gunaDateTimePicker1";
+            this.gunaDateTimePicker1.OnHoverBaseColor = System.Drawing.Color.White;
+            this.gunaDateTimePicker1.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaDateTimePicker1.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaDateTimePicker1.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaDateTimePicker1.Size = new System.Drawing.Size(240, 30);
+            this.gunaDateTimePicker1.TabIndex = 24;
+            this.gunaDateTimePicker1.Text = "Monday, May 6, 2024";
+            this.gunaDateTimePicker1.Value = new System.DateTime(2024, 5, 6, 13, 12, 20, 560);
+            // 
+            // gunaTextBox3
+            // 
+            this.gunaTextBox3.BaseColor = System.Drawing.Color.White;
+            this.gunaTextBox3.BorderColor = System.Drawing.Color.Silver;
+            this.gunaTextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox3.FocusedBaseColor = System.Drawing.Color.White;
+            this.gunaTextBox3.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaTextBox3.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.gunaTextBox3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaTextBox3.Location = new System.Drawing.Point(155, 527);
+            this.gunaTextBox3.Name = "gunaTextBox3";
+            this.gunaTextBox3.PasswordChar = '\0';
+            this.gunaTextBox3.SelectedText = "";
+            this.gunaTextBox3.Size = new System.Drawing.Size(278, 32);
+            this.gunaTextBox3.TabIndex = 23;
+            this.gunaTextBox3.Text = "Tên ngành học";
+            // 
+            // gunaTextBox2
+            // 
+            this.gunaTextBox2.BaseColor = System.Drawing.Color.White;
+            this.gunaTextBox2.BorderColor = System.Drawing.Color.Silver;
+            this.gunaTextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox2.FocusedBaseColor = System.Drawing.Color.White;
+            this.gunaTextBox2.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaTextBox2.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.gunaTextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaTextBox2.Location = new System.Drawing.Point(155, 476);
+            this.gunaTextBox2.Name = "gunaTextBox2";
+            this.gunaTextBox2.PasswordChar = '\0';
+            this.gunaTextBox2.SelectedText = "";
+            this.gunaTextBox2.Size = new System.Drawing.Size(278, 32);
+            this.gunaTextBox2.TabIndex = 22;
+            this.gunaTextBox2.Text = "Tên trường học";
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(155, 317);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(693, 141);
+            this.richTextBox1.TabIndex = 21;
+            this.richTextBox1.Text = "";
+            // 
+            // gunaTextBox1
+            // 
+            this.gunaTextBox1.BaseColor = System.Drawing.Color.White;
+            this.gunaTextBox1.BorderColor = System.Drawing.Color.Silver;
+            this.gunaTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox1.FocusedBaseColor = System.Drawing.Color.White;
+            this.gunaTextBox1.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaTextBox1.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.gunaTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaTextBox1.Location = new System.Drawing.Point(155, 250);
+            this.gunaTextBox1.Name = "gunaTextBox1";
+            this.gunaTextBox1.PasswordChar = '\0';
+            this.gunaTextBox1.SelectedText = "";
+            this.gunaTextBox1.Size = new System.Drawing.Size(497, 32);
+            this.gunaTextBox1.TabIndex = 20;
+            this.gunaTextBox1.Text = "gunaTextBox1";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(42, 761);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(89, 36);
+            this.label12.TabIndex = 19;
+            this.label12.Text = "Kinh nghiệm\r\n làm việc";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(42, 879);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(74, 18);
+            this.label11.TabIndex = 18;
+            this.label11.Text = "Chứng chỉ";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(42, 318);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(70, 18);
+            this.label10.TabIndex = 17;
+            this.label10.Text = "Giới thiệu";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(42, 591);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(57, 18);
+            this.label9.TabIndex = 16;
+            this.label9.Text = "Kĩ năng";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(42, 490);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(67, 18);
+            this.label8.TabIndex = 15;
+            this.label8.Text = "Học vấn:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(42, 250);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(80, 18);
+            this.label7.TabIndex = 14;
+            this.label7.Text = "Tiêu đề CV";
             // 
             // panel1
             // 
@@ -348,70 +711,28 @@
             this.gunaCirclePictureBox1.TabStop = false;
             this.gunaCirclePictureBox1.UseTransfarantBackground = false;
             // 
-            // label7
+            // checkBox1
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(44, 252);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(74, 16);
-            this.label7.TabIndex = 14;
-            this.label7.Text = "Tiêu đề CV";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(55, 398);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(60, 16);
-            this.label8.TabIndex = 15;
-            this.label8.Text = "Học vấn:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(53, 440);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(53, 16);
-            this.label9.TabIndex = 16;
-            this.label9.Text = "Kĩ năng";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(44, 322);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(62, 16);
-            this.label10.TabIndex = 17;
-            this.label10.Text = "Giới thiệu";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(55, 545);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(65, 16);
-            this.label11.TabIndex = 18;
-            this.label11.Text = "Chứng chỉ";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(55, 495);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(132, 16);
-            this.label12.TabIndex = 19;
-            this.label12.Text = "Kinh nghiệm làm việc";
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.BackColor = System.Drawing.Color.Transparent;
+            this.checkBox1.Location = new System.Drawing.Point(893, 539);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(86, 20);
+            this.checkBox1.TabIndex = 38;
+            this.checkBox1.Text = "Đang học";
+            this.checkBox1.UseVisualStyleBackColor = false;
             // 
             // FCreateCV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1013, 766);
+            this.ClientSize = new System.Drawing.Size(1029, 766);
             this.Controls.Add(this.pnlFunc);
             this.Name = "FCreateCV";
             this.Text = "FCreateCV";
             this.pnlFunc.ResumeLayout(false);
             this.pnlFunc.PerformLayout();
+            this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).EndInit();
@@ -444,7 +765,26 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
+        private Guna.UI.WinForms.GunaTextBox gunaTextBox2;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        private Guna.UI.WinForms.GunaTextBox gunaTextBox1;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private Guna.UI.WinForms.GunaDateTimePicker gunaDateTimePicker3;
+        private Guna.UI.WinForms.GunaDateTimePicker gunaDateTimePicker4;
+        private Guna.UI.WinForms.GunaTextBox gunaTextBox4;
+        private Guna.UI.WinForms.GunaTextBox gunaTextBox5;
+        private System.Windows.Forms.RichTextBox richTextBox3;
+        private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private Guna.UI.WinForms.GunaDateTimePicker gunaDateTimePicker2;
+        private Guna.UI.WinForms.GunaDateTimePicker gunaDateTimePicker1;
+        private Guna.UI.WinForms.GunaTextBox gunaTextBox3;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }

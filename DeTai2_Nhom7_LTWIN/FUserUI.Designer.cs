@@ -420,10 +420,11 @@
             // 
             // btnInfor
             // 
+            this.btnInfor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnInfor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInfor.Location = new System.Drawing.Point(334, 0);
+            this.btnInfor.Location = new System.Drawing.Point(1094, 12);
             this.btnInfor.Name = "btnInfor";
-            this.btnInfor.Size = new System.Drawing.Size(119, 57);
+            this.btnInfor.Size = new System.Drawing.Size(109, 40);
             this.btnInfor.TabIndex = 4;
             this.btnInfor.Text = "Hồ sơ - CV";
             this.btnInfor.UseVisualStyleBackColor = true;

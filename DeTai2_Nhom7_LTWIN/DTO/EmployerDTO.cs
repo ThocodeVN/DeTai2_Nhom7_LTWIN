@@ -8,7 +8,7 @@ namespace DeTai2_Nhom7_LTWIN.DTO
 {
     public class EmployerDTO
     {
-        string id;
+        int id;
         string name;
         string companyName;
         string phone;
@@ -18,9 +18,8 @@ namespace DeTai2_Nhom7_LTWIN.DTO
         string loginName;
         string password;
 
-        public EmployerDTO(string id, string name, string companyName, string phone, string address, string email, string industry, string loginName, string password)
+        public EmployerDTO(string name, string companyName, string phone, string address, string email, string industry, string loginName, string password)
         {
-            Id = id; 
             Name = name;
             CompanyName = companyName;
             Phone = phone;
@@ -31,7 +30,7 @@ namespace DeTai2_Nhom7_LTWIN.DTO
             Password = password;
         }
 
-        public string Id { get => id; set => id = value; }
+        public int Id { get => id; set => id = value; }
         public string Name { get => name; set => name = value; }
         public string CompanyName { get => companyName; set => companyName = value; }
         public string Phone { get => phone; set => phone = value; }

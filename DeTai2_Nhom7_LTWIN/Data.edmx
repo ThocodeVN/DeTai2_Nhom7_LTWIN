@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Detai2_DBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Application">
+          <Key>
+            <PropertyRef Name="AppID" />
+          </Key>
+          <Property Name="AppID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="JobID" Type="int" Nullable="false" />
+          <Property Name="CvID" Type="int" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Candidate">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="60" Nullable="false" />
+          <Property Name="Email" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Birth" Type="date" Nullable="false" />
+          <Property Name="Phone" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="Sex" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Address" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="LoginName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Password" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CV">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CanID" Type="int" Nullable="false" />
+          <Property Name="Title" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Introduce" Type="nvarchar" MaxLength="2000" Nullable="false" />
+          <Property Name="Education" Type="nvarchar" MaxLength="1000" Nullable="false" />
+          <Property Name="Exp" Type="nvarchar" MaxLength="1000" Nullable="false" />
+          <Property Name="Skills" Type="nvarchar" MaxLength="2000" Nullable="false" />
+          <Property Name="Certificate" Type="nvarchar" MaxLength="1000" Nullable="false" />
+          <Property Name="CreateDate" Type="date" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Employer">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="CompanyName" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Phone" Type="nvarchar" MaxLength="11" Nullable="false" />
+          <Property Name="Address" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Email" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Industry" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="LoginName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Password" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Job">
+          <Key>
+            <PropertyRef Name="JobID" />
+          </Key>
+          <Property Name="JobID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Title" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Description" Type="nvarchar" MaxLength="3000" Nullable="false" />
+          <Property Name="Require" Type="nvarchar" MaxLength="3000" Nullable="false" />
+          <Property Name="Salary" Type="int" />
+          <Property Name="Location" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="EmpID" Type="int" Nullable="false" />
+          <Property Name="LastDate" Type="date" Nullable="false" />
+          <Property Name="TimeWork" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Benefit" Type="nvarchar" MaxLength="1000" Nullable="false" />
+          <Property Name="HowApply" Type="nvarchar" MaxLength="1000" Nullable="false" />
+          <Property Name="ReqExperience" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Education" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Type" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="Detai2_DBModelStoreContainer">
+          <EntitySet Name="Application" EntityType="Self.Application" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Candidate" EntityType="Self.Candidate" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CV" EntityType="Self.CV" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Employer" EntityType="Self.Employer" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Job" EntityType="Self.Job" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Detai2_DBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Application">
+          <Key>
+            <PropertyRef Name="AppID" />
+          </Key>
+          <Property Name="AppID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="JobID" Type="Int32" Nullable="false" />
+          <Property Name="CvID" Type="Int32" Nullable="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="Candidate">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Birth" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Phone" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Sex" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Address" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="LoginName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CV">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CanID" Type="Int32" Nullable="false" />
+          <Property Name="Title" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Introduce" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Education" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Exp" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Skills" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Certificate" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="0" />
+        </EntityType>
+        <EntityType Name="Employer">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CompanyName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Phone" Type="String" MaxLength="11" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Address" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Industry" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="LoginName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Job">
+          <Key>
+            <PropertyRef Name="JobID" />
+          </Key>
+          <Property Name="JobID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="3000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Require" Type="String" MaxLength="3000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Salary" Type="Int32" />
+          <Property Name="Location" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="EmpID" Type="Int32" Nullable="false" />
+          <Property Name="LastDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="TimeWork" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Benefit" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="HowApply" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ReqExperience" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Education" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="Detai2_DBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Applications" EntityType="Self.Application" />
+          <EntitySet Name="Candidates" EntityType="Self.Candidate" />
+          <EntitySet Name="CVs" EntityType="Self.CV" />
+          <EntitySet Name="Employers" EntityType="Self.Employer" />
+          <EntitySet Name="Jobs" EntityType="Self.Job" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Detai2_DBModelStoreContainer" CdmEntityContainer="Detai2_DBEntities">
+          <EntitySetMapping Name="Applications">
+            <EntityTypeMapping TypeName="Detai2_DBModel.Application">
+              <MappingFragment StoreEntitySet="Application">
+                <ScalarProperty Name="AppID" ColumnName="AppID" />
+                <ScalarProperty Name="JobID" ColumnName="JobID" />
+                <ScalarProperty Name="CvID" ColumnName="CvID" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Candidates">
+            <EntityTypeMapping TypeName="Detai2_DBModel.Candidate">
+              <MappingFragment StoreEntitySet="Candidate">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Birth" ColumnName="Birth" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Sex" ColumnName="Sex" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="LoginName" ColumnName="LoginName" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CVs">
+            <EntityTypeMapping TypeName="Detai2_DBModel.CV">
+              <MappingFragment StoreEntitySet="CV">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="CanID" ColumnName="CanID" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Introduce" ColumnName="Introduce" />
+                <ScalarProperty Name="Education" ColumnName="Education" />
+                <ScalarProperty Name="Exp" ColumnName="Exp" />
+                <ScalarProperty Name="Skills" ColumnName="Skills" />
+                <ScalarProperty Name="Certificate" ColumnName="Certificate" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Employers">
+            <EntityTypeMapping TypeName="Detai2_DBModel.Employer">
+              <MappingFragment StoreEntitySet="Employer">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Industry" ColumnName="Industry" />
+                <ScalarProperty Name="LoginName" ColumnName="LoginName" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Jobs">
+            <EntityTypeMapping TypeName="Detai2_DBModel.Job">
+              <MappingFragment StoreEntitySet="Job">
+                <ScalarProperty Name="JobID" ColumnName="JobID" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Require" ColumnName="Require" />
+                <ScalarProperty Name="Salary" ColumnName="Salary" />
+                <ScalarProperty Name="Location" ColumnName="Location" />
+                <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+                <ScalarProperty Name="LastDate" ColumnName="LastDate" />
+                <ScalarProperty Name="TimeWork" ColumnName="TimeWork" />
+                <ScalarProperty Name="Benefit" ColumnName="Benefit" />
+                <ScalarProperty Name="HowApply" ColumnName="HowApply" />
+                <ScalarProperty Name="ReqExperience" ColumnName="ReqExperience" />
+                <ScalarProperty Name="Education" ColumnName="Education" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
