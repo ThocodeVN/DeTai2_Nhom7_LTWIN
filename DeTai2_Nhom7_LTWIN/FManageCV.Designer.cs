@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FManageCV));
             this.pnlFunc = new Guna.UI.WinForms.GunaGradientPanel();
             this.btnCreateCV = new System.Windows.Forms.Button();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.fpnlCV = new System.Windows.Forms.FlowLayoutPanel();
             this.pnlFunc.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -40,7 +40,7 @@
             this.pnlFunc.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlFunc.BackgroundImage")));
             this.pnlFunc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlFunc.Controls.Add(this.btnCreateCV);
-            this.pnlFunc.Controls.Add(this.flowLayoutPanel1);
+            this.pnlFunc.Controls.Add(this.fpnlCV);
             this.pnlFunc.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlFunc.GradientColor1 = System.Drawing.Color.White;
             this.pnlFunc.GradientColor2 = System.Drawing.Color.White;
@@ -60,19 +60,19 @@
             this.btnCreateCV.Location = new System.Drawing.Point(507, 12);
             this.btnCreateCV.Name = "btnCreateCV";
             this.btnCreateCV.Size = new System.Drawing.Size(173, 52);
-            this.btnCreateCV.TabIndex = 34;
+            this.btnCreateCV.TabIndex = 35;
             this.btnCreateCV.Text = "Tạo CV mới!";
             this.btnCreateCV.UseVisualStyleBackColor = false;
             this.btnCreateCV.Click += new System.EventHandler(this.btnCreateCV_Click);
             // 
-            // flowLayoutPanel1
+            // fpnlCV
             // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 84);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(692, 576);
-            this.flowLayoutPanel1.TabIndex = 0;
+            this.fpnlCV.BackColor = System.Drawing.Color.Transparent;
+            this.fpnlCV.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.fpnlCV.Location = new System.Drawing.Point(0, 84);
+            this.fpnlCV.Name = "fpnlCV";
+            this.fpnlCV.Size = new System.Drawing.Size(692, 576);
+            this.fpnlCV.TabIndex = 0;
             // 
             // FManageCV
             // 
@@ -80,8 +80,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(692, 660);
             this.Controls.Add(this.pnlFunc);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FManageCV";
             this.Text = "FManageCV";
+            this.Load += new System.EventHandler(this.FManageCV_Load);
             this.pnlFunc.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -90,7 +92,7 @@
         #endregion
 
         private Guna.UI.WinForms.GunaGradientPanel pnlFunc;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel fpnlCV;
         private System.Windows.Forms.Button btnCreateCV;
     }
 }

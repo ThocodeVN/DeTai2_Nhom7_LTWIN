@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DeTai2_Nhom7_LTWIN.DAO;
+using DeTai2_Nhom7_LTWIN.DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +14,35 @@ namespace DeTai2_Nhom7_LTWIN
 {
     public partial class UCCV : UserControl
     {
-        public UCCV()
+        ApplicationDAO app = new ApplicationDAO();
+        JobDTO JobDTO;
+        CvDTO cvDTO;
+        public UCCV(CvDTO cv, JobDTO job = null)
         {
             InitializeComponent();
+            this.JobDTO = job;
+            this.cvDTO = cv;
+        }
+
+        private void UCCV_Load(object sender, EventArgs e)
+        {
+            lbTitle.Text = cvDTO.Title;
+            lbCreateDate.Text = cvDTO.CreateDate.ToString();
+            if(JobDTO == null)
+            {
+                btnSubmit.Hide();
+            }
+            else
+            {
+                btnSubmit.Show();
+            }
+        }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            ApplicationDTO appDTO = new ApplicationDTO(DateTime.Now, JobDTO.JobID, cvDTO.Id);
+            app.Add(appDTO);
+            MessageBox.Show("Đã nộp CV thành công");
         }
     }
 }

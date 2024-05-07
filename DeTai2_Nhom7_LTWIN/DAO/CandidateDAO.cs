@@ -46,6 +46,7 @@ namespace DeTai2_Nhom7_LTWIN.DAO
                 db.Candidates.Add(can);
                 db.SaveChanges();
                 MessageBox.Show("Đăng kí thành công");
+                db.GetValidationErrors();
             }
             catch (Exception ex) 
             {

@@ -65,6 +65,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(692, 660);
             this.Controls.Add(this.pnlFunc);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FHistory";
             this.Text = "FHistory";
             this.Load += new System.EventHandler(this.FHistory_Load);

@@ -1,4 +1,5 @@
-﻿using DeTai2_Nhom7_LTWIN.DTO;
+﻿using DeTai2_Nhom7_LTWIN.DAO;
+using DeTai2_Nhom7_LTWIN.DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,17 +15,18 @@ namespace DeTai2_Nhom7_LTWIN
 {
     public partial class FInforJob : Form
     {
-        JobDTO jobDTO;
+        JobDTO jobD;
         CandidateDTO canDTO;
+        EmployerDAO employerDAO = new EmployerDAO();
 
         public FInforJob(JobDTO jobDTO, CandidateDTO can)
         {
             InitializeComponent();
-            this.jobDTO = jobDTO;
+            this.jobD = jobDTO;
             this.canDTO = can;
         }
 
-        public void LoadInfoJob(JobDTO jobD)
+        public void LoadInfoJob()
         {
 
             lbNameJob.Text = jobD.Title;
@@ -37,6 +39,9 @@ namespace DeTai2_Nhom7_LTWIN
             lbBenefit.Text = jobD.Benefit;
             lbHowApply.Text = jobD.HowApply;
             lbTimeWork.Text = jobD.TimeWork;
+
+            lbLoca.Text = jobD.Location.Substring(0, jobD.Location.IndexOf(','));
+            lbCompanyName.Text = employerDAO.GetOneEmp(jobD.EmpID).CompanyName;
 
             DateTime Now = DateTime.Now;
             DateTime Last = jobD.LastDate;
@@ -52,10 +57,20 @@ namespace DeTai2_Nhom7_LTWIN
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            FManageCV myCV = new FManageCV(canDTO);
+            FManageCV myCV = new FManageCV(canDTO, jobD);
             this.Hide();
             myCV.ShowDialog();
             this.Show();
+        }
+
+        private void FInforJob_Load(object sender, EventArgs e)
+        {
+            LoadInfoJob();
+        }
+
+        private void btnSubmit2_Click(object sender, EventArgs e)
+        {
+            btnSubmit_Click(sender, e);
         }
     }
 }

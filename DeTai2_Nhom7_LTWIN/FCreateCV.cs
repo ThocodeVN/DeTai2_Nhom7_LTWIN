@@ -27,6 +27,7 @@ namespace DeTai2_Nhom7_LTWIN
             string education = txtSchool.Text + ", " + txtStudyIndus.Text + ", " + dtpEduStart.Value.ToString() + " - " + dtpEduEnd.Value.ToString();
             string exp = txtCompany.Text + ", " + txtWorkIndus.Text + ", " + dtpWorkStart.Value.ToString() + " - " + dtpWorkEnd.Value.ToString();
             CvDTO cvDTO = new CvDTO(canDTO.CanID, txtTitle.Text, txtIntroduce.Text, education, rtxtSkills.Text, exp, rtxtCertificate.Text, DateTime.Now);
+            cvDAO.Add(cvDTO);
         }
 
         private void FCreateCV_Load(object sender, EventArgs e)
@@ -36,6 +37,7 @@ namespace DeTai2_Nhom7_LTWIN
             txtPhone.Text = canDTO.Phone;
             txtAddress.Text = canDTO.Address;
             cbxSex.Text = canDTO.Sex;
+            dtpBirth.Value = canDTO.Birth;
         }
     }
 }

@@ -43,5 +43,39 @@ namespace DeTai2_Nhom7_LTWIN
                 fpnlJob.Controls.Add(uCJob);
             }
         }
+
+        private void btnFind_Click(object sender, EventArgs e)
+        {
+            string find = "select * from Job where ";
+            if (txtFind.Text != "Tìm kiếm công việc ở đây..." && txtFind.Text != "")
+            {
+                find += " Title = N'" + txtFind.Text + "' and ";
+            }
+
+            if (cbxExp.Text != "Kinh nghiệm" && cbxExp.Text != "")
+            {
+                find += "ReqExperience = N'" + cbxExp.Text + "' and ";
+            }
+
+            if (cbxSalary.Text != "Mức lương" && cbxSalary.Text != "")
+            {
+                find += "Salary = " + cbxSalary.Text + " and ";
+            }
+
+            if (cbxTypeJob.Text != "Loại công việc" && cbxTypeJob.Text != "")
+            {
+                find += "Type= N'" + cbxTypeJob.Text + "' and ";
+            }
+
+            if (cbxLocation.Text != "Tỉnh thành" && cbxLocation.Text != "")
+            {
+                find += "Location = N'" + cbxLocation.Text + "' and ";
+            }
+
+            find = find.Remove(find.Length - 5);
+            MessageBox.Show(find);
+            fpnlJob.Controls.Clear();
+            
+        }
     }
 }

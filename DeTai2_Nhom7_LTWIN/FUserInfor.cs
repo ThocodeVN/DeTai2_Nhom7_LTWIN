@@ -38,6 +38,7 @@ namespace DeTai2_Nhom7_LTWIN
             FManageCV fManageCV = new FManageCV(canDTO);
             fManageCV.TopLevel = false;
             pnlFunc.Controls.Add(fManageCV);
+            fManageCV.Show();
         }
 
         private void btnHistoryCV_Click(object sender, EventArgs e)
@@ -46,6 +47,7 @@ namespace DeTai2_Nhom7_LTWIN
             FHistory fHistory = new FHistory(canDTO);
             fHistory.TopLevel = false;
             pnlFunc.Controls.Add(fHistory);
+            fHistory.Show();
         }
     }
 }

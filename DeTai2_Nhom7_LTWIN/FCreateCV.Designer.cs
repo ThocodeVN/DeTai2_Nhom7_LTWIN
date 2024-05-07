@@ -56,6 +56,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtAddress = new Guna.UI.WinForms.GunaTextBox();
             this.dtpBirth = new Guna.UI.WinForms.GunaDateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -68,7 +69,6 @@
             this.txtPhone = new Guna.UI.WinForms.GunaTextBox();
             this.txtName = new Guna.UI.WinForms.GunaTextBox();
             this.gunaCirclePictureBox1 = new Guna.UI.WinForms.GunaCirclePictureBox();
-            this.txtAddress = new Guna.UI.WinForms.GunaTextBox();
             this.pnlFunc.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -474,6 +474,23 @@
             this.panel1.Size = new System.Drawing.Size(758, 219);
             this.panel1.TabIndex = 13;
             // 
+            // txtAddress
+            // 
+            this.txtAddress.BaseColor = System.Drawing.Color.White;
+            this.txtAddress.BorderColor = System.Drawing.Color.Silver;
+            this.txtAddress.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtAddress.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtAddress.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtAddress.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtAddress.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtAddress.Location = new System.Drawing.Point(97, 186);
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.PasswordChar = '\0';
+            this.txtAddress.SelectedText = "";
+            this.txtAddress.Size = new System.Drawing.Size(630, 30);
+            this.txtAddress.TabIndex = 13;
+            this.txtAddress.Text = "gunaTextBox3";
+            // 
             // dtpBirth
             // 
             this.dtpBirth.BaseColor = System.Drawing.Color.White;
@@ -534,12 +551,17 @@
             this.cbxSex.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cbxSex.ForeColor = System.Drawing.Color.Black;
             this.cbxSex.FormattingEnabled = true;
+            this.cbxSex.Items.AddRange(new object[] {
+            "Nam",
+            "Nữ",
+            "Khác"});
             this.cbxSex.Location = new System.Drawing.Point(97, 76);
             this.cbxSex.Name = "cbxSex";
             this.cbxSex.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.cbxSex.OnHoverItemForeColor = System.Drawing.Color.White;
             this.cbxSex.Size = new System.Drawing.Size(166, 31);
             this.cbxSex.TabIndex = 10;
+            this.cbxSex.TabStop = false;
             // 
             // label3
             // 
@@ -629,23 +651,6 @@
             this.gunaCirclePictureBox1.TabIndex = 0;
             this.gunaCirclePictureBox1.TabStop = false;
             this.gunaCirclePictureBox1.UseTransfarantBackground = false;
-            // 
-            // txtAddress
-            // 
-            this.txtAddress.BaseColor = System.Drawing.Color.White;
-            this.txtAddress.BorderColor = System.Drawing.Color.Silver;
-            this.txtAddress.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtAddress.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtAddress.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.txtAddress.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtAddress.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtAddress.Location = new System.Drawing.Point(97, 186);
-            this.txtAddress.Name = "txtAddress";
-            this.txtAddress.PasswordChar = '\0';
-            this.txtAddress.SelectedText = "";
-            this.txtAddress.Size = new System.Drawing.Size(630, 30);
-            this.txtAddress.TabIndex = 13;
-            this.txtAddress.Text = "gunaTextBox3";
             // 
             // FCreateCV
             // 

@@ -26,7 +26,7 @@ namespace DeTai2_Nhom7_LTWIN
             txtEmail.Text = canDTO.Email;
             txtPhone.Text = canDTO.Phone;
             txtAddress.Text = canDTO.Address;
-            cbxSex.Text = canDTO.Sex;
+            cbxSex.SelectedText = canDTO.Sex;
         }
     }
 }

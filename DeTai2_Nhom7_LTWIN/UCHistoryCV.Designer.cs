@@ -30,17 +30,17 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCHistoryCV));
             this.gunaGradientPanel1 = new Guna.UI.WinForms.GunaGradientPanel();
+            this.lbSubmitDate = new System.Windows.Forms.Label();
+            this.lbCVname = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lbLocation = new System.Windows.Forms.Label();
             this.lbSalary = new System.Windows.Forms.Label();
             this.lbCompanyName = new System.Windows.Forms.Label();
             this.lbJobName = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lbSubmitDate = new System.Windows.Forms.Label();
-            this.lbCVname = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.gunaGradientPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // gunaGradientPanel1
@@ -65,6 +65,37 @@
             this.gunaGradientPanel1.Size = new System.Drawing.Size(774, 104);
             this.gunaGradientPanel1.TabIndex = 5;
             this.gunaGradientPanel1.Text = "gunaGradientPanel1";
+            // 
+            // lbSubmitDate
+            // 
+            this.lbSubmitDate.AutoSize = true;
+            this.lbSubmitDate.BackColor = System.Drawing.Color.Transparent;
+            this.lbSubmitDate.Location = new System.Drawing.Point(515, 74);
+            this.lbSubmitDate.Name = "lbSubmitDate";
+            this.lbSubmitDate.Size = new System.Drawing.Size(75, 16);
+            this.lbSubmitDate.TabIndex = 22;
+            this.lbSubmitDate.Text = "Ngày Nộp: ";
+            // 
+            // lbCVname
+            // 
+            this.lbCVname.AutoSize = true;
+            this.lbCVname.BackColor = System.Drawing.Color.Transparent;
+            this.lbCVname.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCVname.Location = new System.Drawing.Point(514, 3);
+            this.lbCVname.Name = "lbCVname";
+            this.lbCVname.Size = new System.Drawing.Size(75, 24);
+            this.lbCVname.TabIndex = 21;
+            this.lbCVname.Text = "Tên CV";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(381, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(111, 96);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 20;
+            this.pictureBox2.TabStop = false;
             // 
             // lbLocation
             // 
@@ -119,37 +150,6 @@
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
-            // lbSubmitDate
-            // 
-            this.lbSubmitDate.AutoSize = true;
-            this.lbSubmitDate.BackColor = System.Drawing.Color.Transparent;
-            this.lbSubmitDate.Location = new System.Drawing.Point(515, 74);
-            this.lbSubmitDate.Name = "lbSubmitDate";
-            this.lbSubmitDate.Size = new System.Drawing.Size(75, 16);
-            this.lbSubmitDate.TabIndex = 22;
-            this.lbSubmitDate.Text = "Ngày Nộp: ";
-            // 
-            // lbCVname
-            // 
-            this.lbCVname.AutoSize = true;
-            this.lbCVname.BackColor = System.Drawing.Color.Transparent;
-            this.lbCVname.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCVname.Location = new System.Drawing.Point(514, 3);
-            this.lbCVname.Name = "lbCVname";
-            this.lbCVname.Size = new System.Drawing.Size(75, 24);
-            this.lbCVname.TabIndex = 21;
-            this.lbCVname.Text = "Tên CV";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(381, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(111, 96);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 20;
-            this.pictureBox2.TabStop = false;
-            // 
             // UCHistoryCV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -157,10 +157,11 @@
             this.Controls.Add(this.gunaGradientPanel1);
             this.Name = "UCHistoryCV";
             this.Size = new System.Drawing.Size(774, 104);
+            this.Load += new System.EventHandler(this.UCHistoryCV_Load);
             this.gunaGradientPanel1.ResumeLayout(false);
             this.gunaGradientPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

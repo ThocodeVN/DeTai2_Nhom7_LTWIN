@@ -55,6 +55,8 @@ namespace DeTai2_Nhom7_LTWIN.DAO
                     Certificate = cvDTO.Certificate,
                     CreateDate = cvDTO.CreateDate
                 };
+                db.CVs.Add(cv);
+                db.SaveChanges();
                 MessageBox.Show("Tạo CV thành công");
             }
             catch (Exception ex)

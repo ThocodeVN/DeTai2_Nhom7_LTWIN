@@ -48,6 +48,7 @@
             // 
             // cbxSex
             // 
+            this.cbxSex.AllowDrop = true;
             this.cbxSex.BackColor = System.Drawing.Color.Transparent;
             this.cbxSex.BaseColor = System.Drawing.Color.White;
             this.cbxSex.BorderColor = System.Drawing.Color.Silver;
@@ -57,6 +58,10 @@
             this.cbxSex.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cbxSex.ForeColor = System.Drawing.Color.Black;
             this.cbxSex.FormattingEnabled = true;
+            this.cbxSex.Items.AddRange(new object[] {
+            "Nam",
+            "Nữ",
+            "Khác"});
             this.cbxSex.Location = new System.Drawing.Point(257, 102);
             this.cbxSex.Name = "cbxSex";
             this.cbxSex.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
