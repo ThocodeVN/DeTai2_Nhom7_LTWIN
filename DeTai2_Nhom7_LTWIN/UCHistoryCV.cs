@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DeTai2_Nhom7_LTWIN.DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,15 @@ namespace DeTai2_Nhom7_LTWIN
 {
     public partial class UCHistoryCV : UserControl
     {
-        public UCHistoryCV()
+        JobDTO jobDTO;
+        ApplicationDTO appDTO;
+        CvDTO cvDTO;
+        public UCHistoryCV(JobDTO job, CvDTO cv, ApplicationDTO app)
         {
             InitializeComponent();
+            this.jobDTO = job;
+            this.appDTO = app;
+            this.cvDTO = cv;
         }
     }
 }

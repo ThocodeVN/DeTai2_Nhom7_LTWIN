@@ -46,7 +46,7 @@ namespace DeTai2_Nhom7_LTWIN
         {
             LbCompanyName.Text = empDTO.CompanyName;
             LbJobName.Text = job.Title;
-            LbLocation.Text = job.Location;
+            LbLocation.Text = job.Location.Substring(0, job.Location.IndexOf(','));
             LbSalary.Text = job.Salary.ToString();
         }
 

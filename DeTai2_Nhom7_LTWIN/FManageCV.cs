@@ -23,7 +23,7 @@ namespace DeTai2_Nhom7_LTWIN.DTO
 
         private void btnCreateCV_Click(object sender, EventArgs e)
         {
-            FCreateCV fCreateCV = new FCreateCV();
+            FCreateCV fCreateCV = new FCreateCV(canDTO);
             this.Hide();
             this.Show();
             fCreateCV.ShowDialog();

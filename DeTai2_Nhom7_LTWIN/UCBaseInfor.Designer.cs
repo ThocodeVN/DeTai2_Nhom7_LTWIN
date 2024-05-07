@@ -175,6 +175,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Location = new System.Drawing.Point(254, 237);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(47, 16);
@@ -184,6 +185,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Location = new System.Drawing.Point(254, 316);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(41, 16);
@@ -193,6 +195,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Location = new System.Drawing.Point(254, 158);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(85, 16);
@@ -202,6 +205,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Location = new System.Drawing.Point(254, 83);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(54, 16);
@@ -211,6 +215,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(254, 12);
             this.label1.Name = "label1";
@@ -239,6 +244,7 @@
             this.Controls.Add(this.gunaGradientPanel1);
             this.Name = "UCBaseInfor";
             this.Size = new System.Drawing.Size(701, 707);
+            this.Load += new System.EventHandler(this.UCBaseInfor_Load);
             this.gunaGradientPanel1.ResumeLayout(false);
             this.gunaGradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).EndInit();

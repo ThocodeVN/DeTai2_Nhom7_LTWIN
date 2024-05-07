@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DeTai2_Nhom7_LTWIN.DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,11 @@ namespace DeTai2_Nhom7_LTWIN
 {
     public partial class FUserInfor : Form
     {
-        public FUserInfor()
+        CandidateDTO canDTO;
+        public FUserInfor(CandidateDTO canDTO)
         {
             InitializeComponent();
+            this.canDTO = canDTO;
         }
         
         private void FUserInfor_Load(object sender, EventArgs e)
@@ -25,22 +28,24 @@ namespace DeTai2_Nhom7_LTWIN
         private void btnInfor_Click(object sender, EventArgs e)
         {
             pnlFunc.Controls.Clear();
-            UCBaseInfor ucBase = new UCBaseInfor();
+            UCBaseInfor ucBase = new UCBaseInfor(canDTO);
             pnlFunc.Controls.Add(ucBase);
         }
 
         private void btnCV_Click(object sender, EventArgs e)
         {
             pnlFunc.Controls.Clear();
-            UCCV ucCV = new UCCV();
-            pnlFunc.Controls.Add(ucCV);
+            FManageCV fManageCV = new FManageCV(canDTO);
+            fManageCV.TopLevel = false;
+            pnlFunc.Controls.Add(fManageCV);
         }
 
         private void btnHistoryCV_Click(object sender, EventArgs e)
         {
             pnlFunc.Controls.Clear();
-            UCHistoryCV uCHistory = new UCHistoryCV();
-            pnlFunc.Controls.Add(uCHistory);
+            FHistory fHistory = new FHistory(canDTO);
+            fHistory.TopLevel = false;
+            pnlFunc.Controls.Add(fHistory);
         }
     }
 }

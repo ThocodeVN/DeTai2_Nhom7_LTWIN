@@ -15,9 +15,19 @@ namespace DeTai2_Nhom7_LTWIN.DAO
     {
         Detai2_DBEntities db = new Detai2_DBEntities();
 
-        public List<ApplicationDTO> GetListApp()
+        public List<ApplicationDTO> GetListApp(int jobID = 0, int CvID = 0)
         {
             List<Application> app = db.Applications.ToList();
+            if (CvID == 0 && jobID != 0)
+            {
+                app = app.Where(e => e.JobID == jobID).ToList();
+            }
+            
+            if (jobID == 0 && CvID != 0)
+            {
+                app = app.Where(e => e.CvID == CvID).ToList();
+            }
+            
             List<ApplicationDTO> list = new List<ApplicationDTO>();
             foreach (Application a in app)
             {

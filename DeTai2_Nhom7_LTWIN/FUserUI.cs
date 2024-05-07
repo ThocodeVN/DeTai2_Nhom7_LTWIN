@@ -28,7 +28,7 @@ namespace DeTai2_Nhom7_LTWIN
 
         private void btnInfor_Click(object sender, EventArgs e)
         {
-            FUserInfor fUser = new FUserInfor();
+            FUserInfor fUser = new FUserInfor(can);
             fUser.Show();
         }
 
