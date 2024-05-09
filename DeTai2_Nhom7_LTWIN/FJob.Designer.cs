@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FJob));
             this.pnlFunc = new Guna.UI.WinForms.GunaGradientPanel();
-            this.fpnlJob = new System.Windows.Forms.FlowLayoutPanel();
             this.btnCreateJob = new System.Windows.Forms.Button();
+            this.fpnlJob = new System.Windows.Forms.FlowLayoutPanel();
             this.pnlFunc.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,6 +52,20 @@
             this.pnlFunc.TabIndex = 6;
             this.pnlFunc.Text = "gunaGradientPanel3";
             // 
+            // btnCreateJob
+            // 
+            this.btnCreateJob.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnCreateJob.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(195)))), ((int)(((byte)(41)))));
+            this.btnCreateJob.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCreateJob.ForeColor = System.Drawing.Color.White;
+            this.btnCreateJob.Location = new System.Drawing.Point(587, 12);
+            this.btnCreateJob.Name = "btnCreateJob";
+            this.btnCreateJob.Size = new System.Drawing.Size(195, 55);
+            this.btnCreateJob.TabIndex = 9;
+            this.btnCreateJob.Text = "Tạo công việc mới!";
+            this.btnCreateJob.UseVisualStyleBackColor = false;
+            this.btnCreateJob.Click += new System.EventHandler(this.btnCreateJob_Click);
+            // 
             // fpnlJob
             // 
             this.fpnlJob.BackColor = System.Drawing.Color.Transparent;
@@ -61,20 +75,6 @@
             this.fpnlJob.Padding = new System.Windows.Forms.Padding(10);
             this.fpnlJob.Size = new System.Drawing.Size(794, 611);
             this.fpnlJob.TabIndex = 0;
-            // 
-            // btnCreateJob
-            // 
-            this.btnCreateJob.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnCreateJob.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(195)))), ((int)(((byte)(41)))));
-            this.btnCreateJob.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCreateJob.ForeColor = System.Drawing.Color.White;
-            this.btnCreateJob.Location = new System.Drawing.Point(545, 12);
-            this.btnCreateJob.Name = "btnCreateJob";
-            this.btnCreateJob.Size = new System.Drawing.Size(195, 55);
-            this.btnCreateJob.TabIndex = 9;
-            this.btnCreateJob.Text = "Tạo công việc mới!";
-            this.btnCreateJob.UseVisualStyleBackColor = false;
-            this.btnCreateJob.Click += new System.EventHandler(this.btnCreateJob_Click);
             // 
             // FJob
             // 

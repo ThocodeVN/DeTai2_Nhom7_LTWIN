@@ -13,13 +13,11 @@ namespace DeTai2_Nhom7_LTWIN
 {
     public partial class FCV : Form
     {
-        CandidateDTO canDTO;
-        JobDTO jobDTO;
-        public FCV(CandidateDTO canDTO, JobDTO jobDTO)
+        CvDTO cvDTO;
+        public FCV(CvDTO cvDTO)
         {
             InitializeComponent();
-            this.canDTO = canDTO;
-            this.jobDTO = jobDTO;
+            this.cvDTO = cvDTO;
         }
     }
 }

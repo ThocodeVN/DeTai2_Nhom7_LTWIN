@@ -24,7 +24,7 @@ namespace DeTai2_Nhom7_LTWIN.DTO
             this.jobDTO = jobDTO;
             if(jobDTO != null )
             {
-                FormBorderStyle = FormBorderStyle.Sizable;
+                FormBorderStyle = FormBorderStyle.FixedSingle;
                 btnCreateCV.Hide();
             }
             else

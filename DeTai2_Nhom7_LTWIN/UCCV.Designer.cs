@@ -29,117 +29,222 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCCV));
-            this.gunaGradientPanel1 = new Guna.UI.WinForms.GunaGradientPanel();
-            this.gunaCirclePictureBox1 = new Guna.UI.WinForms.GunaCirclePictureBox();
-            this.gunaCirclePictureBox2 = new Guna.UI.WinForms.GunaCirclePictureBox();
-            this.lbCreateDate = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.lbTitle = new System.Windows.Forms.Label();
+            this.ptbAvt = new System.Windows.Forms.PictureBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
             this.btnSubmit = new System.Windows.Forms.Button();
-            this.gunaGradientPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox2)).BeginInit();
+            this.lbCreateDate = new System.Windows.Forms.Label();
+            this.btnViewCV = new System.Windows.Forms.Button();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbAvt)).BeginInit();
+            this.panel3.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
-            // gunaGradientPanel1
+            // panel1
             // 
-            this.gunaGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gunaGradientPanel1.BackgroundImage")));
-            this.gunaGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.gunaGradientPanel1.Controls.Add(this.btnSubmit);
-            this.gunaGradientPanel1.Controls.Add(this.lbCreateDate);
-            this.gunaGradientPanel1.Controls.Add(this.lbTitle);
-            this.gunaGradientPanel1.Controls.Add(this.gunaCirclePictureBox2);
-            this.gunaGradientPanel1.Controls.Add(this.gunaCirclePictureBox1);
-            this.gunaGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gunaGradientPanel1.GradientColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(250)))), ((int)(((byte)(178)))));
-            this.gunaGradientPanel1.GradientColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(250)))), ((int)(((byte)(178)))));
-            this.gunaGradientPanel1.GradientColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(250)))), ((int)(((byte)(178)))));
-            this.gunaGradientPanel1.GradientColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(250)))), ((int)(((byte)(178)))));
-            this.gunaGradientPanel1.Location = new System.Drawing.Point(0, 0);
-            this.gunaGradientPanel1.Name = "gunaGradientPanel1";
-            this.gunaGradientPanel1.Size = new System.Drawing.Size(532, 140);
-            this.gunaGradientPanel1.TabIndex = 4;
-            this.gunaGradientPanel1.Text = "gunaGradientPanel1";
+            this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel1.Controls.Add(this.panel10);
+            this.panel1.Controls.Add(this.panel7);
+            this.panel1.Controls.Add(this.panel6);
+            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(316, 360);
+            this.panel1.TabIndex = 0;
             // 
-            // gunaCirclePictureBox1
+            // panel2
             // 
-            this.gunaCirclePictureBox1.BaseColor = System.Drawing.Color.White;
-            this.gunaCirclePictureBox1.Location = new System.Drawing.Point(150, 73);
-            this.gunaCirclePictureBox1.Name = "gunaCirclePictureBox1";
-            this.gunaCirclePictureBox1.Size = new System.Drawing.Size(8, 8);
-            this.gunaCirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.gunaCirclePictureBox1.TabIndex = 0;
-            this.gunaCirclePictureBox1.TabStop = false;
-            this.gunaCirclePictureBox1.UseTransfarantBackground = false;
-            // 
-            // gunaCirclePictureBox2
-            // 
-            this.gunaCirclePictureBox2.BaseColor = System.Drawing.Color.White;
-            this.gunaCirclePictureBox2.Location = new System.Drawing.Point(7, 3);
-            this.gunaCirclePictureBox2.Name = "gunaCirclePictureBox2";
-            this.gunaCirclePictureBox2.Size = new System.Drawing.Size(151, 134);
-            this.gunaCirclePictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.gunaCirclePictureBox2.TabIndex = 1;
-            this.gunaCirclePictureBox2.TabStop = false;
-            this.gunaCirclePictureBox2.UseTransfarantBackground = false;
-            // 
-            // lbCreateDate
-            // 
-            this.lbCreateDate.AutoSize = true;
-            this.lbCreateDate.BackColor = System.Drawing.Color.Transparent;
-            this.lbCreateDate.Location = new System.Drawing.Point(187, 71);
-            this.lbCreateDate.Name = "lbCreateDate";
-            this.lbCreateDate.Size = new System.Drawing.Size(62, 16);
-            this.lbCreateDate.TabIndex = 15;
-            this.lbCreateDate.Text = "Ngày tạo";
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(98)))), ((int)(((byte)(63)))));
+            this.panel2.Controls.Add(this.lbCreateDate);
+            this.panel2.Controls.Add(this.lbTitle);
+            this.panel2.Controls.Add(this.ptbAvt);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(316, 86);
+            this.panel2.TabIndex = 10;
             // 
             // lbTitle
             // 
             this.lbTitle.AutoSize = true;
-            this.lbTitle.BackColor = System.Drawing.Color.Transparent;
-            this.lbTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTitle.Location = new System.Drawing.Point(185, 12);
+            this.lbTitle.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTitle.ForeColor = System.Drawing.Color.White;
+            this.lbTitle.Location = new System.Drawing.Point(110, 14);
             this.lbTitle.Name = "lbTitle";
-            this.lbTitle.Size = new System.Drawing.Size(85, 26);
-            this.lbTitle.TabIndex = 14;
+            this.lbTitle.Size = new System.Drawing.Size(74, 22);
+            this.lbTitle.TabIndex = 1;
             this.lbTitle.Text = "Tên CV";
+            // 
+            // ptbAvt
+            // 
+            this.ptbAvt.Image = ((System.Drawing.Image)(resources.GetObject("ptbAvt.Image")));
+            this.ptbAvt.Location = new System.Drawing.Point(3, 3);
+            this.ptbAvt.Name = "ptbAvt";
+            this.ptbAvt.Size = new System.Drawing.Size(89, 80);
+            this.ptbAvt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptbAvt.TabIndex = 0;
+            this.ptbAvt.TabStop = false;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.panel5);
+            this.panel3.Controls.Add(this.panel4);
+            this.panel3.Location = new System.Drawing.Point(3, 92);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(136, 252);
+            this.panel3.TabIndex = 11;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(98)))), ((int)(((byte)(63)))));
+            this.panel4.Location = new System.Drawing.Point(3, 3);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(113, 17);
+            this.panel4.TabIndex = 0;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(98)))), ((int)(((byte)(63)))));
+            this.panel5.Location = new System.Drawing.Point(3, 154);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(113, 17);
+            this.panel5.TabIndex = 1;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.White;
+            this.panel6.Controls.Add(this.panel8);
+            this.panel6.Location = new System.Drawing.Point(145, 92);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(168, 80);
+            this.panel6.TabIndex = 12;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(98)))), ((int)(((byte)(63)))));
+            this.panel8.Location = new System.Drawing.Point(3, 3);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(113, 17);
+            this.panel8.TabIndex = 0;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.White;
+            this.panel7.Controls.Add(this.btnViewCV);
+            this.panel7.Controls.Add(this.btnSubmit);
+            this.panel7.Controls.Add(this.panel9);
+            this.panel7.Location = new System.Drawing.Point(145, 178);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(168, 166);
+            this.panel7.TabIndex = 13;
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(98)))), ((int)(((byte)(63)))));
+            this.panel9.Location = new System.Drawing.Point(3, 3);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(113, 17);
+            this.panel9.TabIndex = 0;
             // 
             // btnSubmit
             // 
             this.btnSubmit.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnSubmit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(195)))), ((int)(((byte)(41)))));
+            this.btnSubmit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(98)))), ((int)(((byte)(63)))));
             this.btnSubmit.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubmit.ForeColor = System.Drawing.Color.White;
-            this.btnSubmit.Location = new System.Drawing.Point(409, 92);
+            this.btnSubmit.Location = new System.Drawing.Point(74, 114);
             this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(123, 45);
-            this.btnSubmit.TabIndex = 16;
-            this.btnSubmit.Text = "Nộp ";
+            this.btnSubmit.Size = new System.Drawing.Size(91, 45);
+            this.btnSubmit.TabIndex = 15;
+            this.btnSubmit.Text = "Nộp";
             this.btnSubmit.UseVisualStyleBackColor = false;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
+            // 
+            // lbCreateDate
+            // 
+            this.lbCreateDate.AutoSize = true;
+            this.lbCreateDate.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCreateDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(160)))), ((int)(((byte)(112)))));
+            this.lbCreateDate.Location = new System.Drawing.Point(109, 47);
+            this.lbCreateDate.Name = "lbCreateDate";
+            this.lbCreateDate.Size = new System.Drawing.Size(61, 17);
+            this.lbCreateDate.TabIndex = 3;
+            this.lbCreateDate.Text = "Ngày tạo";
+            // 
+            // btnViewCV
+            // 
+            this.btnViewCV.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnViewCV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(98)))), ((int)(((byte)(63)))));
+            this.btnViewCV.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewCV.ForeColor = System.Drawing.Color.White;
+            this.btnViewCV.Location = new System.Drawing.Point(3, 114);
+            this.btnViewCV.Name = "btnViewCV";
+            this.btnViewCV.Size = new System.Drawing.Size(65, 45);
+            this.btnViewCV.TabIndex = 16;
+            this.btnViewCV.Text = "Xem";
+            this.btnViewCV.UseVisualStyleBackColor = false;
+            this.btnViewCV.Click += new System.EventHandler(this.btnViewCV_Click);
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(98)))), ((int)(((byte)(63)))));
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel10.Location = new System.Drawing.Point(0, 350);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(316, 10);
+            this.panel10.TabIndex = 2;
             // 
             // UCCV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.gunaGradientPanel1);
+            this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(10);
             this.Name = "UCCV";
-            this.Size = new System.Drawing.Size(532, 140);
+            this.Size = new System.Drawing.Size(316, 360);
             this.Load += new System.EventHandler(this.UCCV_Load);
-            this.gunaGradientPanel1.ResumeLayout(false);
-            this.gunaGradientPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox2)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbAvt)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Guna.UI.WinForms.GunaGradientPanel gunaGradientPanel1;
-        private System.Windows.Forms.Label lbCreateDate;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label lbTitle;
-        private Guna.UI.WinForms.GunaCirclePictureBox gunaCirclePictureBox2;
-        private Guna.UI.WinForms.GunaCirclePictureBox gunaCirclePictureBox1;
+        private System.Windows.Forms.PictureBox ptbAvt;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Button btnSubmit;
+        private System.Windows.Forms.Label lbCreateDate;
+        private System.Windows.Forms.Button btnViewCV;
+        private System.Windows.Forms.Panel panel10;
     }
 }

@@ -27,8 +27,8 @@ namespace DeTai2_Nhom7_LTWIN
     
         public virtual DbSet<Application> Applications { get; set; }
         public virtual DbSet<Candidate> Candidates { get; set; }
-        public virtual DbSet<CV> CVs { get; set; }
         public virtual DbSet<Employer> Employers { get; set; }
         public virtual DbSet<Job> Jobs { get; set; }
+        public virtual DbSet<CV> CVs { get; set; }
     }
 }

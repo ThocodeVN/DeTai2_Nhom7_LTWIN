@@ -30,6 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FUserUI));
             this.gunaGradientPanel1 = new Guna.UI.WinForms.GunaGradientPanel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.btnFind = new System.Windows.Forms.Button();
             this.cbxExp = new Guna.UI.WinForms.GunaComboBox();
             this.cbxTypeJob = new Guna.UI.WinForms.GunaComboBox();
@@ -57,6 +61,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gunaGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gunaGradientPanel1.BackgroundImage")));
             this.gunaGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.gunaGradientPanel1.Controls.Add(this.label6);
+            this.gunaGradientPanel1.Controls.Add(this.label5);
+            this.gunaGradientPanel1.Controls.Add(this.label4);
+            this.gunaGradientPanel1.Controls.Add(this.label3);
             this.gunaGradientPanel1.Controls.Add(this.btnFind);
             this.gunaGradientPanel1.Controls.Add(this.cbxExp);
             this.gunaGradientPanel1.Controls.Add(this.cbxTypeJob);
@@ -74,6 +82,58 @@
             this.gunaGradientPanel1.Size = new System.Drawing.Size(1402, 220);
             this.gunaGradientPanel1.TabIndex = 2;
             this.gunaGradientPanel1.Text = "gunaGradientPanel1";
+            // 
+            // label6
+            // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.label6.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.label6.Location = new System.Drawing.Point(895, 143);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(90, 20);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "Ngành nghề";
+            // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.label5.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.label5.Location = new System.Drawing.Point(895, 80);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(92, 20);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "Kinh nghiệm";
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.label4.Location = new System.Drawing.Point(555, 143);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(81, 20);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Mức lương";
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.label3.Location = new System.Drawing.Point(555, 80);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(84, 20);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Tỉnh/ thành";
             // 
             // btnFind
             // 
@@ -117,6 +177,7 @@
             this.cbxExp.OnHoverItemForeColor = System.Drawing.Color.White;
             this.cbxExp.Size = new System.Drawing.Size(270, 31);
             this.cbxExp.TabIndex = 6;
+            this.cbxExp.TextChanged += new System.EventHandler(this.cbxExp_TextChanged);
             // 
             // cbxTypeJob
             // 
@@ -131,6 +192,7 @@
             this.cbxTypeJob.ForeColor = System.Drawing.Color.Black;
             this.cbxTypeJob.FormattingEnabled = true;
             this.cbxTypeJob.Items.AddRange(new object[] {
+            "Tất cả ngành nghề",
             "Lập trình viên",
             "Kỹ sư phần mềm",
             "Nhân viên kinh doanh",
@@ -237,6 +299,7 @@
             this.cbxTypeJob.OnHoverItemForeColor = System.Drawing.Color.White;
             this.cbxTypeJob.Size = new System.Drawing.Size(270, 31);
             this.cbxTypeJob.TabIndex = 5;
+            this.cbxTypeJob.TextChanged += new System.EventHandler(this.cbxTypeJob_TextChanged);
             // 
             // cbxLocation
             // 
@@ -321,6 +384,7 @@
             this.cbxLocation.OnHoverItemForeColor = System.Drawing.Color.White;
             this.cbxLocation.Size = new System.Drawing.Size(270, 31);
             this.cbxLocation.TabIndex = 4;
+            this.cbxLocation.TextChanged += new System.EventHandler(this.cbxLocation_TextChanged);
             // 
             // cbxSalary
             // 
@@ -350,6 +414,7 @@
             this.cbxSalary.OnHoverItemForeColor = System.Drawing.Color.White;
             this.cbxSalary.Size = new System.Drawing.Size(270, 31);
             this.cbxSalary.TabIndex = 3;
+            this.cbxSalary.TextChanged += new System.EventHandler(this.cbxSalary_TextChanged);
             // 
             // label2
             // 
@@ -466,11 +531,13 @@
             // fpnlJob
             // 
             this.fpnlJob.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.fpnlJob.Location = new System.Drawing.Point(51, 292);
+            this.fpnlJob.BackColor = System.Drawing.Color.LightGray;
+            this.fpnlJob.Location = new System.Drawing.Point(45, 285);
+            this.fpnlJob.Margin = new System.Windows.Forms.Padding(10);
             this.fpnlJob.Name = "fpnlJob";
-            this.fpnlJob.Padding = new System.Windows.Forms.Padding(10);
             this.fpnlJob.Size = new System.Drawing.Size(1324, 542);
             this.fpnlJob.TabIndex = 5;
+            this.fpnlJob.ControlAdded += new System.Windows.Forms.ControlEventHandler(this.fpnlJob_ControlAdded);
             // 
             // FUserUI
             // 
@@ -515,5 +582,9 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnInfor;
         private System.Windows.Forms.FlowLayoutPanel fpnlJob;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
     }
 }

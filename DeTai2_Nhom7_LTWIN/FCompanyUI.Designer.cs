@@ -176,6 +176,7 @@
             this.Controls.Add(this.pnlFunc);
             this.Controls.Add(this.gunaGradientPanel1);
             this.Name = "FCompanyUI";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FCompanyUI";
             this.gunaGradientPanel1.ResumeLayout(false);
             this.gunaGradientPanel1.PerformLayout();

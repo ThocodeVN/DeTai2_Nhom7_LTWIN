@@ -108,6 +108,12 @@
     <Compile Include="FJob.Designer.cs">
       <DependentUpon>FJob.cs</DependentUpon>
     </Compile>
+    <Compile Include="FJobOperation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FJobOperation.Designer.cs">
+      <DependentUpon>FJobOperation.cs</DependentUpon>
+    </Compile>
     <Compile Include="FManageCV.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -175,6 +181,12 @@
     <Compile Include="FUserUI.Designer.cs">
       <DependentUpon>FUserUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="FViewCV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FViewCV.Designer.cs">
+      <DependentUpon>FViewCV.cs</DependentUpon>
+    </Compile>
     <Compile Include="Job.cs">
       <DependentUpon>Data.tt</DependentUpon>
     </Compile>
@@ -234,6 +246,9 @@
     <EmbeddedResource Include="FJob.resx">
       <DependentUpon>FJob.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FJobOperation.resx">
+      <DependentUpon>FJobOperation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FLogin.resx">
       <DependentUpon>FLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -248,6 +263,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FUserUI.resx">
       <DependentUpon>FUserUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FViewCV.resx">
+      <DependentUpon>FViewCV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

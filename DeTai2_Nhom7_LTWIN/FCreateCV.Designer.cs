@@ -69,6 +69,7 @@
             this.txtPhone = new Guna.UI.WinForms.GunaTextBox();
             this.txtName = new Guna.UI.WinForms.GunaTextBox();
             this.gunaCirclePictureBox1 = new Guna.UI.WinForms.GunaCirclePictureBox();
+            this.cbNotWork = new System.Windows.Forms.CheckBox();
             this.pnlFunc.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -80,6 +81,7 @@
             this.pnlFunc.AutoScroll = true;
             this.pnlFunc.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlFunc.BackgroundImage")));
             this.pnlFunc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlFunc.Controls.Add(this.cbNotWork);
             this.pnlFunc.Controls.Add(this.cbStuding);
             this.pnlFunc.Controls.Add(this.panel2);
             this.pnlFunc.Controls.Add(this.label15);
@@ -121,12 +123,13 @@
             // 
             this.cbStuding.AutoSize = true;
             this.cbStuding.BackColor = System.Drawing.Color.Transparent;
-            this.cbStuding.Location = new System.Drawing.Point(893, 539);
+            this.cbStuding.Location = new System.Drawing.Point(893, 506);
             this.cbStuding.Name = "cbStuding";
             this.cbStuding.Size = new System.Drawing.Size(86, 20);
             this.cbStuding.TabIndex = 38;
             this.cbStuding.Text = "Đang học";
             this.cbStuding.UseVisualStyleBackColor = false;
+            this.cbStuding.CheckedChanged += new System.EventHandler(this.cbStuding_CheckedChanged);
             // 
             // panel2
             // 
@@ -652,13 +655,27 @@
             this.gunaCirclePictureBox1.TabStop = false;
             this.gunaCirclePictureBox1.UseTransfarantBackground = false;
             // 
+            // cbNotWork
+            // 
+            this.cbNotWork.AutoSize = true;
+            this.cbNotWork.BackColor = System.Drawing.Color.Transparent;
+            this.cbNotWork.Location = new System.Drawing.Point(893, 791);
+            this.cbNotWork.Name = "cbNotWork";
+            this.cbNotWork.Size = new System.Drawing.Size(99, 20);
+            this.cbNotWork.TabIndex = 39;
+            this.cbNotWork.Text = "Chưa đi làm";
+            this.cbNotWork.UseVisualStyleBackColor = false;
+            this.cbNotWork.CheckedChanged += new System.EventHandler(this.cbNotWork_CheckedChanged);
+            // 
             // FCreateCV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1029, 766);
             this.Controls.Add(this.pnlFunc);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FCreateCV";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FCreateCV";
             this.Load += new System.EventHandler(this.FCreateCV_Load);
             this.pnlFunc.ResumeLayout(false);
@@ -713,5 +730,6 @@
         private System.Windows.Forms.Button btnCreateCV;
         private System.Windows.Forms.CheckBox cbStuding;
         private Guna.UI.WinForms.GunaTextBox txtAddress;
+        private System.Windows.Forms.CheckBox cbNotWork;
     }
 }

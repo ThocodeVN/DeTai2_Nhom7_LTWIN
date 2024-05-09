@@ -83,7 +83,7 @@
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel5.Location = new System.Drawing.Point(0, 1461);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(946, 29);
+            this.panel5.Size = new System.Drawing.Size(988, 29);
             this.panel5.TabIndex = 13;
             // 
             // label5
@@ -333,7 +333,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(946, 210);
+            this.panel1.Size = new System.Drawing.Size(988, 210);
             this.panel1.TabIndex = 9;
             // 
             // ptbAvt
@@ -352,13 +352,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(967, 1013);
+            this.ClientSize = new System.Drawing.Size(1009, 1013);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Name = "FCV";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FCV";
             this.panel13.ResumeLayout(false);
             this.panel13.PerformLayout();

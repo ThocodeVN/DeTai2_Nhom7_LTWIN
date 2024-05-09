@@ -52,7 +52,11 @@ namespace DeTai2_Nhom7_LTWIN
 
         private void UCJob_MouseClick(object sender, MouseEventArgs e)
         {
-            FInforJob fJob = new FInforJob(job, can);
+            Form fJob;
+            if (can == null)
+                fJob = new FJobOperation(job, empDTO);
+            else
+                fJob = new FInforJob(job, can);
             fJob.Show();
         }
     }

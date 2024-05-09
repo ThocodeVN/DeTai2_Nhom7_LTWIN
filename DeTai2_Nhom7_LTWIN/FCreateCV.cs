@@ -39,5 +39,36 @@ namespace DeTai2_Nhom7_LTWIN
             cbxSex.Text = canDTO.Sex;
             dtpBirth.Value = canDTO.Birth;
         }
+
+        private void cbStuding_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbStuding.Checked)
+            {
+                dtpEduEnd.Value = DateTime.Now;
+                dtpEduEnd.Enabled = false;
+            }
+            else
+            {
+                dtpEduEnd.Enabled = true;
+            }    
+        }
+
+        private void cbNotWork_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbNotWork.Checked)
+            {
+                txtCompany.Enabled = false;
+                txtWorkIndus.Enabled = false;
+                dtpWorkEnd.Enabled = false;
+                dtpWorkStart.Enabled = false;
+            }
+            else
+            {
+                txtCompany.Enabled = true;
+                txtWorkIndus.Enabled = true;
+                dtpWorkEnd.Enabled = true;
+                dtpWorkStart.Enabled = true;
+            }
+        }
     }
 }

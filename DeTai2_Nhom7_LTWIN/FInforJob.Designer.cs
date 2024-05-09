@@ -92,6 +92,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(195)))), ((int)(((byte)(41)))));
             this.label16.Location = new System.Drawing.Point(3, 13);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(180, 26);
@@ -105,7 +106,7 @@
             this.panel4.Controls.Add(this.lbTypeJob);
             this.panel4.Controls.Add(this.lbTExp);
             this.panel4.Controls.Add(this.label16);
-            this.panel4.Location = new System.Drawing.Point(744, 222);
+            this.panel4.Location = new System.Drawing.Point(738, 222);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(260, 588);
             this.panel4.TabIndex = 7;
@@ -339,6 +340,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(195)))), ((int)(((byte)(41)))));
             this.label10.Location = new System.Drawing.Point(0, 13);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(234, 26);
@@ -456,12 +458,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1070, 775);
+            this.ClientSize = new System.Drawing.Size(1028, 775);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Name = "FInforJob";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FInforJob";
             this.Load += new System.EventHandler(this.FInforJob_Load);
             this.panel4.ResumeLayout(false);

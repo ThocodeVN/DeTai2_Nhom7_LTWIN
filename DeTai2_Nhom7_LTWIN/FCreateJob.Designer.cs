@@ -644,6 +644,7 @@
             this.ClientSize = new System.Drawing.Size(994, 898);
             this.Controls.Add(this.pnlFunc);
             this.Name = "FCreateJob";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FCreateJob";
             this.pnlFunc.ResumeLayout(false);
             this.pnlFunc.PerformLayout();

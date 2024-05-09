@@ -27,6 +27,19 @@ namespace DeTai2_Nhom7_LTWIN.DAO
             return listJobDTO;
         }
 
+        public List<JobDTO> GetListJob_Find(string find, string salary, string type, string exp, string location)
+        {
+            List<Job> listJob = db.Jobs.ToList();
+            listJob = listJob.Where(e => e.Title == find || e.Salary.ToString() == salary || e.Type == type || e.ReqExperience == exp || e.Location.Substring(0, e.Location.IndexOf(',')) == location).ToList();
+            List<JobDTO> listJobDTO = new List<JobDTO>();
+            foreach (Job job in listJob)
+            {
+                JobDTO j = getOneJob(job.JobID);
+                listJobDTO.Add(j);
+            }
+            return listJobDTO;
+        }
+
         public List<JobDTO> GetListJob_Emp(EmployerDTO emp)
         {
             List<Job> listJob = db.Jobs.ToList();

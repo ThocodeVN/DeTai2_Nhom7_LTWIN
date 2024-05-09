@@ -44,5 +44,17 @@ namespace DeTai2_Nhom7_LTWIN
             app.Add(appDTO);
             MessageBox.Show("Đã nộp CV thành công");
         }
+
+        private void btnViewCV_Click(object sender, EventArgs e)
+        {
+            FCV fCV = new FCV(cvDTO);
+            DialogResult result = fCV.ShowDialog();
+            this.Hide();
+            if(result == DialogResult.Cancel)
+            {
+                this.Show();
+            }
+
+        }
     }
 }
