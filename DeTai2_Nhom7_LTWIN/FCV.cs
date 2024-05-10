@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -35,6 +36,13 @@ namespace DeTai2_Nhom7_LTWIN
             lbExp.Text = cvDTO.Exp;
             lbPhone.Text = canDAO.GetOneCandi(cvDTO.CanId).Phone;
             lbEmail.Text = canDAO.GetOneCandi(cvDTO.CanId).Email;
+
+            if (cvDTO.Avatar != null)
+            {
+                MemoryStream stream = new MemoryStream(cvDTO.Avatar.ToArray());
+                Image img = Image.FromStream(stream);
+                ptrbAvatar.Image = img;
+            }
         }
     }
 }

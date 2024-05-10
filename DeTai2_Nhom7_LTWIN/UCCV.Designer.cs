@@ -32,6 +32,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.btnBrowse = new System.Windows.Forms.Button();
             this.btnViewCV = new System.Windows.Forms.Button();
             this.btnSubmit = new System.Windows.Forms.Button();
@@ -79,6 +80,7 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.White;
+            this.panel7.Controls.Add(this.btnUpdate);
             this.panel7.Controls.Add(this.btnBrowse);
             this.panel7.Controls.Add(this.btnViewCV);
             this.panel7.Controls.Add(this.btnSubmit);
@@ -87,6 +89,20 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(176, 166);
             this.panel7.TabIndex = 13;
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(98)))), ((int)(((byte)(63)))));
+            this.btnUpdate.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.ForeColor = System.Drawing.Color.White;
+            this.btnUpdate.Location = new System.Drawing.Point(71, 114);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(98, 45);
+            this.btnUpdate.TabIndex = 18;
+            this.btnUpdate.Text = "Cập nhật";
+            this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnBrowse
             // 
@@ -263,5 +279,6 @@
         private System.Windows.Forms.Button btnViewCV;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Button btnBrowse;
+        private System.Windows.Forms.Button btnUpdate;
     }
 }

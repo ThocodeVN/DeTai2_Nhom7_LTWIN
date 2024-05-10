@@ -67,6 +67,7 @@ namespace DeTai2_Nhom7_LTWIN.DAO
                 emp.Industry = employer.Industry;
                 emp.LoginName = employer.LoginName;
                 emp.Password = employer.Password;
+                emp.Avatar = employer.Avatar;
                 db.SaveChanges();
                 MessageBox.Show("Cập nhật thành công thành công");
             }
@@ -96,6 +97,7 @@ namespace DeTai2_Nhom7_LTWIN.DAO
             {
                 EmployerDTO empDTO = new EmployerDTO(emp.Name, emp.CompanyName, emp.Phone, emp.Address, emp.Email, emp.Industry, emp.LoginName, emp.Password);
                 empDTO.Id = emp.ID;
+                empDTO.Avatar = emp.Avatar;
                 return empDTO;
             }
             else

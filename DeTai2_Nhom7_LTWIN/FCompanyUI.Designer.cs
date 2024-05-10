@@ -178,6 +178,7 @@
             this.Name = "FCompanyUI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FCompanyUI";
+            this.Load += new System.EventHandler(this.FCompanyUI_Load);
             this.gunaGradientPanel1.ResumeLayout(false);
             this.gunaGradientPanel1.PerformLayout();
             this.gunaGradientPanel2.ResumeLayout(false);

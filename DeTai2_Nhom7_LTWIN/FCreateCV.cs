@@ -5,7 +5,10 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,29 +18,98 @@ namespace DeTai2_Nhom7_LTWIN
     public partial class FCreateCV : Form
     {
         CandidateDTO canDTO;
+        CvDTO cvDTO;
         CvDAO cvDAO = new CvDAO();
-        public FCreateCV(CandidateDTO can)
+        public FCreateCV(CandidateDTO can, CvDTO cvDTO = null)
         {
             InitializeComponent();
             this.canDTO = can;
+            this.cvDTO = cvDTO;
         }
 
         private void btnCreateCV_Click(object sender, EventArgs e)
         {
             string education = txtSchool.Text + ", " + txtStudyIndus.Text + ", " + dtpEduStart.Value.ToShortDateString() + " - " + dtpEduEnd.Value.ToShortDateString();
             string exp = txtCompany.Text + ", " + txtWorkIndus.Text + ", " + dtpWorkStart.Value.ToShortDateString() + " - " + dtpWorkEnd.Value.ToShortDateString();
-            CvDTO cvDTO = new CvDTO(canDTO.CanID, txtTitle.Text, txtIntroduce.Text, education, rtxtSkills.Text, exp, rtxtCertificate.Text, DateTime.Now);
+            CvDTO cvDTO = new CvDTO(canDTO.CanID, txtTitle.Text, rtxtIntroduce.Text, education, rtxtSkills.Text, exp, rtxtCertificate.Text, DateTime.Now);
             cvDAO.Add(cvDTO);
         }
 
         private void FCreateCV_Load(object sender, EventArgs e)
         {
             txtName.Text = canDTO.Name;
+            txtName.Enabled = false;
             txtEmail.Text = canDTO.Email;
+            txtEmail.Enabled = false;
             txtPhone.Text = canDTO.Phone;
+            txtPhone.Enabled = false;
             txtAddress.Text = canDTO.Address;
+            txtAddress.Enabled = false;
             cbxSex.Text = canDTO.Sex;
+            cbxSex.Enabled = false;
             dtpBirth.Value = canDTO.Birth;
+            dtpBirth.Enabled = false;
+
+
+            if(cvDTO == null)
+            {
+                btnUpdate.Hide();
+                btnCreateCV.Show();
+            }    
+            else
+            {
+                btnUpdate.Show();
+                btnCreateCV.Hide();
+
+                string[] education = ConvertData(cvDTO.Education);
+                txtSchool.Text = education[0];
+                txtStudyIndus.Text = education[1];
+                dtpEduStart.Value = Convert.ToDateTime(education[2]);
+                dtpEduEnd.Value = Convert.ToDateTime(education[3]);
+
+                string[] experience = ConvertData(cvDTO.Exp);
+                txtCompany.Text = experience[0];
+                txtWorkIndus.Text = experience[1];
+                dtpWorkStart.Value = Convert.ToDateTime(experience[2]);
+                dtpWorkEnd.Value = Convert.ToDateTime(experience[3]);
+
+                rtxtIntroduce.Text = cvDTO.Introduce;
+                rtxtSkills.Text = cvDTO.Skill;
+                rtxtCertificate.Text = cvDTO.Certificate;
+
+                if (cvDTO.Avatar != null)
+                {
+                    MemoryStream stream = new MemoryStream(cvDTO.Avatar.ToArray());
+                    Image img = Image.FromStream(stream);
+                    ptrbAvatar.Image = img;
+                }
+            }    
+
+            CheckImage();
+        }
+
+        // hàm dùng để chuyển từ dữ liệu trong data sang các control trên FcreateCV
+        private string[] ConvertData(string input)
+        {
+            string[] list = new string[5];
+
+            // Tách chuỗi thành các phần
+            string[] parts = input.Split(',');
+
+            // Loại bỏ khoảng trắng ở đầu và cuối của mỗi phần
+            for (int i = 0; i < parts.Length; i++)
+            {
+                parts[i] = parts[i].Trim();
+                list[i] = parts[i];
+            }
+
+            // Phần tử thứ ba là ngày bắt đầu
+            list[2] = parts[2].Split('-')[0].Trim();
+
+            // phần tử thứ ba là ngày kết thúc
+            list[3] = parts[2].Split('-')[1].Trim();
+
+            return list;
         }
 
         private void cbStuding_CheckedChanged(object sender, EventArgs e)
@@ -71,6 +143,59 @@ namespace DeTai2_Nhom7_LTWIN
                 dtpWorkEnd.Enabled = true;
                 dtpWorkStart.Enabled = true;
             }
+        }
+
+        private void CheckImage()
+        {
+            if (ptrbAvatar.Image == null)
+            {
+                btnUpImage.Text = "Thêm ảnh";
+                btnDeleteImage.Hide();
+            }
+            else
+            {
+                btnUpImage.Text = "Sửa ảnh";
+                btnDeleteImage.Show();
+            }
+        }    
+
+        private void btnUpImage_Click(object sender, EventArgs e)
+        {
+            ofdOpenImage.ShowDialog();
+            string file = "";
+            file = ofdOpenImage.FileName;
+            if (file == "" || file == "openFileDialog1")
+            {
+                return;
+            }
+            Image avatar = Image.FromFile(file);
+            ptrbAvatar.Image = avatar;
+
+            MemoryStream stream = new MemoryStream();
+            ptrbAvatar.Image.Save(stream, ImageFormat.Jpeg);
+            cvDTO.Avatar = stream.ToArray();
+            CheckImage();
+        }
+
+        private void btnDeleteImage_Click(object sender, EventArgs e)
+        {
+            ptrbAvatar.Image = null;
+            cvDTO.Avatar = null;
+            CheckImage();
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            string education = txtSchool.Text + ", " + txtStudyIndus.Text + ", " + dtpEduStart.Value.ToShortDateString() + " - " + dtpEduEnd.Value.ToShortDateString();
+            string exp = txtCompany.Text + ", " + txtWorkIndus.Text + ", " + dtpWorkStart.Value.ToShortDateString() + " - " + dtpWorkEnd.Value.ToShortDateString();
+            cvDTO.Exp = exp;
+            cvDTO.Education = education;
+            cvDTO.Skill = rtxtSkills.Text;
+            cvDTO.CanId = canDTO.CanID;
+            cvDTO.Certificate = rtxtCertificate.Text;
+            cvDTO.Title = txtTitle.Text;
+            cvDTO.Introduce = rtxtIntroduce.Text;
+            cvDAO.Update(cvDTO);
         }
     }
 }

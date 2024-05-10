@@ -17,6 +17,7 @@ namespace DeTai2_Nhom7_LTWIN.DTO
         string exp;
         string certificate;
         DateTime createDate;
+        byte[] avatar;
 
         public CvDTO(int canId, string title, string introduce, string education, string skill, string exp, string certificate, DateTime createDate)
         {
@@ -39,5 +40,6 @@ namespace DeTai2_Nhom7_LTWIN.DTO
         public DateTime CreateDate { get => createDate; set => createDate = value; }
         public string Education { get => education; set => education = value; }
         public string Exp { get => exp; set => exp = value; }
+        public byte[] Avatar { get => avatar; set => avatar = value; }
     }
 }

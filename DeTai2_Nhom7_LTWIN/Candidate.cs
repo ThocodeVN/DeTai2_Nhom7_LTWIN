@@ -23,5 +23,6 @@ namespace DeTai2_Nhom7_LTWIN
         public string Address { get; set; }
         public string LoginName { get; set; }
         public string Password { get; set; }
+        public byte[] Avatar { get; set; }
     }
 }

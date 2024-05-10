@@ -37,5 +37,10 @@ namespace DeTai2_Nhom7_LTWIN
             UCCompanyInfor uCCompanyInfor = new UCCompanyInfor(empDTO);
             pnlFunc.Controls.Add(uCCompanyInfor);
         }
+
+        private void FCompanyUI_Load(object sender, EventArgs e)
+        {
+            btnComInfor_Click(sender, e);
+        }
     }
 }

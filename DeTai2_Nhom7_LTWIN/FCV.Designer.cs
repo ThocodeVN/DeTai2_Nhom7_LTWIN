@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FCV));
             this.panel16 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
@@ -63,7 +62,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbBirth = new System.Windows.Forms.Label();
             this.lbSex = new System.Windows.Forms.Label();
-            this.ptbAvt = new System.Windows.Forms.PictureBox();
+            this.ptrbAvatar = new Guna.UI.WinForms.GunaCirclePictureBox();
             this.panel12.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel14.SuspendLayout();
@@ -74,7 +73,7 @@
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbAvt)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptrbAvatar)).BeginInit();
             this.SuspendLayout();
             // 
             // panel16
@@ -353,10 +352,10 @@
             // lbCertificate
             // 
             this.lbCertificate.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCertificate.Location = new System.Drawing.Point(6, 57);
+            this.lbCertificate.Location = new System.Drawing.Point(7, 45);
             this.lbCertificate.Name = "lbCertificate";
-            this.lbCertificate.Size = new System.Drawing.Size(349, 338);
-            this.lbCertificate.TabIndex = 13;
+            this.lbCertificate.Size = new System.Drawing.Size(348, 350);
+            this.lbCertificate.TabIndex = 16;
             this.lbCertificate.Text = "label4";
             // 
             // panel2
@@ -404,10 +403,10 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(98)))), ((int)(((byte)(63)))));
+            this.panel1.Controls.Add(this.ptrbAvatar);
             this.panel1.Controls.Add(this.lbBirth);
             this.panel1.Controls.Add(this.lbSex);
             this.panel1.Controls.Add(this.lbName);
-            this.panel1.Controls.Add(this.ptbAvt);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -436,16 +435,16 @@
             this.lbSex.TabIndex = 2;
             this.lbSex.Text = "Giới tính";
             // 
-            // ptbAvt
+            // ptrbAvatar
             // 
-            this.ptbAvt.Dock = System.Windows.Forms.DockStyle.Left;
-            this.ptbAvt.Image = ((System.Drawing.Image)(resources.GetObject("ptbAvt.Image")));
-            this.ptbAvt.Location = new System.Drawing.Point(0, 0);
-            this.ptbAvt.Name = "ptbAvt";
-            this.ptbAvt.Size = new System.Drawing.Size(230, 210);
-            this.ptbAvt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptbAvt.TabIndex = 0;
-            this.ptbAvt.TabStop = false;
+            this.ptrbAvatar.BaseColor = System.Drawing.Color.White;
+            this.ptrbAvatar.Location = new System.Drawing.Point(3, 3);
+            this.ptrbAvatar.Name = "ptrbAvatar";
+            this.ptrbAvatar.Size = new System.Drawing.Size(214, 204);
+            this.ptrbAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptrbAvatar.TabIndex = 4;
+            this.ptrbAvatar.TabStop = false;
+            this.ptrbAvatar.UseTransfarantBackground = false;
             // 
             // FCV
             // 
@@ -480,7 +479,7 @@
             this.panel3.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbAvt)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptrbAvatar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -508,7 +507,6 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label lbName;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox ptbAvt;
         private System.Windows.Forms.Label lbBirth;
         private System.Windows.Forms.Label lbSex;
         private System.Windows.Forms.Label lbAddress;
@@ -520,7 +518,8 @@
         private System.Windows.Forms.Label lbSkills;
         private System.Windows.Forms.Label lbIntroduce;
         private System.Windows.Forms.Label lbExp;
-        private System.Windows.Forms.Label lbCertificate;
         private System.Windows.Forms.Label lbEducation;
+        private System.Windows.Forms.Label lbCertificate;
+        private Guna.UI.WinForms.GunaCirclePictureBox ptrbAvatar;
     }
 }

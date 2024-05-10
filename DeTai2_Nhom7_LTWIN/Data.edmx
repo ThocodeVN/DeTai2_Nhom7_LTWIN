@@ -28,6 +28,7 @@
           <Property Name="Address" Type="nvarchar" MaxLength="100" Nullable="false" />
           <Property Name="LoginName" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="Password" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Avatar" Type="image" />
         </EntityType>
         <EntityType Name="CV">
           <Key>
@@ -42,6 +43,7 @@
           <Property Name="Skills" Type="nvarchar" MaxLength="2000" Nullable="false" />
           <Property Name="Certificate" Type="nvarchar" MaxLength="1000" Nullable="false" />
           <Property Name="CreateDate" Type="date" Nullable="false" />
+          <Property Name="Avatar" Type="image" />
         </EntityType>
         <EntityType Name="Employer">
           <Key>
@@ -56,6 +58,7 @@
           <Property Name="Industry" Type="nvarchar" MaxLength="100" Nullable="false" />
           <Property Name="LoginName" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="Password" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Avatar" Type="image" />
         </EntityType>
         <EntityType Name="Job">
           <Key>
@@ -110,6 +113,7 @@
           <Property Name="Address" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="LoginName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Avatar" Type="Binary" MaxLength="Max" FixedLength="false" />
         </EntityType>
         <EntityType Name="Employer">
           <Key>
@@ -124,6 +128,7 @@
           <Property Name="Industry" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="LoginName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Avatar" Type="Binary" MaxLength="Max" FixedLength="false" />
         </EntityType>
         <EntityType Name="Job">
           <Key>
@@ -164,6 +169,7 @@
           <Property Name="Skills" Type="String" Nullable="false" MaxLength="2000" FixedLength="false" Unicode="true" />
           <Property Name="Certificate" Type="String" Nullable="false" MaxLength="1000" FixedLength="false" Unicode="true" />
           <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Avatar" Type="Binary" MaxLength="Max" FixedLength="false" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -185,6 +191,7 @@
           <EntitySetMapping Name="Candidates">
             <EntityTypeMapping TypeName="Detai2_DBModel.Candidate">
               <MappingFragment StoreEntitySet="Candidate">
+                <ScalarProperty Name="Avatar" ColumnName="Avatar" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="Email" ColumnName="Email" />
@@ -200,6 +207,7 @@
           <EntitySetMapping Name="Employers">
             <EntityTypeMapping TypeName="Detai2_DBModel.Employer">
               <MappingFragment StoreEntitySet="Employer">
+                <ScalarProperty Name="Avatar" ColumnName="Avatar" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
@@ -235,6 +243,7 @@
           <EntitySetMapping Name="CVs">
             <EntityTypeMapping TypeName="Detai2_DBModel.CV">
               <MappingFragment StoreEntitySet="CV">
+                <ScalarProperty Name="Avatar" ColumnName="Avatar" />
                 <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
                 <ScalarProperty Name="Certificate" ColumnName="Certificate" />
                 <ScalarProperty Name="Skills" ColumnName="Skills" />

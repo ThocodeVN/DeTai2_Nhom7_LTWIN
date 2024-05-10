@@ -15,6 +15,7 @@ namespace DeTai2_Nhom7_LTWIN
     public partial class UCCV : UserControl
     {
         ApplicationDAO appDAO = new ApplicationDAO();
+        CandidateDAO canDAO = new CandidateDAO();   
         ApplicationDTO appDTO;
         JobDTO JobDTO;
         CvDTO cvDTO;
@@ -25,17 +26,20 @@ namespace DeTai2_Nhom7_LTWIN
             this.JobDTO = job;
             this.cvDTO = cv;
             this.browse = browse;
-            appDTO = appDAO.GetOneApp(0, JobDTO.JobID, cvDTO.Id);
-            if(appDTO.State)
+            if (job != null)
             {
-                btnBrowse.Text = "Đã duyệt";
-                btnBrowse.BackColor = Color.FromArgb(49, 98, 63);
-            }    
-            else
-            {
-                btnBrowse.Text = "Chưa duyệt";
-                btnBrowse.BackColor = Color.Yellow;
-            }    
+                appDTO = appDAO.GetOneApp(0, JobDTO.JobID, cvDTO.Id);
+                if (appDTO.State)
+                {
+                    btnBrowse.Text = "Đã duyệt";
+                    btnBrowse.BackColor = Color.FromArgb(49, 98, 63);
+                }
+                else
+                {
+                    btnBrowse.Text = "Chưa duyệt";
+                    btnBrowse.BackColor = Color.Yellow;
+                }
+            }
             
         }
 
@@ -46,10 +50,12 @@ namespace DeTai2_Nhom7_LTWIN
             if(JobDTO == null && !browse)
             {
                 btnSubmit.Hide();
+                btnUpdate.Show();
             }
             else
             {
                 btnSubmit.Show();
+                btnUpdate.Hide();
             }
 
             if(browse)
@@ -89,6 +95,12 @@ namespace DeTai2_Nhom7_LTWIN
             {
                 this.Show();
             }
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            FCreateCV fCreate = new FCreateCV(canDAO.GetOneCandi(cvDTO.CanId), cvDTO);
+            fCreate.Show();
         }
     }
 }

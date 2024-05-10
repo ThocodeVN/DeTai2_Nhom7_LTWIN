@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Rebar;
+using System.Data.Entity.Core;
 
 namespace DeTai2_Nhom7_LTWIN.DAO
 {
@@ -53,7 +54,8 @@ namespace DeTai2_Nhom7_LTWIN.DAO
                     Skills = cvDTO.Skill,
                     Exp = cvDTO.Exp,
                     Certificate = cvDTO.Certificate,
-                    CreateDate = cvDTO.CreateDate
+                    CreateDate = cvDTO.CreateDate,
+                    Avatar = cvDTO.Avatar
                 };
                 db.CVs.Add(cv);
                 db.SaveChanges();
@@ -65,6 +67,35 @@ namespace DeTai2_Nhom7_LTWIN.DAO
             }
         }
 
+        public void Update(CvDTO cvDTO)
+        {
+            try
+            {
+                CV cv = db.CVs.FirstOrDefault(e => e.Id == cvDTO.Id);
+                cv.Exp = cvDTO.Exp;
+                cv.Certificate = cvDTO.Certificate;
+                cv.CreateDate = cvDTO.CreateDate;
+                cv.Avatar = cvDTO.Avatar;
+                cv.Introduce = cvDTO.Introduce;
+                cv.Skills = cvDTO.Skill;    
+                cv.Education = cvDTO.Education;
+                cv.Title = cvDTO.Title;
+                db.SaveChanges();
+                MessageBox.Show("Cập nhật CV thành công");
+            }
+            catch (Exception ex)
+            {
+                if(ex.InnerException is UpdateException)
+                {
+                    MessageBox.Show("Cập nhật thất bại \n" + ex.InnerException.Message);
+                }
+                else
+                {
+                    MessageBox.Show("Cập nhật thất bại");
+                }    
+            }
+        }
+
         public CvDTO GetOneCVFollowCvID(int cvID)
         {
             CV cv = db.CVs.FirstOrDefault(e => e.Id == cvID);
@@ -73,8 +104,9 @@ namespace DeTai2_Nhom7_LTWIN.DAO
                 MessageBox.Show("Ứng viên này không tồn tại");
                 return null;
             }
-            CvDTO c = new CvDTO(cv.CanID, cv.Title, cv.Introduce, cv.Education, cv.Skills, cv.Exp, cv.Education, cv.CreateDate);
+            CvDTO c = new CvDTO(cv.CanID, cv.Title, cv.Introduce, cv.Education, cv.Skills, cv.Exp, cv.Certificate, cv.CreateDate);
             c.Id = cv.Id;
+            c.Avatar = cv.Avatar;
             return c;
         }
     }

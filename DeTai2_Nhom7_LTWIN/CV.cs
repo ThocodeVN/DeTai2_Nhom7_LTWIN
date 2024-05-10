@@ -23,5 +23,6 @@ namespace DeTai2_Nhom7_LTWIN
         public string Skills { get; set; }
         public string Certificate { get; set; }
         public System.DateTime CreateDate { get; set; }
+        public byte[] Avatar { get; set; }
     }
 }
