@@ -18,5 +18,6 @@ namespace DeTai2_Nhom7_LTWIN
         public int JobID { get; set; }
         public int CvID { get; set; }
         public System.DateTime CreateDate { get; set; }
+        public Nullable<bool> State { get; set; }
     }
 }

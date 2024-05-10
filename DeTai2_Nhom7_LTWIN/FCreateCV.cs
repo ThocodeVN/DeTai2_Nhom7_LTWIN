@@ -24,8 +24,8 @@ namespace DeTai2_Nhom7_LTWIN
 
         private void btnCreateCV_Click(object sender, EventArgs e)
         {
-            string education = txtSchool.Text + ", " + txtStudyIndus.Text + ", " + dtpEduStart.Value.ToString() + " - " + dtpEduEnd.Value.ToString();
-            string exp = txtCompany.Text + ", " + txtWorkIndus.Text + ", " + dtpWorkStart.Value.ToString() + " - " + dtpWorkEnd.Value.ToString();
+            string education = txtSchool.Text + ", " + txtStudyIndus.Text + ", " + dtpEduStart.Value.ToShortDateString() + " - " + dtpEduEnd.Value.ToShortDateString();
+            string exp = txtCompany.Text + ", " + txtWorkIndus.Text + ", " + dtpWorkStart.Value.ToShortDateString() + " - " + dtpWorkEnd.Value.ToShortDateString();
             CvDTO cvDTO = new CvDTO(canDTO.CanID, txtTitle.Text, txtIntroduce.Text, education, rtxtSkills.Text, exp, rtxtCertificate.Text, DateTime.Now);
             cvDAO.Add(cvDTO);
         }
@@ -61,6 +61,8 @@ namespace DeTai2_Nhom7_LTWIN
                 txtWorkIndus.Enabled = false;
                 dtpWorkEnd.Enabled = false;
                 dtpWorkStart.Enabled = false;
+                txtCompany.Text = "Chưa đi làm";
+                txtWorkIndus.Text = "Chưa đi làm";
             }
             else
             {

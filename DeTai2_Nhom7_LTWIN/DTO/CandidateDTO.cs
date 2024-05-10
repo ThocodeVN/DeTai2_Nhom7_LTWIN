@@ -17,7 +17,7 @@ namespace DeTai2_Nhom7_LTWIN.DTO
         private string address;
         private string accName;
         private string password;
-
+        private byte[] avatar;
         public CandidateDTO(string name, string sex, DateTime birth, string phone, string email, string address, string loginName, string password)
         {
             Name = name;
@@ -39,5 +39,6 @@ namespace DeTai2_Nhom7_LTWIN.DTO
         public string Address { get => address; set => address = value; }
         public string AccName { get => accName; set => accName = value; }
         public string Password { get => password; set => password = value; }
+        public byte[] Avatar { get => avatar; set => avatar = value; }
     }
 }

@@ -117,21 +117,18 @@ namespace DeTai2_Nhom7_LTWIN
         {
             if (fpnlJob.Controls.Count == 1)
             {
-                int height = fpnlJob.Size.Height;
-                fpnlJob.Size = new Size(fpnlJob.Controls[0].Size.Width, height);
+                fpnlJob.Size = new Size(fpnlJob.Controls[0].Size.Width + 5, 555);
               
             }
 
             if (fpnlJob.Controls.Count > 1 && fpnlJob.Controls.Count < 3)
             {
-                int height = fpnlJob.Size.Height;
-                fpnlJob.Size = new Size(fpnlJob.Controls[0].Size.Width * 2 + 30, height);
+                fpnlJob.Size = new Size(fpnlJob.Controls[0].Size.Width * 2 + 30, 555);
             }
 
             if (fpnlJob.Controls.Count >= 3)
             {
-                int height = fpnlJob.Size.Height;
-                fpnlJob.Size = new Size(fpnlJob.Controls[0].Size.Width * 3 + 50, height);
+                fpnlJob.Size = new Size(fpnlJob.Controls[0].Size.Width * 3 + 50, 555);
             }
 
             int x = (this.Size.Width - fpnlJob.Size.Width) / 2;

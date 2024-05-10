@@ -28,12 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCJob));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbJobName = new System.Windows.Forms.Label();
             this.lbCompanyName = new System.Windows.Forms.Label();
             this.lbSalary = new System.Windows.Forms.Label();
             this.lbLocation = new System.Windows.Forms.Label();
+            this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,7 +53,7 @@
             // 
             this.lbJobName.AutoSize = true;
             this.lbJobName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbJobName.Location = new System.Drawing.Point(142, 23);
+            this.lbJobName.Location = new System.Drawing.Point(142, 13);
             this.lbJobName.Name = "lbJobName";
             this.lbJobName.Size = new System.Drawing.Size(113, 18);
             this.lbJobName.TabIndex = 1;
@@ -62,7 +64,7 @@
             this.lbCompanyName.AutoSize = true;
             this.lbCompanyName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbCompanyName.ForeColor = System.Drawing.Color.Gray;
-            this.lbCompanyName.Location = new System.Drawing.Point(142, 55);
+            this.lbCompanyName.Location = new System.Drawing.Point(142, 46);
             this.lbCompanyName.Name = "lbCompanyName";
             this.lbCompanyName.Size = new System.Drawing.Size(79, 17);
             this.lbCompanyName.TabIndex = 2;
@@ -72,7 +74,7 @@
             // 
             this.lbSalary.AutoSize = true;
             this.lbSalary.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.lbSalary.Location = new System.Drawing.Point(142, 91);
+            this.lbSalary.Location = new System.Drawing.Point(142, 90);
             this.lbSalary.Name = "lbSalary";
             this.lbSalary.Size = new System.Drawing.Size(68, 16);
             this.lbSalary.TabIndex = 3;
@@ -87,6 +89,11 @@
             this.lbLocation.Size = new System.Drawing.Size(60, 16);
             this.lbLocation.TabIndex = 4;
             this.lbLocation.Text = "Địa điểm";
+            // 
+            // gunaElipse1
+            // 
+            this.gunaElipse1.Radius = 10;
+            this.gunaElipse1.TargetControl = this;
             // 
             // UCJob
             // 
@@ -116,5 +123,6 @@
         private System.Windows.Forms.Label lbCompanyName;
         private System.Windows.Forms.Label lbSalary;
         private System.Windows.Forms.Label lbLocation;
+        private Guna.UI.WinForms.GunaElipse gunaElipse1;
     }
 }

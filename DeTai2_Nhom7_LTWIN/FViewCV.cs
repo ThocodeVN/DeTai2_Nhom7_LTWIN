@@ -15,7 +15,6 @@ namespace DeTai2_Nhom7_LTWIN
     public partial class FViewCV : Form
     {
         JobDTO jobDTO;
-        private JobDAO jobDAO = new JobDAO();
         ApplicationDAO appDAO = new ApplicationDAO();
         CvDAO cvDAO = new CvDAO();
         public FViewCV(JobDTO jobDTO)
@@ -30,7 +29,7 @@ namespace DeTai2_Nhom7_LTWIN
             foreach (ApplicationDTO app in listApp)
             {
                 CvDTO cvDTO = cvDAO.GetOneCVFollowCvID(app.CvID);
-                UCCV ucv = new UCCV(cvDTO);
+                UCCV ucv = new UCCV(cvDTO,true, jobDTO);
                 fpnlCV.Controls.Add(ucv);
             }
         }

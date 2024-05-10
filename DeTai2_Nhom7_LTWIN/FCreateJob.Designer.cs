@@ -459,6 +459,7 @@
             this.btnUpdate.TabIndex = 62;
             this.btnUpdate.Text = "Cập nhật";
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // label7
             // 
@@ -646,6 +647,7 @@
             this.Name = "FCreateJob";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FCreateJob";
+            this.Load += new System.EventHandler(this.FCreateJob_Load);
             this.pnlFunc.ResumeLayout(false);
             this.pnlFunc.PerformLayout();
             this.ResumeLayout(false);

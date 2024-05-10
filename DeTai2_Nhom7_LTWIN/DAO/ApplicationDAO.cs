@@ -8,6 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Security.Cryptography;
+using System.Data.Entity.Core.Mapping;
+using System.Data.Entity.Validation;
+using System.Data.SqlClient;
+using System.Data.Entity.Core;
 
 namespace DeTai2_Nhom7_LTWIN.DAO
 {
@@ -27,7 +31,7 @@ namespace DeTai2_Nhom7_LTWIN.DAO
             {
                 app = app.Where(e => e.CvID == CvID).ToList();
             }
-            
+
             List<ApplicationDTO> list = new List<ApplicationDTO>();
             foreach (Application a in app)
             {
@@ -53,13 +57,31 @@ namespace DeTai2_Nhom7_LTWIN.DAO
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Ứng tuyển thất bại \n" + ex.Message);
+                if (ex.InnerException is UpdateException update)
+                {
+                    // Xử lý lỗi ràng buộc unique ở đây
+                    MessageBox.Show("Ứng tuyển thất bại \n Công việc này bạn đã nộp CV rồi!");
+                }
+                else
+                {
+                    MessageBox.Show("Ứng tuyển thất bại \n");
+                }    
             }
         }
 
-        public ApplicationDTO GetOneApp(int AppID)
+        public ApplicationDTO GetOneApp(int AppID = 0, int JobID = 0, int CvID = 0)
         {
-            Application app = db.Applications.FirstOrDefault(e => e.AppID == AppID);
+            Application app;
+
+            if (JobID != 0 && CvID != 0)
+            {
+                app = db.Applications.FirstOrDefault(e => e.JobID == JobID && e.CvID == CvID);
+            }
+            else
+            {
+                app = db.Applications.FirstOrDefault(e => e.AppID == AppID);
+            }
+
             if (app == null)
             {
                 MessageBox.Show("Ứng tuyển này không tồn tại");
@@ -67,7 +89,28 @@ namespace DeTai2_Nhom7_LTWIN.DAO
             }
             ApplicationDTO appDTO = new ApplicationDTO(app.CreateDate, app.JobID, app.CvID);
             appDTO.AppID = app.AppID;
+            appDTO.State = (bool)app.State;
             return appDTO;
+        }
+
+        public void Browse(ApplicationDTO applicationDTO)
+        {
+            try
+            {
+                Application app = db.Applications.FirstOrDefault(e => e.AppID == applicationDTO.AppID);
+                if (app == null)
+                {
+                    MessageBox.Show("Ứng tuyển này không tồn tại");
+                    return;
+                }
+                app.State = applicationDTO.State;
+                db.SaveChanges();
+                MessageBox.Show("Duyệt thành công");
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Duyệt thất bại \n" + ex.Message);
+            }
         }
     }
 }

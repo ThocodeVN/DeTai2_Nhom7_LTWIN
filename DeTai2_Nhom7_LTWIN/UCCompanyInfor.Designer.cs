@@ -30,6 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCCompanyInfor));
             this.pnlFunc = new Guna.UI.WinForms.GunaGradientPanel();
+            this.txtCompanyName = new Guna.UI.WinForms.GunaTextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtPassword = new Guna.UI.WinForms.GunaTextBox();
+            this.txtLoginName = new Guna.UI.WinForms.GunaTextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.txtIndustry = new Guna.UI.WinForms.GunaTextBox();
             this.txtEmail = new Guna.UI.WinForms.GunaTextBox();
@@ -42,12 +48,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.gunaCirclePictureBox1 = new Guna.UI.WinForms.GunaCirclePictureBox();
-            this.txtPassword = new Guna.UI.WinForms.GunaTextBox();
-            this.txtLoginName = new Guna.UI.WinForms.GunaTextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txtCompanyName = new Guna.UI.WinForms.GunaTextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.pnlFunc.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -84,6 +84,90 @@
             this.pnlFunc.Size = new System.Drawing.Size(812, 741);
             this.pnlFunc.TabIndex = 6;
             this.pnlFunc.Text = "gunaGradientPanel3";
+            // 
+            // txtCompanyName
+            // 
+            this.txtCompanyName.BaseColor = System.Drawing.Color.White;
+            this.txtCompanyName.BorderColor = System.Drawing.Color.Silver;
+            this.txtCompanyName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCompanyName.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtCompanyName.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtCompanyName.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtCompanyName.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtCompanyName.Location = new System.Drawing.Point(441, 40);
+            this.txtCompanyName.Name = "txtCompanyName";
+            this.txtCompanyName.PasswordChar = '\0';
+            this.txtCompanyName.SelectedText = "";
+            this.txtCompanyName.Size = new System.Drawing.Size(288, 30);
+            this.txtCompanyName.TabIndex = 50;
+            this.txtCompanyName.Text = "gunaTextBox1";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(294, 52);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(81, 18);
+            this.label6.TabIndex = 49;
+            this.label6.Text = "Tên công ti";
+            // 
+            // txtPassword
+            // 
+            this.txtPassword.BaseColor = System.Drawing.Color.White;
+            this.txtPassword.BorderColor = System.Drawing.Color.Silver;
+            this.txtPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPassword.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtPassword.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtPassword.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtPassword.Location = new System.Drawing.Point(441, 459);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '\0';
+            this.txtPassword.SelectedText = "";
+            this.txtPassword.Size = new System.Drawing.Size(262, 30);
+            this.txtPassword.TabIndex = 42;
+            this.txtPassword.Text = "gunaTextBox3";
+            // 
+            // txtLoginName
+            // 
+            this.txtLoginName.BaseColor = System.Drawing.Color.White;
+            this.txtLoginName.BorderColor = System.Drawing.Color.Silver;
+            this.txtLoginName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtLoginName.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtLoginName.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtLoginName.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtLoginName.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtLoginName.Location = new System.Drawing.Point(441, 400);
+            this.txtLoginName.Name = "txtLoginName";
+            this.txtLoginName.PasswordChar = '\0';
+            this.txtLoginName.SelectedText = "";
+            this.txtLoginName.Size = new System.Drawing.Size(262, 30);
+            this.txtLoginName.TabIndex = 41;
+            this.txtLoginName.Text = "gunaTextBox3";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(299, 459);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(69, 18);
+            this.label8.TabIndex = 40;
+            this.label8.Text = "Mật khẩu";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(297, 400);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(105, 18);
+            this.label7.TabIndex = 39;
+            this.label7.Text = "Tên đăng nhập";
             // 
             // button5
             // 
@@ -239,6 +323,7 @@
             // 
             // gunaCirclePictureBox1
             // 
+            this.gunaCirclePictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.gunaCirclePictureBox1.BaseColor = System.Drawing.Color.White;
             this.gunaCirclePictureBox1.Location = new System.Drawing.Point(18, 17);
             this.gunaCirclePictureBox1.Name = "gunaCirclePictureBox1";
@@ -247,90 +332,6 @@
             this.gunaCirclePictureBox1.TabIndex = 12;
             this.gunaCirclePictureBox1.TabStop = false;
             this.gunaCirclePictureBox1.UseTransfarantBackground = false;
-            // 
-            // txtPassword
-            // 
-            this.txtPassword.BaseColor = System.Drawing.Color.White;
-            this.txtPassword.BorderColor = System.Drawing.Color.Silver;
-            this.txtPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPassword.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtPassword.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.txtPassword.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtPassword.Location = new System.Drawing.Point(441, 459);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PasswordChar = '\0';
-            this.txtPassword.SelectedText = "";
-            this.txtPassword.Size = new System.Drawing.Size(262, 30);
-            this.txtPassword.TabIndex = 42;
-            this.txtPassword.Text = "gunaTextBox3";
-            // 
-            // txtLoginName
-            // 
-            this.txtLoginName.BaseColor = System.Drawing.Color.White;
-            this.txtLoginName.BorderColor = System.Drawing.Color.Silver;
-            this.txtLoginName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtLoginName.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtLoginName.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.txtLoginName.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtLoginName.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtLoginName.Location = new System.Drawing.Point(441, 400);
-            this.txtLoginName.Name = "txtLoginName";
-            this.txtLoginName.PasswordChar = '\0';
-            this.txtLoginName.SelectedText = "";
-            this.txtLoginName.Size = new System.Drawing.Size(262, 30);
-            this.txtLoginName.TabIndex = 41;
-            this.txtLoginName.Text = "gunaTextBox3";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(299, 459);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(69, 18);
-            this.label8.TabIndex = 40;
-            this.label8.Text = "Mật khẩu";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(297, 400);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(105, 18);
-            this.label7.TabIndex = 39;
-            this.label7.Text = "Tên đăng nhập";
-            // 
-            // txtCompanyName
-            // 
-            this.txtCompanyName.BaseColor = System.Drawing.Color.White;
-            this.txtCompanyName.BorderColor = System.Drawing.Color.Silver;
-            this.txtCompanyName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCompanyName.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtCompanyName.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.txtCompanyName.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtCompanyName.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtCompanyName.Location = new System.Drawing.Point(441, 40);
-            this.txtCompanyName.Name = "txtCompanyName";
-            this.txtCompanyName.PasswordChar = '\0';
-            this.txtCompanyName.SelectedText = "";
-            this.txtCompanyName.Size = new System.Drawing.Size(288, 30);
-            this.txtCompanyName.TabIndex = 50;
-            this.txtCompanyName.Text = "gunaTextBox1";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(294, 52);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(81, 18);
-            this.label6.TabIndex = 49;
-            this.label6.Text = "Tên công ti";
             // 
             // UCCompanyInfor
             // 

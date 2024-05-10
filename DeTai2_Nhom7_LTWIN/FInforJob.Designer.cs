@@ -185,10 +185,10 @@
             this.btnSubmit2.Name = "btnSubmit2";
             this.btnSubmit2.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(195)))), ((int)(((byte)(41)))));
             this.btnSubmit2.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnSubmit2.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(195)))), ((int)(((byte)(41)))));
+            this.btnSubmit2.OnHoverForeColor = System.Drawing.Color.White;
             this.btnSubmit2.OnHoverImage = null;
             this.btnSubmit2.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(195)))), ((int)(((byte)(41)))));
-            this.btnSubmit2.Size = new System.Drawing.Size(161, 42);
+            this.btnSubmit2.Size = new System.Drawing.Size(170, 42);
             this.btnSubmit2.TabIndex = 8;
             this.btnSubmit2.Text = "Ứng tuyển ngay";
             this.btnSubmit2.Click += new System.EventHandler(this.btnSubmit2_Click);
@@ -385,18 +385,20 @@
             this.btnSubmit.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnSubmit.ForeColor = System.Drawing.Color.White;
             this.btnSubmit.Image = ((System.Drawing.Image)(resources.GetObject("btnSubmit.Image")));
+            this.btnSubmit.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnSubmit.ImageOffsetX = 190;
             this.btnSubmit.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnSubmit.Location = new System.Drawing.Point(80, 145);
+            this.btnSubmit.Location = new System.Drawing.Point(54, 145);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(195)))), ((int)(((byte)(41)))));
             this.btnSubmit.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnSubmit.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(195)))), ((int)(((byte)(41)))));
+            this.btnSubmit.OnHoverForeColor = System.Drawing.Color.White;
             this.btnSubmit.OnHoverImage = null;
             this.btnSubmit.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(195)))), ((int)(((byte)(41)))));
-            this.btnSubmit.Size = new System.Drawing.Size(555, 42);
+            this.btnSubmit.Size = new System.Drawing.Size(594, 42);
             this.btnSubmit.TabIndex = 0;
             this.btnSubmit.Text = "Ứng tuyển ngay";
+            this.btnSubmit.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // lbExp

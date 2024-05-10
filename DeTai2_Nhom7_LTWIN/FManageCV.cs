@@ -48,7 +48,7 @@ namespace DeTai2_Nhom7_LTWIN.DTO
             List<CvDTO> listCV = cvDAO.GetListCV_Can(canDTO);
             foreach (CvDTO cv in listCV)
             {
-                UCCV ucv = new UCCV(cv, jobDTO);
+                UCCV ucv = new UCCV(cv, false, jobDTO);
                 fpnlCV.Controls.Add(ucv);
             }
         }

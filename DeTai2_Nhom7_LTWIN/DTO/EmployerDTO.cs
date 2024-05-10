@@ -17,6 +17,7 @@ namespace DeTai2_Nhom7_LTWIN.DTO
         string industry;
         string loginName;
         string password;
+        byte[] avatar;
 
         public EmployerDTO(string name, string companyName, string phone, string address, string email, string industry, string loginName, string password)
         {
@@ -39,5 +40,6 @@ namespace DeTai2_Nhom7_LTWIN.DTO
         public string Industry { get => industry; set => industry = value; }
         public string LoginName { get => loginName; set => loginName = value; }
         public string Password { get => password; set => password = value; }
+        public byte[] Avatar { get => avatar; set => avatar = value; }
     }
 }

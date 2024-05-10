@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FCreateCV));
             this.pnlFunc = new Guna.UI.WinForms.GunaGradientPanel();
+            this.cbNotWork = new System.Windows.Forms.CheckBox();
             this.cbStuding = new System.Windows.Forms.CheckBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnCreateCV = new System.Windows.Forms.Button();
@@ -69,7 +70,6 @@
             this.txtPhone = new Guna.UI.WinForms.GunaTextBox();
             this.txtName = new Guna.UI.WinForms.GunaTextBox();
             this.gunaCirclePictureBox1 = new Guna.UI.WinForms.GunaCirclePictureBox();
-            this.cbNotWork = new System.Windows.Forms.CheckBox();
             this.pnlFunc.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -118,6 +118,18 @@
             this.pnlFunc.Size = new System.Drawing.Size(1029, 766);
             this.pnlFunc.TabIndex = 6;
             this.pnlFunc.Text = "gunaGradientPanel3";
+            // 
+            // cbNotWork
+            // 
+            this.cbNotWork.AutoSize = true;
+            this.cbNotWork.BackColor = System.Drawing.Color.Transparent;
+            this.cbNotWork.Location = new System.Drawing.Point(893, 791);
+            this.cbNotWork.Name = "cbNotWork";
+            this.cbNotWork.Size = new System.Drawing.Size(99, 20);
+            this.cbNotWork.TabIndex = 39;
+            this.cbNotWork.Text = "Chưa đi làm";
+            this.cbNotWork.UseVisualStyleBackColor = false;
+            this.cbNotWork.CheckedChanged += new System.EventHandler(this.cbNotWork_CheckedChanged);
             // 
             // cbStuding
             // 
@@ -646,6 +658,7 @@
             // 
             // gunaCirclePictureBox1
             // 
+            this.gunaCirclePictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.gunaCirclePictureBox1.BaseColor = System.Drawing.Color.White;
             this.gunaCirclePictureBox1.Location = new System.Drawing.Point(21, 12);
             this.gunaCirclePictureBox1.Name = "gunaCirclePictureBox1";
@@ -654,18 +667,6 @@
             this.gunaCirclePictureBox1.TabIndex = 0;
             this.gunaCirclePictureBox1.TabStop = false;
             this.gunaCirclePictureBox1.UseTransfarantBackground = false;
-            // 
-            // cbNotWork
-            // 
-            this.cbNotWork.AutoSize = true;
-            this.cbNotWork.BackColor = System.Drawing.Color.Transparent;
-            this.cbNotWork.Location = new System.Drawing.Point(893, 791);
-            this.cbNotWork.Name = "cbNotWork";
-            this.cbNotWork.Size = new System.Drawing.Size(99, 20);
-            this.cbNotWork.TabIndex = 39;
-            this.cbNotWork.Text = "Chưa đi làm";
-            this.cbNotWork.UseVisualStyleBackColor = false;
-            this.cbNotWork.CheckedChanged += new System.EventHandler(this.cbNotWork_CheckedChanged);
             // 
             // FCreateCV
             // 

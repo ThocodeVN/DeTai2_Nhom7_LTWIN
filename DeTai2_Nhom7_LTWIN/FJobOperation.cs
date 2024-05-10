@@ -18,6 +18,7 @@ namespace DeTai2_Nhom7_LTWIN
         private JobDTO jobD;
         private EmployerDTO employer;
         private ApplicationDAO appDAO = new ApplicationDAO();  
+        private JobDAO jobDAO = new JobDAO();
         public FJobOperation(JobDTO job, EmployerDTO employer)
         {
             InitializeComponent();
@@ -64,6 +65,17 @@ namespace DeTai2_Nhom7_LTWIN
         private void FJobOperation_Load(object sender, EventArgs e)
         {
             LoadInfoJob();
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            FCreateJob fCreateJob = new FCreateJob(employer, jobD);
+            this.Hide();
+            DialogResult result = fCreateJob.ShowDialog();
+            if (result == DialogResult.Cancel)
+            {
+                this.Show();
+            }
         }
     }
 }

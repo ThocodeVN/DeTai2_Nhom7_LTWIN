@@ -30,26 +30,27 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCCV));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.lbTitle = new System.Windows.Forms.Label();
-            this.ptbAvt = new System.Windows.Forms.PictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.btnBrowse = new System.Windows.Forms.Button();
+            this.btnViewCV = new System.Windows.Forms.Button();
+            this.btnSubmit = new System.Windows.Forms.Button();
+            this.panel9 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.btnSubmit = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.pnlCV = new System.Windows.Forms.Panel();
             this.lbCreateDate = new System.Windows.Forms.Label();
-            this.btnViewCV = new System.Windows.Forms.Button();
-            this.panel10 = new System.Windows.Forms.Panel();
+            this.lbTitle = new System.Windows.Forms.Label();
+            this.ptbAvt = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbAvt)).BeginInit();
-            this.panel3.SuspendLayout();
-            this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.pnlCV.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbAvt)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -59,24 +60,149 @@
             this.panel1.Controls.Add(this.panel7);
             this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.pnlCV);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(316, 360);
             this.panel1.TabIndex = 0;
             // 
-            // panel2
+            // panel10
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(98)))), ((int)(((byte)(63)))));
-            this.panel2.Controls.Add(this.lbCreateDate);
-            this.panel2.Controls.Add(this.lbTitle);
-            this.panel2.Controls.Add(this.ptbAvt);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(316, 86);
-            this.panel2.TabIndex = 10;
+            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(98)))), ((int)(((byte)(63)))));
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel10.Location = new System.Drawing.Point(0, 350);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(316, 10);
+            this.panel10.TabIndex = 2;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.White;
+            this.panel7.Controls.Add(this.btnBrowse);
+            this.panel7.Controls.Add(this.btnViewCV);
+            this.panel7.Controls.Add(this.btnSubmit);
+            this.panel7.Controls.Add(this.panel9);
+            this.panel7.Location = new System.Drawing.Point(137, 178);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(176, 166);
+            this.panel7.TabIndex = 13;
+            // 
+            // btnBrowse
+            // 
+            this.btnBrowse.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnBrowse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(98)))), ((int)(((byte)(63)))));
+            this.btnBrowse.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBrowse.ForeColor = System.Drawing.Color.White;
+            this.btnBrowse.Location = new System.Drawing.Point(71, 114);
+            this.btnBrowse.Name = "btnBrowse";
+            this.btnBrowse.Size = new System.Drawing.Size(98, 45);
+            this.btnBrowse.TabIndex = 17;
+            this.btnBrowse.Text = "Duyệt";
+            this.btnBrowse.UseVisualStyleBackColor = false;
+            this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
+            // 
+            // btnViewCV
+            // 
+            this.btnViewCV.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnViewCV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(98)))), ((int)(((byte)(63)))));
+            this.btnViewCV.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewCV.ForeColor = System.Drawing.Color.White;
+            this.btnViewCV.Location = new System.Drawing.Point(0, 114);
+            this.btnViewCV.Name = "btnViewCV";
+            this.btnViewCV.Size = new System.Drawing.Size(65, 45);
+            this.btnViewCV.TabIndex = 16;
+            this.btnViewCV.Text = "Xem";
+            this.btnViewCV.UseVisualStyleBackColor = false;
+            this.btnViewCV.Click += new System.EventHandler(this.btnViewCV_Click);
+            // 
+            // btnSubmit
+            // 
+            this.btnSubmit.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnSubmit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(98)))), ((int)(((byte)(63)))));
+            this.btnSubmit.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSubmit.ForeColor = System.Drawing.Color.White;
+            this.btnSubmit.Location = new System.Drawing.Point(78, 114);
+            this.btnSubmit.Name = "btnSubmit";
+            this.btnSubmit.Size = new System.Drawing.Size(91, 45);
+            this.btnSubmit.TabIndex = 15;
+            this.btnSubmit.Text = "Nộp";
+            this.btnSubmit.UseVisualStyleBackColor = false;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(98)))), ((int)(((byte)(63)))));
+            this.panel9.Location = new System.Drawing.Point(3, 3);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(113, 17);
+            this.panel9.TabIndex = 0;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.White;
+            this.panel6.Controls.Add(this.panel8);
+            this.panel6.Location = new System.Drawing.Point(137, 92);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(176, 80);
+            this.panel6.TabIndex = 12;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(98)))), ((int)(((byte)(63)))));
+            this.panel8.Location = new System.Drawing.Point(3, 3);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(113, 17);
+            this.panel8.TabIndex = 0;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.panel5);
+            this.panel3.Controls.Add(this.panel4);
+            this.panel3.Location = new System.Drawing.Point(3, 92);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(128, 252);
+            this.panel3.TabIndex = 11;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(98)))), ((int)(((byte)(63)))));
+            this.panel5.Location = new System.Drawing.Point(3, 154);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(113, 17);
+            this.panel5.TabIndex = 1;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(98)))), ((int)(((byte)(63)))));
+            this.panel4.Location = new System.Drawing.Point(3, 3);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(113, 17);
+            this.panel4.TabIndex = 0;
+            // 
+            // pnlCV
+            // 
+            this.pnlCV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(98)))), ((int)(((byte)(63)))));
+            this.pnlCV.Controls.Add(this.lbCreateDate);
+            this.pnlCV.Controls.Add(this.lbTitle);
+            this.pnlCV.Controls.Add(this.ptbAvt);
+            this.pnlCV.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlCV.Location = new System.Drawing.Point(0, 0);
+            this.pnlCV.Name = "pnlCV";
+            this.pnlCV.Size = new System.Drawing.Size(316, 86);
+            this.pnlCV.TabIndex = 10;
+            // 
+            // lbCreateDate
+            // 
+            this.lbCreateDate.AutoSize = true;
+            this.lbCreateDate.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCreateDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(160)))), ((int)(((byte)(112)))));
+            this.lbCreateDate.Location = new System.Drawing.Point(111, 49);
+            this.lbCreateDate.Name = "lbCreateDate";
+            this.lbCreateDate.Size = new System.Drawing.Size(61, 17);
+            this.lbCreateDate.TabIndex = 3;
+            this.lbCreateDate.Text = "Ngày tạo";
             // 
             // lbTitle
             // 
@@ -99,116 +225,6 @@
             this.ptbAvt.TabIndex = 0;
             this.ptbAvt.TabStop = false;
             // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.panel5);
-            this.panel3.Controls.Add(this.panel4);
-            this.panel3.Location = new System.Drawing.Point(3, 92);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(136, 252);
-            this.panel3.TabIndex = 11;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(98)))), ((int)(((byte)(63)))));
-            this.panel4.Location = new System.Drawing.Point(3, 3);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(113, 17);
-            this.panel4.TabIndex = 0;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(98)))), ((int)(((byte)(63)))));
-            this.panel5.Location = new System.Drawing.Point(3, 154);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(113, 17);
-            this.panel5.TabIndex = 1;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.White;
-            this.panel6.Controls.Add(this.panel8);
-            this.panel6.Location = new System.Drawing.Point(145, 92);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(168, 80);
-            this.panel6.TabIndex = 12;
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(98)))), ((int)(((byte)(63)))));
-            this.panel8.Location = new System.Drawing.Point(3, 3);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(113, 17);
-            this.panel8.TabIndex = 0;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.White;
-            this.panel7.Controls.Add(this.btnViewCV);
-            this.panel7.Controls.Add(this.btnSubmit);
-            this.panel7.Controls.Add(this.panel9);
-            this.panel7.Location = new System.Drawing.Point(145, 178);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(168, 166);
-            this.panel7.TabIndex = 13;
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(98)))), ((int)(((byte)(63)))));
-            this.panel9.Location = new System.Drawing.Point(3, 3);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(113, 17);
-            this.panel9.TabIndex = 0;
-            // 
-            // btnSubmit
-            // 
-            this.btnSubmit.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnSubmit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(98)))), ((int)(((byte)(63)))));
-            this.btnSubmit.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubmit.ForeColor = System.Drawing.Color.White;
-            this.btnSubmit.Location = new System.Drawing.Point(74, 114);
-            this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(91, 45);
-            this.btnSubmit.TabIndex = 15;
-            this.btnSubmit.Text = "Nộp";
-            this.btnSubmit.UseVisualStyleBackColor = false;
-            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
-            // 
-            // lbCreateDate
-            // 
-            this.lbCreateDate.AutoSize = true;
-            this.lbCreateDate.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCreateDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(160)))), ((int)(((byte)(112)))));
-            this.lbCreateDate.Location = new System.Drawing.Point(109, 47);
-            this.lbCreateDate.Name = "lbCreateDate";
-            this.lbCreateDate.Size = new System.Drawing.Size(61, 17);
-            this.lbCreateDate.TabIndex = 3;
-            this.lbCreateDate.Text = "Ngày tạo";
-            // 
-            // btnViewCV
-            // 
-            this.btnViewCV.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnViewCV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(98)))), ((int)(((byte)(63)))));
-            this.btnViewCV.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnViewCV.ForeColor = System.Drawing.Color.White;
-            this.btnViewCV.Location = new System.Drawing.Point(3, 114);
-            this.btnViewCV.Name = "btnViewCV";
-            this.btnViewCV.Size = new System.Drawing.Size(65, 45);
-            this.btnViewCV.TabIndex = 16;
-            this.btnViewCV.Text = "Xem";
-            this.btnViewCV.UseVisualStyleBackColor = false;
-            this.btnViewCV.Click += new System.EventHandler(this.btnViewCV_Click);
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(98)))), ((int)(((byte)(63)))));
-            this.panel10.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel10.Location = new System.Drawing.Point(0, 350);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(316, 10);
-            this.panel10.TabIndex = 2;
-            // 
             // UCCV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -219,12 +235,12 @@
             this.Size = new System.Drawing.Size(316, 360);
             this.Load += new System.EventHandler(this.UCCV_Load);
             this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbAvt)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.pnlCV.ResumeLayout(false);
+            this.pnlCV.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbAvt)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -235,7 +251,7 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel pnlCV;
         private System.Windows.Forms.Label lbTitle;
         private System.Windows.Forms.PictureBox ptbAvt;
         private System.Windows.Forms.Panel panel7;
@@ -246,5 +262,6 @@
         private System.Windows.Forms.Label lbCreateDate;
         private System.Windows.Forms.Button btnViewCV;
         private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Button btnBrowse;
     }
 }

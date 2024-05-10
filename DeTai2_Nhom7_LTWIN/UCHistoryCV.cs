@@ -34,6 +34,14 @@ namespace DeTai2_Nhom7_LTWIN
             lbLocation.Text = jobDTO.Location.Substring(0, jobDTO.Location.IndexOf(','));
             lbSalary.Text = jobDTO.Salary.ToString();
             lbSubmitDate.Text = appDTO.CreateDate.ToString();
+            if(!appDTO.State)
+            {
+                pnlHistory.BackColor = Color.Yellow;
+            }
+            else
+            {
+                pnlHistory.BackColor = Color.LimeGreen;
+            }
         }
     }
 }

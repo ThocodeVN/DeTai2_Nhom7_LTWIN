@@ -1,4 +1,5 @@
-﻿using DeTai2_Nhom7_LTWIN.DTO;
+﻿using DeTai2_Nhom7_LTWIN.DAO;
+using DeTai2_Nhom7_LTWIN.DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,10 +15,26 @@ namespace DeTai2_Nhom7_LTWIN
     public partial class FCV : Form
     {
         CvDTO cvDTO;
+        CandidateDAO canDAO = new CandidateDAO();
         public FCV(CvDTO cvDTO)
         {
             InitializeComponent();
             this.cvDTO = cvDTO;
+        }
+
+        private void FCV_Load(object sender, EventArgs e)
+        {
+            lbName.Text = canDAO.GetOneCandi(cvDTO.CanId).Name;
+            lbBirth.Text = canDAO.GetOneCandi(cvDTO.CanId).Birth.ToShortDateString();
+            lbSex.Text = canDAO.GetOneCandi(cvDTO.CanId).Sex;
+            lbIntroduce.Text = cvDTO.Introduce;
+            lbSkills.Text = cvDTO.Skill;
+            lbAddress.Text = canDAO.GetOneCandi(cvDTO.CanId).Address;
+            lbCertificate.Text = cvDTO.Certificate;
+            lbEducation.Text = cvDTO.Education;
+            lbExp.Text = cvDTO.Exp;
+            lbPhone.Text = canDAO.GetOneCandi(cvDTO.CanId).Phone;
+            lbEmail.Text = canDAO.GetOneCandi(cvDTO.CanId).Email;
         }
     }
 }

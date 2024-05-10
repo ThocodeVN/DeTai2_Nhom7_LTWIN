@@ -40,6 +40,10 @@ namespace DeTai2_Nhom7_LTWIN
             lbHowApply.Text = jobD.HowApply;
             lbTimeWork.Text = jobD.TimeWork;
 
+            lbTExp.Text = jobD.Experience;
+            lbTypeJob.Text = jobD.Type;
+            lbEducation.Text = jobD.Education; 
+
             lbLoca.Text = jobD.Location.Substring(0, jobD.Location.IndexOf(','));
             lbCompanyName.Text = employerDAO.GetOneEmp(jobD.EmpID).CompanyName;
 

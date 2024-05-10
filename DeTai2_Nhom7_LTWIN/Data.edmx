@@ -9,10 +9,11 @@
           <Key>
             <PropertyRef Name="AppID" />
           </Key>
-          <Property Name="AppID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="JobID" Type="int" Nullable="false" />
           <Property Name="CvID" Type="int" Nullable="false" />
           <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="State" Type="bit" />
+          <Property Name="AppID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
         </EntityType>
         <EntityType Name="Candidate">
           <Key>
@@ -94,6 +95,7 @@
           <Property Name="JobID" Type="Int32" Nullable="false" />
           <Property Name="CvID" Type="Int32" Nullable="false" />
           <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="State" Type="Boolean" />
         </EntityType>
         <EntityType Name="Candidate">
           <Key>
@@ -172,6 +174,7 @@
           <EntitySetMapping Name="Applications">
             <EntityTypeMapping TypeName="Detai2_DBModel.Application">
               <MappingFragment StoreEntitySet="Application">
+                <ScalarProperty Name="State" ColumnName="State" />
                 <ScalarProperty Name="AppID" ColumnName="AppID" />
                 <ScalarProperty Name="JobID" ColumnName="JobID" />
                 <ScalarProperty Name="CvID" ColumnName="CvID" />
