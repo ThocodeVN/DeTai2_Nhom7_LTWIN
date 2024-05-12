@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,12 +19,6 @@ namespace DeTai2_Nhom7_LTWIN
         private CandidateDTO can;
         private EmployerDTO empDTO;
         private EmployerDAO empDAO = new EmployerDAO();
-
-        public PictureBox PictureBox1 { get => pictureBox1; set => pictureBox1 = value; }
-        public Label LbJobName { get => lbJobName; set => lbJobName = value; }
-        public Label LbCompanyName { get => lbCompanyName; set => lbCompanyName = value; }
-        public Label LbSalary { get => lbSalary; set => lbSalary = value; }
-        public Label LbLocation { get => lbLocation; set => lbLocation = value; }
 
         public UCJob() { }
 
@@ -44,10 +39,17 @@ namespace DeTai2_Nhom7_LTWIN
 
         private void UCJob_Load(object sender, EventArgs e)
         {
-            LbCompanyName.Text = empDTO.CompanyName;
-            LbJobName.Text = job.Title;
-            LbLocation.Text = job.Location.Substring(0, job.Location.IndexOf(','));
-            LbSalary.Text = job.Salary.ToString();
+            lbCompanyName.Text = empDTO.CompanyName;
+            lbJobName.Text = job.Title;
+            lbLocation.Text = job.Location.Substring(0, job.Location.IndexOf(','));
+            lbSalary.Text = job.Salary.ToString();
+
+            if (empDTO.Avatar != null)
+            {
+                MemoryStream stream = new MemoryStream(empDTO.Avatar.ToArray());
+                System.Drawing.Image img = System.Drawing.Image.FromStream(stream);
+                ptrbAvatar.Image = img;
+            }
         }
 
         private void UCJob_MouseClick(object sender, MouseEventArgs e)

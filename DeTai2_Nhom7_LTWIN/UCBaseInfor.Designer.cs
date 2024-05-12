@@ -28,10 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCBaseInfor));
             this.cbxSex = new Guna.UI.WinForms.GunaComboBox();
             this.gunaGradientPanel1 = new Guna.UI.WinForms.GunaGradientPanel();
-            this.btnFind = new System.Windows.Forms.Button();
+            this.btnDeleteImage = new Guna.UI.WinForms.GunaButton();
+            this.btnUpImage = new Guna.UI.WinForms.GunaButton();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.txtEmail = new Guna.UI.WinForms.GunaTextBox();
             this.txtAddress = new Guna.UI.WinForms.GunaTextBox();
             this.txtPhone = new Guna.UI.WinForms.GunaTextBox();
@@ -41,9 +44,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.gunaCirclePictureBox1 = new Guna.UI.WinForms.GunaCirclePictureBox();
+            this.ptrbAvatar = new Guna.UI.WinForms.GunaCirclePictureBox();
+            this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.gunaElipse2 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.ofdOpenImage = new System.Windows.Forms.OpenFileDialog();
             this.gunaGradientPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptrbAvatar)).BeginInit();
             this.SuspendLayout();
             // 
             // cbxSex
@@ -73,7 +79,9 @@
             // 
             this.gunaGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gunaGradientPanel1.BackgroundImage")));
             this.gunaGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.gunaGradientPanel1.Controls.Add(this.btnFind);
+            this.gunaGradientPanel1.Controls.Add(this.btnDeleteImage);
+            this.gunaGradientPanel1.Controls.Add(this.btnUpImage);
+            this.gunaGradientPanel1.Controls.Add(this.btnUpdate);
             this.gunaGradientPanel1.Controls.Add(this.txtEmail);
             this.gunaGradientPanel1.Controls.Add(this.txtAddress);
             this.gunaGradientPanel1.Controls.Add(this.txtPhone);
@@ -84,7 +92,7 @@
             this.gunaGradientPanel1.Controls.Add(this.label3);
             this.gunaGradientPanel1.Controls.Add(this.label2);
             this.gunaGradientPanel1.Controls.Add(this.label1);
-            this.gunaGradientPanel1.Controls.Add(this.gunaCirclePictureBox1);
+            this.gunaGradientPanel1.Controls.Add(this.ptrbAvatar);
             this.gunaGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gunaGradientPanel1.GradientColor1 = System.Drawing.Color.White;
             this.gunaGradientPanel1.GradientColor2 = System.Drawing.Color.White;
@@ -96,18 +104,70 @@
             this.gunaGradientPanel1.TabIndex = 5;
             this.gunaGradientPanel1.Text = "gunaGradientPanel1";
             // 
-            // btnFind
+            // btnDeleteImage
             // 
-            this.btnFind.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnFind.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(195)))), ((int)(((byte)(41)))));
-            this.btnFind.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFind.ForeColor = System.Drawing.Color.White;
-            this.btnFind.Location = new System.Drawing.Point(266, 507);
-            this.btnFind.Name = "btnFind";
-            this.btnFind.Size = new System.Drawing.Size(132, 73);
-            this.btnFind.TabIndex = 15;
-            this.btnFind.Text = "Cập nhật";
-            this.btnFind.UseVisualStyleBackColor = false;
+            this.btnDeleteImage.AnimationHoverSpeed = 0.07F;
+            this.btnDeleteImage.AnimationSpeed = 0.03F;
+            this.btnDeleteImage.BaseColor = System.Drawing.Color.Orange;
+            this.btnDeleteImage.BorderColor = System.Drawing.Color.Black;
+            this.btnDeleteImage.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnDeleteImage.FocusedColor = System.Drawing.Color.Empty;
+            this.btnDeleteImage.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeleteImage.ForeColor = System.Drawing.Color.White;
+            this.btnDeleteImage.Image = null;
+            this.btnDeleteImage.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnDeleteImage.Location = new System.Drawing.Point(125, 211);
+            this.btnDeleteImage.Name = "btnDeleteImage";
+            this.btnDeleteImage.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnDeleteImage.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnDeleteImage.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnDeleteImage.OnHoverImage = null;
+            this.btnDeleteImage.OnPressedColor = System.Drawing.Color.Black;
+            this.btnDeleteImage.Size = new System.Drawing.Size(98, 42);
+            this.btnDeleteImage.TabIndex = 54;
+            this.btnDeleteImage.Text = "Xóa ảnh";
+            this.btnDeleteImage.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnDeleteImage.Click += new System.EventHandler(this.btnDeleteImage_Click);
+            // 
+            // btnUpImage
+            // 
+            this.btnUpImage.AnimationHoverSpeed = 0.07F;
+            this.btnUpImage.AnimationSpeed = 0.03F;
+            this.btnUpImage.BackColor = System.Drawing.Color.LimeGreen;
+            this.btnUpImage.BaseColor = System.Drawing.Color.LimeGreen;
+            this.btnUpImage.BorderColor = System.Drawing.Color.Black;
+            this.btnUpImage.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnUpImage.FocusedColor = System.Drawing.Color.Empty;
+            this.btnUpImage.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpImage.ForeColor = System.Drawing.Color.White;
+            this.btnUpImage.Image = null;
+            this.btnUpImage.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnUpImage.Location = new System.Drawing.Point(12, 211);
+            this.btnUpImage.Name = "btnUpImage";
+            this.btnUpImage.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnUpImage.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnUpImage.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnUpImage.OnHoverImage = null;
+            this.btnUpImage.OnPressedColor = System.Drawing.Color.Black;
+            this.btnUpImage.Size = new System.Drawing.Size(98, 42);
+            this.btnUpImage.TabIndex = 53;
+            this.btnUpImage.Text = "Thêm ảnh";
+            this.btnUpImage.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnUpImage.Click += new System.EventHandler(this.btnUpImage_Click);
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(195)))), ((int)(((byte)(41)))));
+            this.btnUpdate.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.ForeColor = System.Drawing.Color.White;
+            this.btnUpdate.Location = new System.Drawing.Point(280, 464);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(132, 73);
+            this.btnUpdate.TabIndex = 15;
+            this.btnUpdate.Text = "Cập nhật";
+            this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // txtEmail
             // 
@@ -228,19 +288,33 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Họ và tên";
             // 
-            // gunaCirclePictureBox1
+            // ptrbAvatar
             // 
-            this.gunaCirclePictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaCirclePictureBox1.BaseColor = System.Drawing.Color.Transparent;
-            this.gunaCirclePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("gunaCirclePictureBox1.Image")));
-            this.gunaCirclePictureBox1.InitialImage = null;
-            this.gunaCirclePictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.gunaCirclePictureBox1.Name = "gunaCirclePictureBox1";
-            this.gunaCirclePictureBox1.Size = new System.Drawing.Size(211, 192);
-            this.gunaCirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.gunaCirclePictureBox1.TabIndex = 1;
-            this.gunaCirclePictureBox1.TabStop = false;
-            this.gunaCirclePictureBox1.UseTransfarantBackground = false;
+            this.ptrbAvatar.BackColor = System.Drawing.Color.Transparent;
+            this.ptrbAvatar.BaseColor = System.Drawing.Color.Transparent;
+            this.ptrbAvatar.Image = ((System.Drawing.Image)(resources.GetObject("ptrbAvatar.Image")));
+            this.ptrbAvatar.InitialImage = null;
+            this.ptrbAvatar.Location = new System.Drawing.Point(12, 12);
+            this.ptrbAvatar.Name = "ptrbAvatar";
+            this.ptrbAvatar.Size = new System.Drawing.Size(211, 192);
+            this.ptrbAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptrbAvatar.TabIndex = 1;
+            this.ptrbAvatar.TabStop = false;
+            this.ptrbAvatar.UseTransfarantBackground = false;
+            // 
+            // gunaElipse1
+            // 
+            this.gunaElipse1.Radius = 10;
+            this.gunaElipse1.TargetControl = this.btnUpImage;
+            // 
+            // gunaElipse2
+            // 
+            this.gunaElipse2.Radius = 10;
+            this.gunaElipse2.TargetControl = this.btnDeleteImage;
+            // 
+            // ofdOpenImage
+            // 
+            this.ofdOpenImage.FileName = "openFileDialog1";
             // 
             // UCBaseInfor
             // 
@@ -252,7 +326,7 @@
             this.Load += new System.EventHandler(this.UCBaseInfor_Load);
             this.gunaGradientPanel1.ResumeLayout(false);
             this.gunaGradientPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptrbAvatar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -261,7 +335,7 @@
 
         private Guna.UI.WinForms.GunaComboBox cbxSex;
         private Guna.UI.WinForms.GunaGradientPanel gunaGradientPanel1;
-        private System.Windows.Forms.Button btnFind;
+        private System.Windows.Forms.Button btnUpdate;
         private Guna.UI.WinForms.GunaTextBox txtEmail;
         private Guna.UI.WinForms.GunaTextBox txtAddress;
         private Guna.UI.WinForms.GunaTextBox txtPhone;
@@ -271,6 +345,11 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private Guna.UI.WinForms.GunaCirclePictureBox gunaCirclePictureBox1;
+        private Guna.UI.WinForms.GunaCirclePictureBox ptrbAvatar;
+        private Guna.UI.WinForms.GunaButton btnDeleteImage;
+        private Guna.UI.WinForms.GunaButton btnUpImage;
+        private Guna.UI.WinForms.GunaElipse gunaElipse1;
+        private Guna.UI.WinForms.GunaElipse gunaElipse2;
+        private System.Windows.Forms.OpenFileDialog ofdOpenImage;
     }
 }

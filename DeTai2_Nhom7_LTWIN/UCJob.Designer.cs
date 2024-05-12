@@ -29,33 +29,22 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCJob));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbJobName = new System.Windows.Forms.Label();
             this.lbCompanyName = new System.Windows.Forms.Label();
             this.lbSalary = new System.Windows.Forms.Label();
             this.lbLocation = new System.Windows.Forms.Label();
             this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.ptrbAvatar = new Guna.UI.WinForms.GunaCirclePictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.ptrbAvatar)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(13, 13);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(103, 93);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // lbJobName
             // 
-            this.lbJobName.AutoSize = true;
+            this.lbJobName.AutoEllipsis = true;
             this.lbJobName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbJobName.Location = new System.Drawing.Point(142, 13);
             this.lbJobName.Name = "lbJobName";
-            this.lbJobName.Size = new System.Drawing.Size(113, 18);
+            this.lbJobName.Size = new System.Drawing.Size(255, 18);
             this.lbJobName.TabIndex = 1;
             this.lbJobName.Text = "Tên công việc";
             // 
@@ -95,34 +84,45 @@
             this.gunaElipse1.Radius = 10;
             this.gunaElipse1.TargetControl = this;
             // 
+            // ptrbAvatar
+            // 
+            this.ptrbAvatar.BaseColor = System.Drawing.Color.Transparent;
+            this.ptrbAvatar.Dock = System.Windows.Forms.DockStyle.Left;
+            this.ptrbAvatar.Location = new System.Drawing.Point(10, 10);
+            this.ptrbAvatar.Name = "ptrbAvatar";
+            this.ptrbAvatar.Size = new System.Drawing.Size(111, 99);
+            this.ptrbAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptrbAvatar.TabIndex = 5;
+            this.ptrbAvatar.TabStop = false;
+            this.ptrbAvatar.UseTransfarantBackground = false;
+            // 
             // UCJob
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.ptrbAvatar);
             this.Controls.Add(this.lbLocation);
             this.Controls.Add(this.lbSalary);
             this.Controls.Add(this.lbCompanyName);
             this.Controls.Add(this.lbJobName);
-            this.Controls.Add(this.pictureBox1);
             this.Name = "UCJob";
             this.Padding = new System.Windows.Forms.Padding(10);
             this.Size = new System.Drawing.Size(410, 119);
             this.Load += new System.EventHandler(this.UCJob_Load);
             this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.UCJob_MouseClick);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptrbAvatar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lbJobName;
         private System.Windows.Forms.Label lbCompanyName;
         private System.Windows.Forms.Label lbSalary;
         private System.Windows.Forms.Label lbLocation;
         private Guna.UI.WinForms.GunaElipse gunaElipse1;
+        private Guna.UI.WinForms.GunaCirclePictureBox ptrbAvatar;
     }
 }

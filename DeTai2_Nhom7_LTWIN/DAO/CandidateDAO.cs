@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 using System.Net;
 using System.Xml.Linq;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Rebar;
 
 namespace DeTai2_Nhom7_LTWIN.DAO
 {
@@ -53,6 +54,30 @@ namespace DeTai2_Nhom7_LTWIN.DAO
                 MessageBox.Show("Đăng kí thất bại \n" + ex.Message);
             }
         }
+        public void UpdateInfor(CandidateDTO canDTO)
+        {
+            try
+            {
+                Candidate can = new Candidate()
+                {
+                    Name = canDTO.Name,
+                    Sex = canDTO.Sex,
+                    Birth = canDTO.Birth,
+                    Phone = canDTO.Phone,
+                    Email = canDTO.Email,
+                    Address = canDTO.Address,
+                    LoginName = canDTO.AccName,
+                    Password = canDTO.Password,
+                    Avatar = canDTO.Avatar
+                };
+                db.SaveChanges();
+                MessageBox.Show("Cập nhật thành công");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Cập nhật thất bại \n" + ex.Message);
+            }
+        }
 
         public CandidateDTO CheckAcc(string accName, string password)
         {
@@ -79,5 +104,6 @@ namespace DeTai2_Nhom7_LTWIN.DAO
             Can.CanID = cn.ID;
             return Can;
         }
+
     }
 }
