@@ -60,9 +60,9 @@
             this.lbIntroduce = new System.Windows.Forms.Label();
             this.lbName = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.ptrbAvatar = new Guna.UI.WinForms.GunaCirclePictureBox();
             this.lbBirth = new System.Windows.Forms.Label();
             this.lbSex = new System.Windows.Forms.Label();
-            this.ptrbAvatar = new Guna.UI.WinForms.GunaCirclePictureBox();
             this.panel12.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel14.SuspendLayout();
@@ -413,6 +413,17 @@
             this.panel1.Size = new System.Drawing.Size(958, 210);
             this.panel1.TabIndex = 9;
             // 
+            // ptrbAvatar
+            // 
+            this.ptrbAvatar.BaseColor = System.Drawing.Color.White;
+            this.ptrbAvatar.Location = new System.Drawing.Point(3, 3);
+            this.ptrbAvatar.Name = "ptrbAvatar";
+            this.ptrbAvatar.Size = new System.Drawing.Size(214, 204);
+            this.ptrbAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptrbAvatar.TabIndex = 4;
+            this.ptrbAvatar.TabStop = false;
+            this.ptrbAvatar.UseTransfarantBackground = false;
+            // 
             // lbBirth
             // 
             this.lbBirth.AutoSize = true;
@@ -434,17 +445,6 @@
             this.lbSex.Size = new System.Drawing.Size(104, 26);
             this.lbSex.TabIndex = 2;
             this.lbSex.Text = "Giới tính";
-            // 
-            // ptrbAvatar
-            // 
-            this.ptrbAvatar.BaseColor = System.Drawing.Color.White;
-            this.ptrbAvatar.Location = new System.Drawing.Point(3, 3);
-            this.ptrbAvatar.Name = "ptrbAvatar";
-            this.ptrbAvatar.Size = new System.Drawing.Size(214, 204);
-            this.ptrbAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptrbAvatar.TabIndex = 4;
-            this.ptrbAvatar.TabStop = false;
-            this.ptrbAvatar.UseTransfarantBackground = false;
             // 
             // FCV
             // 
