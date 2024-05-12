@@ -292,7 +292,6 @@
             // 
             this.ptrbAvatar.BackColor = System.Drawing.Color.Transparent;
             this.ptrbAvatar.BaseColor = System.Drawing.Color.Transparent;
-            this.ptrbAvatar.Image = ((System.Drawing.Image)(resources.GetObject("ptrbAvatar.Image")));
             this.ptrbAvatar.InitialImage = null;
             this.ptrbAvatar.Location = new System.Drawing.Point(12, 12);
             this.ptrbAvatar.Name = "ptrbAvatar";

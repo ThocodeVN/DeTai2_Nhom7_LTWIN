@@ -29,3 +29,5 @@ namespace DeTai2_Nhom7_LTWIN.DTO
         public bool State { get => state; set => state = value; }
     }
 }
+
+

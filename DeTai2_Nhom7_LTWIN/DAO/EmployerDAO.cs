@@ -43,6 +43,7 @@ namespace DeTai2_Nhom7_LTWIN.DAO
                     Industry = employer.Industry,
                     LoginName = employer.LoginName,
                     Password = employer.Password,
+                    Avatar = employer.Avatar
                 };
                 db.Employers.Add(emp);
                 db.SaveChanges();

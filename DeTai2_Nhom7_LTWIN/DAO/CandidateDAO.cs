@@ -42,7 +42,8 @@ namespace DeTai2_Nhom7_LTWIN.DAO
                     Email = cand.Email,
                     Address = cand.Address,
                     LoginName = cand.AccName,
-                    Password = cand.Password
+                    Password = cand.Password,
+                    Avatar = cand.Avatar
                 };
                 db.Candidates.Add(can);
                 db.SaveChanges();
@@ -101,6 +102,7 @@ namespace DeTai2_Nhom7_LTWIN.DAO
                 return null;
             }
             CandidateDTO Can = new CandidateDTO(cn.Name, cn.Sex, cn.Birth, cn.Phone, cn.Email, cn.Address, cn.LoginName, cn.Password);
+            Can.Avatar = cn.Avatar;
             Can.CanID = cn.ID;
             return Can;
         }

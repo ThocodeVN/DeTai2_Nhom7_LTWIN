@@ -29,15 +29,18 @@ namespace DeTai2_Nhom7_LTWIN
             if (job != null)
             {
                 appDTO = appDAO.GetOneApp(0, JobDTO.JobID, cvDTO.Id);
-                if (appDTO.State)
+                if (appDTO != null)
                 {
-                    btnBrowse.Text = "Đã duyệt";
-                    btnBrowse.BackColor = Color.FromArgb(49, 98, 63);
-                }
+                    if(appDTO.State)
+                    {
+                        btnBrowse.Text = "Đã duyệt";
+                        btnBrowse.BackColor = Color.FromArgb(49, 98, 63);
+                    }
                 else
-                {
-                    btnBrowse.Text = "Chưa duyệt";
-                    btnBrowse.BackColor = Color.Yellow;
+                    {
+                        btnBrowse.Text = "Chưa duyệt";
+                        btnBrowse.BackColor = Color.Yellow;
+                    } 
                 }
             }
             

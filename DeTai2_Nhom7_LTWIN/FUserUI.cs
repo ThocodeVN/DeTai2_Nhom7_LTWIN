@@ -17,10 +17,7 @@ namespace DeTai2_Nhom7_LTWIN
     {
         JobDAO jobDAO = new JobDAO();
         CandidateDTO can;
-        List<UCJob> listUc;
 
-        List<string> local = new List<string>();
-        List<string> type = new List<string>();
         public FUserUI(CandidateDTO can)
         {
             InitializeComponent();

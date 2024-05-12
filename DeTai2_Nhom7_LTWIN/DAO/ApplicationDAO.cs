@@ -49,7 +49,8 @@ namespace DeTai2_Nhom7_LTWIN.DAO
                 {
                     JobID = ap.JobID,
                     CreateDate = ap.CreateDate,
-                    CvID = ap.CvID
+                    CvID = ap.CvID,
+                    State = ap.State
                 };
                 db.Applications.Add(app);
                 db.SaveChanges();

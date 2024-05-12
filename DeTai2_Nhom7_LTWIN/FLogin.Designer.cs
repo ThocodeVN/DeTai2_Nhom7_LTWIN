@@ -103,11 +103,12 @@
             this.txtPassword.ForeColor = System.Drawing.Color.DarkGray;
             this.txtPassword.Location = new System.Drawing.Point(436, 157);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PasswordChar = '\0';
+            this.txtPassword.PasswordChar = '*';
             this.txtPassword.SelectedText = "";
             this.txtPassword.Size = new System.Drawing.Size(285, 32);
             this.txtPassword.TabIndex = 13;
             this.txtPassword.Text = "Mật khẩu...";
+            this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
             // 
             // txtLoginName
             // 

@@ -51,7 +51,6 @@ namespace DeTai2_Nhom7_LTWIN
             }
             System.Drawing.Image avatar = System.Drawing.Image.FromFile(file);
             ptrbAvatar.Image = avatar;
-
             MemoryStream stream = new MemoryStream();
             ptrbAvatar.Image.Save(stream, ImageFormat.Jpeg);
             canDTO.Avatar = stream.ToArray();

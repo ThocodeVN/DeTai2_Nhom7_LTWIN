@@ -22,6 +22,7 @@ namespace DeTai2_Nhom7_LTWIN
         public FLogin()
         {
             InitializeComponent();
+            txtPassword.PasswordChar = '\0';
         }
 
         private void btnSignUp_Click(object sender, EventArgs e)
@@ -83,6 +84,19 @@ namespace DeTai2_Nhom7_LTWIN
                 MessageBox.Show("Hãy chọn đối tượng đăng nhập");
                 return;
             }
+        }
+
+        private void txtPassword_TextChanged(object sender, EventArgs e)
+        {
+            if(txtPassword.Text == "Mật khẩu..." || txtPassword.Text == "")
+            {
+                txtPassword.PasswordChar = '\0';
+                txtPassword.Text = "Mật khẩu...";
+            }    
+            else
+            {
+                txtPassword.PasswordChar = '*';
+            }   
         }
     }
 }

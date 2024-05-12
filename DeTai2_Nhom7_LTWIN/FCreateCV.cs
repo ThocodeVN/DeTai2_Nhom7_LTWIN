@@ -20,6 +20,7 @@ namespace DeTai2_Nhom7_LTWIN
         CandidateDTO canDTO;
         CvDTO cvDTO;
         CvDAO cvDAO = new CvDAO();
+        MemoryStream image = null;
         public FCreateCV(CandidateDTO can, CvDTO cvDTO = null)
         {
             InitializeComponent();
@@ -32,6 +33,7 @@ namespace DeTai2_Nhom7_LTWIN
             string education = txtSchool.Text + ", " + txtStudyIndus.Text + ", " + dtpEduStart.Value.ToShortDateString() + " - " + dtpEduEnd.Value.ToShortDateString();
             string exp = txtCompany.Text + ", " + txtWorkIndus.Text + ", " + dtpWorkStart.Value.ToShortDateString() + " - " + dtpWorkEnd.Value.ToShortDateString();
             CvDTO cvDTO = new CvDTO(canDTO.CanID, txtTitle.Text, rtxtIntroduce.Text, education, rtxtSkills.Text, exp, rtxtCertificate.Text, DateTime.Now);
+            cvDTO.Avatar = image.ToArray();
             cvDAO.Add(cvDTO);
         }
 
@@ -170,17 +172,16 @@ namespace DeTai2_Nhom7_LTWIN
             }
             Image avatar = Image.FromFile(file);
             ptrbAvatar.Image = avatar;
-
             MemoryStream stream = new MemoryStream();
             ptrbAvatar.Image.Save(stream, ImageFormat.Jpeg);
-            cvDTO.Avatar = stream.ToArray();
+            image = stream;
             CheckImage();
         }
 
         private void btnDeleteImage_Click(object sender, EventArgs e)
         {
             ptrbAvatar.Image = null;
-            cvDTO.Avatar = null;
+            image = null;
             CheckImage();
         }
 
