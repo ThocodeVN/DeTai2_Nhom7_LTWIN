@@ -36,7 +36,6 @@
             this.lbTExp = new System.Windows.Forms.Label();
             this.lbAddress = new System.Windows.Forms.Label();
             this.lbCompanyName = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lbNameJob = new System.Windows.Forms.Label();
             this.btnSubmit2 = new Guna.UI.WinForms.GunaButton();
@@ -63,11 +62,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.ptrAvatar = new Guna.UI.WinForms.GunaCirclePictureBox();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptrAvatar)).BeginInit();
             this.SuspendLayout();
             // 
             // lbEducation
@@ -140,20 +140,12 @@
             this.lbCompanyName.TabIndex = 1;
             this.lbCompanyName.Text = "Tên công ti";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(96, 86);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.ptrAvatar);
             this.panel2.Controls.Add(this.lbAddress);
             this.panel2.Controls.Add(this.lbCompanyName);
-            this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Location = new System.Drawing.Point(719, 12);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(285, 190);
@@ -455,6 +447,17 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Mức lương";
             // 
+            // ptrAvatar
+            // 
+            this.ptrAvatar.BaseColor = System.Drawing.Color.White;
+            this.ptrAvatar.Location = new System.Drawing.Point(6, 3);
+            this.ptrAvatar.Name = "ptrAvatar";
+            this.ptrAvatar.Size = new System.Drawing.Size(93, 87);
+            this.ptrAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptrAvatar.TabIndex = 3;
+            this.ptrAvatar.TabStop = false;
+            this.ptrAvatar.UseTransfarantBackground = false;
+            // 
             // FInforJob
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -471,13 +474,13 @@
             this.Load += new System.EventHandler(this.FInforJob_Load);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptrAvatar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -491,7 +494,6 @@
         private System.Windows.Forms.Label lbTExp;
         private System.Windows.Forms.Label lbAddress;
         private System.Windows.Forms.Label lbCompanyName;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label lbNameJob;
         private Guna.UI.WinForms.GunaButton btnSubmit2;
@@ -518,5 +520,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lbTimeWork;
         private System.Windows.Forms.Label label5;
+        private Guna.UI.WinForms.GunaCirclePictureBox ptrAvatar;
     }
 }

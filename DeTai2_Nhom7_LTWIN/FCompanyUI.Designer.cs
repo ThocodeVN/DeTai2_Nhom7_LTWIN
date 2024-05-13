@@ -86,7 +86,7 @@
             this.btnJob.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(195)))), ((int)(((byte)(41)))));
             this.btnJob.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnJob.ForeColor = System.Drawing.Color.White;
-            this.btnJob.Location = new System.Drawing.Point(3, 226);
+            this.btnJob.Location = new System.Drawing.Point(0, 226);
             this.btnJob.Name = "btnJob";
             this.btnJob.Size = new System.Drawing.Size(204, 73);
             this.btnJob.TabIndex = 9;

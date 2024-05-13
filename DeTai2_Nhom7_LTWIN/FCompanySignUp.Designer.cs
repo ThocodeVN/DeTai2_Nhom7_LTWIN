@@ -102,7 +102,7 @@
             this.pnlFunc.GradientColor4 = System.Drawing.Color.White;
             this.pnlFunc.Location = new System.Drawing.Point(0, 0);
             this.pnlFunc.Name = "pnlFunc";
-            this.pnlFunc.Size = new System.Drawing.Size(549, 717);
+            this.pnlFunc.Size = new System.Drawing.Size(562, 717);
             this.pnlFunc.TabIndex = 6;
             this.pnlFunc.Text = "gunaGradientPanel3";
             // 
@@ -178,6 +178,7 @@
             this.txtHome.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.txtHome.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtHome.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtHome.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.txtHome.Location = new System.Drawing.Point(459, 467);
             this.txtHome.Name = "txtHome";
             this.txtHome.PasswordChar = '\0';
@@ -195,6 +196,7 @@
             this.txtStreet.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.txtStreet.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtStreet.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtStreet.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.txtStreet.Location = new System.Drawing.Point(323, 467);
             this.txtStreet.Name = "txtStreet";
             this.txtStreet.PasswordChar = '\0';
@@ -212,6 +214,7 @@
             this.txtCommune.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.txtCommune.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtCommune.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtCommune.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.txtCommune.Location = new System.Drawing.Point(182, 467);
             this.txtCommune.Name = "txtCommune";
             this.txtCommune.PasswordChar = '\0';
@@ -229,6 +232,7 @@
             this.txtDistrict.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.txtDistrict.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtDistrict.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtDistrict.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.txtDistrict.Location = new System.Drawing.Point(324, 417);
             this.txtDistrict.Name = "txtDistrict";
             this.txtDistrict.PasswordChar = '\0';
@@ -246,6 +250,7 @@
             this.txtProvince.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.txtProvince.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtProvince.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtProvince.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.txtProvince.Location = new System.Drawing.Point(182, 417);
             this.txtProvince.Name = "txtProvince";
             this.txtProvince.PasswordChar = '\0';
@@ -280,7 +285,6 @@
             this.txtCompanyName.SelectedText = "";
             this.txtCompanyName.Size = new System.Drawing.Size(288, 30);
             this.txtCompanyName.TabIndex = 48;
-            this.txtCompanyName.Text = "gunaTextBox1";
             // 
             // label6
             // 
@@ -321,7 +325,6 @@
             this.txtRePassword.SelectedText = "";
             this.txtRePassword.Size = new System.Drawing.Size(288, 30);
             this.txtRePassword.TabIndex = 45;
-            this.txtRePassword.Text = "gunaTextBox3";
             // 
             // txtPassword
             // 
@@ -338,7 +341,6 @@
             this.txtPassword.SelectedText = "";
             this.txtPassword.Size = new System.Drawing.Size(288, 30);
             this.txtPassword.TabIndex = 44;
-            this.txtPassword.Text = "gunaTextBox3";
             // 
             // txtLoginName
             // 
@@ -355,7 +357,6 @@
             this.txtLoginName.SelectedText = "";
             this.txtLoginName.Size = new System.Drawing.Size(288, 30);
             this.txtLoginName.TabIndex = 43;
-            this.txtLoginName.Text = "gunaTextBox3";
             // 
             // label9
             // 
@@ -405,7 +406,6 @@
             this.txtIndustry.SelectedText = "";
             this.txtIndustry.Size = new System.Drawing.Size(288, 30);
             this.txtIndustry.TabIndex = 20;
-            this.txtIndustry.Text = "gunaTextBox5";
             // 
             // txtEmail
             // 
@@ -422,7 +422,6 @@
             this.txtEmail.SelectedText = "";
             this.txtEmail.Size = new System.Drawing.Size(288, 30);
             this.txtEmail.TabIndex = 19;
-            this.txtEmail.Text = "gunaTextBox4";
             // 
             // txtPhone
             // 
@@ -439,7 +438,6 @@
             this.txtPhone.SelectedText = "";
             this.txtPhone.Size = new System.Drawing.Size(288, 30);
             this.txtPhone.TabIndex = 17;
-            this.txtPhone.Text = "gunaTextBox2";
             // 
             // txtName
             // 
@@ -456,7 +454,6 @@
             this.txtName.SelectedText = "";
             this.txtName.Size = new System.Drawing.Size(288, 30);
             this.txtName.TabIndex = 16;
-            this.txtName.Text = "gunaTextBox1";
             // 
             // label5
             // 
@@ -520,12 +517,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(549, 717);
+            this.ClientSize = new System.Drawing.Size(562, 717);
             this.Controls.Add(this.pnlFunc);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FCompanySignUp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FCompanySignUp";
+            this.Load += new System.EventHandler(this.FCompanySignUp_Load);
             this.pnlFunc.ResumeLayout(false);
             this.pnlFunc.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptrbAvatar)).EndInit();

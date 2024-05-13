@@ -96,6 +96,12 @@
     <Compile Include="Employer.cs">
       <DependentUpon>Data.tt</DependentUpon>
     </Compile>
+    <Compile Include="FCreatePost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCreatePost.Designer.cs">
+      <DependentUpon>FCreatePost.cs</DependentUpon>
+    </Compile>
     <Compile Include="FHistory.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -187,6 +193,12 @@
     <Compile Include="FViewCV.Designer.cs">
       <DependentUpon>FViewCV.cs</DependentUpon>
     </Compile>
+    <Compile Include="FViewPost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FViewPost.Designer.cs">
+      <DependentUpon>FViewPost.cs</DependentUpon>
+    </Compile>
     <Compile Include="Job.cs">
       <DependentUpon>Data.tt</DependentUpon>
     </Compile>
@@ -222,6 +234,12 @@
     <Compile Include="UCJob.Designer.cs">
       <DependentUpon>UCJob.cs</DependentUpon>
     </Compile>
+    <Compile Include="UCPost.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCPost.Designer.cs">
+      <DependentUpon>UCPost.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FCompanySignUp.resx">
       <DependentUpon>FCompanySignUp.cs</DependentUpon>
     </EmbeddedResource>
@@ -233,6 +251,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FCreateJob.resx">
       <DependentUpon>FCreateJob.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FCreatePost.resx">
+      <DependentUpon>FCreatePost.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FCV.resx">
       <DependentUpon>FCV.cs</DependentUpon>
@@ -267,6 +288,9 @@
     <EmbeddedResource Include="FViewCV.resx">
       <DependentUpon>FViewCV.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FViewPost.resx">
+      <DependentUpon>FViewPost.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -290,6 +314,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UCJob.resx">
       <DependentUpon>UCJob.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCPost.resx">
+      <DependentUpon>UCPost.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="Data.edmx">
       <Generator>EntityModelCodeGenerator</Generator>

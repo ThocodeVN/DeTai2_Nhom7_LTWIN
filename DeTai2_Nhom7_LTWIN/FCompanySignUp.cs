@@ -73,5 +73,9 @@ namespace DeTai2_Nhom7_LTWIN
             }
         }
 
+        private void FCompanySignUp_Load(object sender, EventArgs e)
+        {
+            CheckImage();
+        }
     }
 }

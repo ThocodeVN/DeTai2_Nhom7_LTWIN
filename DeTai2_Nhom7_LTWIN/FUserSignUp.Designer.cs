@@ -31,6 +31,9 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FUserSignUp));
             this.pnlFunc = new Guna.UI.WinForms.GunaGradientPanel();
+            this.btnDeleteImage = new Guna.UI.WinForms.GunaButton();
+            this.btnUpImage = new Guna.UI.WinForms.GunaButton();
+            this.ptrbAvatar = new Guna.UI.WinForms.GunaCirclePictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.cbxSex = new Guna.UI.WinForms.GunaComboBox();
             this.txtRePassword = new Guna.UI.WinForms.GunaTextBox();
@@ -54,9 +57,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtPhone = new Guna.UI.WinForms.GunaTextBox();
             this.txtName = new Guna.UI.WinForms.GunaTextBox();
-            this.btnDeleteImage = new Guna.UI.WinForms.GunaButton();
-            this.btnUpImage = new Guna.UI.WinForms.GunaButton();
-            this.ptrbAvatar = new Guna.UI.WinForms.GunaCirclePictureBox();
             this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.gunaElipse2 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.ofdOpenImage = new System.Windows.Forms.OpenFileDialog();
@@ -104,6 +104,69 @@
             this.pnlFunc.Name = "pnlFunc";
             this.pnlFunc.Size = new System.Drawing.Size(532, 684);
             this.pnlFunc.TabIndex = 6;
+            // 
+            // btnDeleteImage
+            // 
+            this.btnDeleteImage.AnimationHoverSpeed = 0.07F;
+            this.btnDeleteImage.AnimationSpeed = 0.03F;
+            this.btnDeleteImage.BaseColor = System.Drawing.Color.Orange;
+            this.btnDeleteImage.BorderColor = System.Drawing.Color.Black;
+            this.btnDeleteImage.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnDeleteImage.FocusedColor = System.Drawing.Color.Empty;
+            this.btnDeleteImage.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeleteImage.ForeColor = System.Drawing.Color.White;
+            this.btnDeleteImage.Image = null;
+            this.btnDeleteImage.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnDeleteImage.Location = new System.Drawing.Point(280, 194);
+            this.btnDeleteImage.Name = "btnDeleteImage";
+            this.btnDeleteImage.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnDeleteImage.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnDeleteImage.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnDeleteImage.OnHoverImage = null;
+            this.btnDeleteImage.OnPressedColor = System.Drawing.Color.Black;
+            this.btnDeleteImage.Size = new System.Drawing.Size(108, 42);
+            this.btnDeleteImage.TabIndex = 60;
+            this.btnDeleteImage.Text = "Xóa ảnh";
+            this.btnDeleteImage.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnDeleteImage.Click += new System.EventHandler(this.btnDeleteImage_Click);
+            // 
+            // btnUpImage
+            // 
+            this.btnUpImage.AnimationHoverSpeed = 0.07F;
+            this.btnUpImage.AnimationSpeed = 0.03F;
+            this.btnUpImage.BackColor = System.Drawing.Color.LimeGreen;
+            this.btnUpImage.BaseColor = System.Drawing.Color.LimeGreen;
+            this.btnUpImage.BorderColor = System.Drawing.Color.Black;
+            this.btnUpImage.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnUpImage.FocusedColor = System.Drawing.Color.Empty;
+            this.btnUpImage.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpImage.ForeColor = System.Drawing.Color.White;
+            this.btnUpImage.Image = null;
+            this.btnUpImage.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnUpImage.Location = new System.Drawing.Point(164, 194);
+            this.btnUpImage.Name = "btnUpImage";
+            this.btnUpImage.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnUpImage.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnUpImage.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnUpImage.OnHoverImage = null;
+            this.btnUpImage.OnPressedColor = System.Drawing.Color.Black;
+            this.btnUpImage.Size = new System.Drawing.Size(110, 42);
+            this.btnUpImage.TabIndex = 59;
+            this.btnUpImage.Text = "Thêm ảnh";
+            this.btnUpImage.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnUpImage.Click += new System.EventHandler(this.btnUpImage_Click);
+            // 
+            // ptrbAvatar
+            // 
+            this.ptrbAvatar.BackColor = System.Drawing.Color.Transparent;
+            this.ptrbAvatar.BaseColor = System.Drawing.Color.White;
+            this.ptrbAvatar.Location = new System.Drawing.Point(186, 17);
+            this.ptrbAvatar.Name = "ptrbAvatar";
+            this.ptrbAvatar.Size = new System.Drawing.Size(177, 171);
+            this.ptrbAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptrbAvatar.TabIndex = 58;
+            this.ptrbAvatar.TabStop = false;
+            this.ptrbAvatar.UseTransfarantBackground = false;
             // 
             // label2
             // 
@@ -448,69 +511,6 @@
             this.txtName.TabIndex = 22;
             this.txtName.Text = "gunaTextBox1";
             // 
-            // btnDeleteImage
-            // 
-            this.btnDeleteImage.AnimationHoverSpeed = 0.07F;
-            this.btnDeleteImage.AnimationSpeed = 0.03F;
-            this.btnDeleteImage.BaseColor = System.Drawing.Color.Orange;
-            this.btnDeleteImage.BorderColor = System.Drawing.Color.Black;
-            this.btnDeleteImage.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnDeleteImage.FocusedColor = System.Drawing.Color.Empty;
-            this.btnDeleteImage.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeleteImage.ForeColor = System.Drawing.Color.White;
-            this.btnDeleteImage.Image = null;
-            this.btnDeleteImage.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnDeleteImage.Location = new System.Drawing.Point(280, 194);
-            this.btnDeleteImage.Name = "btnDeleteImage";
-            this.btnDeleteImage.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btnDeleteImage.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnDeleteImage.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnDeleteImage.OnHoverImage = null;
-            this.btnDeleteImage.OnPressedColor = System.Drawing.Color.Black;
-            this.btnDeleteImage.Size = new System.Drawing.Size(108, 42);
-            this.btnDeleteImage.TabIndex = 60;
-            this.btnDeleteImage.Text = "Xóa ảnh";
-            this.btnDeleteImage.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnDeleteImage.Click += new System.EventHandler(this.btnDeleteImage_Click);
-            // 
-            // btnUpImage
-            // 
-            this.btnUpImage.AnimationHoverSpeed = 0.07F;
-            this.btnUpImage.AnimationSpeed = 0.03F;
-            this.btnUpImage.BackColor = System.Drawing.Color.LimeGreen;
-            this.btnUpImage.BaseColor = System.Drawing.Color.LimeGreen;
-            this.btnUpImage.BorderColor = System.Drawing.Color.Black;
-            this.btnUpImage.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnUpImage.FocusedColor = System.Drawing.Color.Empty;
-            this.btnUpImage.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpImage.ForeColor = System.Drawing.Color.White;
-            this.btnUpImage.Image = null;
-            this.btnUpImage.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnUpImage.Location = new System.Drawing.Point(164, 194);
-            this.btnUpImage.Name = "btnUpImage";
-            this.btnUpImage.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btnUpImage.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnUpImage.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnUpImage.OnHoverImage = null;
-            this.btnUpImage.OnPressedColor = System.Drawing.Color.Black;
-            this.btnUpImage.Size = new System.Drawing.Size(110, 42);
-            this.btnUpImage.TabIndex = 59;
-            this.btnUpImage.Text = "Thêm ảnh";
-            this.btnUpImage.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnUpImage.Click += new System.EventHandler(this.btnUpImage_Click);
-            // 
-            // ptrbAvatar
-            // 
-            this.ptrbAvatar.BackColor = System.Drawing.Color.Transparent;
-            this.ptrbAvatar.BaseColor = System.Drawing.Color.White;
-            this.ptrbAvatar.Location = new System.Drawing.Point(186, 17);
-            this.ptrbAvatar.Name = "ptrbAvatar";
-            this.ptrbAvatar.Size = new System.Drawing.Size(177, 171);
-            this.ptrbAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptrbAvatar.TabIndex = 58;
-            this.ptrbAvatar.TabStop = false;
-            this.ptrbAvatar.UseTransfarantBackground = false;
-            // 
             // gunaElipse1
             // 
             this.gunaElipse1.Radius = 10;
@@ -535,6 +535,7 @@
             this.Name = "FUserSignUp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FUserSignUp";
+            this.Load += new System.EventHandler(this.FUserSignUp_Load);
             this.pnlFunc.ResumeLayout(false);
             this.pnlFunc.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptrbAvatar)).EndInit();

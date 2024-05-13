@@ -70,5 +70,10 @@ namespace DeTai2_Nhom7_LTWIN
                 btnDeleteImage.Show();
             }
         }
+
+        private void FUserSignUp_Load(object sender, EventArgs e)
+        {
+            CheckImage();
+        }
     }
 }

@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text;
@@ -45,7 +46,15 @@ namespace DeTai2_Nhom7_LTWIN
             lbEducation.Text = jobD.Education; 
 
             lbLoca.Text = jobD.Location.Substring(0, jobD.Location.IndexOf(','));
-            lbCompanyName.Text = employerDAO.GetOneEmp(jobD.EmpID).CompanyName;
+            EmployerDTO empDTO = employerDAO.GetOneEmp(jobD.EmpID);
+            lbCompanyName.Text = empDTO.CompanyName;
+
+            if (empDTO.Avatar != null)
+            {
+                MemoryStream stream = new MemoryStream(empDTO.Avatar.ToArray());
+                Image img = Image.FromStream(stream);
+                ptrAvatar.Image = img;
+            }
 
             DateTime Now = DateTime.Now;
             DateTime Last = jobD.LastDate;

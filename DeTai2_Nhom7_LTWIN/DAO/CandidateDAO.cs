@@ -59,18 +59,16 @@ namespace DeTai2_Nhom7_LTWIN.DAO
         {
             try
             {
-                Candidate can = new Candidate()
-                {
-                    Name = canDTO.Name,
-                    Sex = canDTO.Sex,
-                    Birth = canDTO.Birth,
-                    Phone = canDTO.Phone,
-                    Email = canDTO.Email,
-                    Address = canDTO.Address,
-                    LoginName = canDTO.AccName,
-                    Password = canDTO.Password,
-                    Avatar = canDTO.Avatar
-                };
+                Candidate can = db.Candidates.FirstOrDefault(c => c.ID == canDTO.CanID);
+                can.Name = canDTO.Name;
+                can.Sex = canDTO.Sex;
+                can.Birth = canDTO.Birth;
+                can.Phone = canDTO.Phone;
+                can.Email = canDTO.Email;
+                can.Address = canDTO.Address;
+                can.LoginName = canDTO.AccName;
+                can.Password = canDTO.Password;
+                can.Avatar = canDTO.Avatar;
                 db.SaveChanges();
                 MessageBox.Show("Cập nhật thành công");
             }

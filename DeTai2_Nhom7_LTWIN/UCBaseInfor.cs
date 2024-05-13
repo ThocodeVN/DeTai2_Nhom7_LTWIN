@@ -38,6 +38,7 @@ namespace DeTai2_Nhom7_LTWIN
                 System.Drawing.Image img = System.Drawing.Image.FromStream(stream);
                 ptrbAvatar.Image = img;
             }
+            CheckImage();
         }
 
         private void btnUpImage_Click(object sender, EventArgs e)

@@ -314,6 +314,7 @@
             this.txtWorkIndus.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.txtWorkIndus.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtWorkIndus.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtWorkIndus.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.txtWorkIndus.Location = new System.Drawing.Point(155, 812);
             this.txtWorkIndus.Name = "txtWorkIndus";
             this.txtWorkIndus.PasswordChar = '\0';
@@ -331,6 +332,7 @@
             this.txtCompany.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.txtCompany.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtCompany.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtCompany.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.txtCompany.Location = new System.Drawing.Point(155, 761);
             this.txtCompany.Name = "txtCompany";
             this.txtCompany.PasswordChar = '\0';
@@ -428,6 +430,7 @@
             this.txtStudyIndus.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.txtStudyIndus.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtStudyIndus.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtStudyIndus.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.txtStudyIndus.Location = new System.Drawing.Point(155, 527);
             this.txtStudyIndus.Name = "txtStudyIndus";
             this.txtStudyIndus.PasswordChar = '\0';
@@ -445,6 +448,7 @@
             this.txtSchool.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.txtSchool.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtSchool.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtSchool.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.txtSchool.Location = new System.Drawing.Point(155, 476);
             this.txtSchool.Name = "txtSchool";
             this.txtSchool.PasswordChar = '\0';
@@ -476,7 +480,6 @@
             this.txtTitle.SelectedText = "";
             this.txtTitle.Size = new System.Drawing.Size(497, 32);
             this.txtTitle.TabIndex = 20;
-            this.txtTitle.Text = "gunaTextBox1";
             // 
             // label12
             // 
@@ -579,7 +582,6 @@
             this.txtAddress.SelectedText = "";
             this.txtAddress.Size = new System.Drawing.Size(630, 30);
             this.txtAddress.TabIndex = 13;
-            this.txtAddress.Text = "gunaTextBox3";
             // 
             // dtpBirth
             // 
