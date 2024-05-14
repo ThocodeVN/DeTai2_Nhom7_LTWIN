@@ -260,36 +260,5 @@ namespace DeTai2_Nhom7_LTWIN
                 txtWorkIndus.BorderColor = Color.FromArgb(33, 195, 41);
             }
         }
-
-        private void rtxtIntroduce_TextChanged(object sender, EventArgs e)
-        {
-            if (rtxtIntroduce.Text == "")
-            {
-            }
-            else
-            {
-            }
-        }
-
-        private void rtxtSkills_TextChanged(object sender, EventArgs e)
-        {
-            if (rtxtSkills.Text == "")
-            {
-            }
-            else
-            {
-            }
-        }
-
-        private void rtxtCertificate_TextChanged(object sender, EventArgs e)
-        {
-            if (rtxtCertificate.Text == "")
-            {
-
-            }
-            else
-            {
-            }
-        }
     }
 }

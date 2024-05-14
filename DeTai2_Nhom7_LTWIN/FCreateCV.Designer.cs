@@ -350,7 +350,6 @@
             this.rtxtCertificate.Size = new System.Drawing.Size(693, 141);
             this.rtxtCertificate.TabIndex = 29;
             this.rtxtCertificate.Text = "";
-            this.rtxtCertificate.TextChanged += new System.EventHandler(this.rtxtCertificate_TextChanged);
             // 
             // rtxtSkills
             // 
@@ -359,7 +358,6 @@
             this.rtxtSkills.Size = new System.Drawing.Size(693, 141);
             this.rtxtSkills.TabIndex = 28;
             this.rtxtSkills.Text = "";
-            this.rtxtSkills.TextChanged += new System.EventHandler(this.rtxtSkills_TextChanged);
             // 
             // label14
             // 
@@ -470,7 +468,6 @@
             this.rtxtIntroduce.Size = new System.Drawing.Size(693, 141);
             this.rtxtIntroduce.TabIndex = 21;
             this.rtxtIntroduce.Text = "";
-            this.rtxtIntroduce.TextChanged += new System.EventHandler(this.rtxtIntroduce_TextChanged);
             // 
             // txtTitle
             // 
