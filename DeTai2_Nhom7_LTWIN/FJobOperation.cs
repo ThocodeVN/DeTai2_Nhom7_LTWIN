@@ -77,5 +77,12 @@ namespace DeTai2_Nhom7_LTWIN
                 this.Show();
             }
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            DialogResult re = MessageBox.Show("Bạn muốn xóa công việc này?", "Chú ý", MessageBoxButtons.YesNo);
+            if(re == DialogResult.Yes)
+              jobDAO.Delete(jobD);
+        }
     }
 }

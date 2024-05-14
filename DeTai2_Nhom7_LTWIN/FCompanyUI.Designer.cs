@@ -38,6 +38,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnInfor = new System.Windows.Forms.Button();
             this.pnlFunc = new Guna.UI.WinForms.GunaGradientPanel();
+            this.btnViewPost = new System.Windows.Forms.Button();
             this.gunaGradientPanel1.SuspendLayout();
             this.gunaGradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -67,6 +68,7 @@
             // 
             this.gunaGradientPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gunaGradientPanel2.BackgroundImage")));
             this.gunaGradientPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.gunaGradientPanel2.Controls.Add(this.btnViewPost);
             this.gunaGradientPanel2.Controls.Add(this.btnJob);
             this.gunaGradientPanel2.Controls.Add(this.pictureBox2);
             this.gunaGradientPanel2.Controls.Add(this.btnComInfor);
@@ -168,6 +170,19 @@
             this.pnlFunc.TabIndex = 5;
             this.pnlFunc.Text = "gunaGradientPanel3";
             // 
+            // btnViewPost
+            // 
+            this.btnViewPost.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(195)))), ((int)(((byte)(41)))));
+            this.btnViewPost.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewPost.ForeColor = System.Drawing.Color.White;
+            this.btnViewPost.Location = new System.Drawing.Point(0, 305);
+            this.btnViewPost.Name = "btnViewPost";
+            this.btnViewPost.Size = new System.Drawing.Size(204, 73);
+            this.btnViewPost.TabIndex = 10;
+            this.btnViewPost.Text = "Xem bài đăng";
+            this.btnViewPost.UseVisualStyleBackColor = false;
+            this.btnViewPost.Click += new System.EventHandler(this.btnViewPost_Click);
+            // 
             // FCompanyUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -200,5 +215,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button btnComInfor;
         private Guna.UI.WinForms.GunaGradientPanel pnlFunc;
+        private System.Windows.Forms.Button btnViewPost;
     }
 }

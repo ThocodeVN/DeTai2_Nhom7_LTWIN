@@ -20,6 +20,8 @@ namespace DeTai2_Nhom7_LTWIN
         JobDTO JobDTO;
         CvDTO cvDTO;
         bool browse;
+        CvDAO cvDAO = new CvDAO();
+
         public UCCV(CvDTO cv,bool browse = false, JobDTO job = null)
         {
             InitializeComponent();
@@ -54,11 +56,13 @@ namespace DeTai2_Nhom7_LTWIN
             {
                 btnSubmit.Hide();
                 btnUpdate.Show();
+                btnPost.Show();
             }
             else
             {
                 btnSubmit.Show();
                 btnUpdate.Hide();
+                btnPost.Hide();
             }
 
             if(browse)
@@ -104,6 +108,19 @@ namespace DeTai2_Nhom7_LTWIN
         {
             FCreateCV fCreate = new FCreateCV(canDAO.GetOneCandi(cvDTO.CanId), cvDTO);
             fCreate.Show();
+        }
+
+        private void btnPost_Click(object sender, EventArgs e)
+        {
+            FCreatePost fcp = new FCreatePost(canDAO.GetOneCandi(cvDTO.CanId), cvDTO);
+            fcp.Show();
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            DialogResult re = MessageBox.Show("Bạn muốn xóa CV này chứ?", "Chú ý", MessageBoxButtons.YesNo);
+            if(re == DialogResult.Yes)
+                cvDAO.Delete(cvDTO);
         }
     }
 }

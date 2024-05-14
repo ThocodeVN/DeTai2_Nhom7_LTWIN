@@ -29,7 +29,6 @@ namespace DeTai2_Nhom7_LTWIN.DAO
 
         public List<CvDTO> GetListCV_Can(CandidateDTO can)
         {
-            List<CV> cv = db.CVs.ToList();
             List<CvDTO> listCv = new List<CvDTO>();
             var query = from q in db.CVs select q;
             query = query.Where(e => e.CanID == can.CanID);
@@ -93,6 +92,28 @@ namespace DeTai2_Nhom7_LTWIN.DAO
                 {
                     MessageBox.Show("Cập nhật thất bại");
                 }    
+            }
+        }
+
+        public void Delete(CvDTO cvDTO)
+        {
+            try
+            {
+                CV cv = db.CVs.FirstOrDefault(e => e.Id == cvDTO.Id);
+                db.CVs.Remove(cv);
+                db.SaveChanges();
+                MessageBox.Show("Xóa CV thành công");
+            }
+            catch (Exception ex)
+            {
+                if (ex.InnerException is UpdateException)
+                {
+                    MessageBox.Show("Xóa thất bại \n" + ex.InnerException.Message);
+                }
+                else
+                {
+                    MessageBox.Show("Xóa thất bại");
+                }
             }
         }
 

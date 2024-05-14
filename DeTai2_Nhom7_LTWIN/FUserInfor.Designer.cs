@@ -35,6 +35,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnInfor = new System.Windows.Forms.Button();
             this.pnlFunc = new Guna.UI.WinForms.GunaGradientPanel();
+            this.btnPost = new System.Windows.Forms.Button();
             this.gunaGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -43,6 +44,7 @@
             // 
             this.gunaGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gunaGradientPanel1.BackgroundImage")));
             this.gunaGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.gunaGradientPanel1.Controls.Add(this.btnPost);
             this.gunaGradientPanel1.Controls.Add(this.btnHistoryCV);
             this.gunaGradientPanel1.Controls.Add(this.btnCV);
             this.gunaGradientPanel1.Controls.Add(this.pictureBox1);
@@ -123,6 +125,19 @@
             this.pnlFunc.TabIndex = 4;
             this.pnlFunc.Text = "gunaGradientPanel2";
             // 
+            // btnPost
+            // 
+            this.btnPost.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(195)))), ((int)(((byte)(41)))));
+            this.btnPost.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPost.ForeColor = System.Drawing.Color.White;
+            this.btnPost.Location = new System.Drawing.Point(0, 384);
+            this.btnPost.Name = "btnPost";
+            this.btnPost.Size = new System.Drawing.Size(204, 73);
+            this.btnPost.TabIndex = 11;
+            this.btnPost.Text = "Bài post của bạn";
+            this.btnPost.UseVisualStyleBackColor = false;
+            this.btnPost.Click += new System.EventHandler(this.btnPost_Click);
+            // 
             // FUserInfor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -149,5 +164,6 @@
         private System.Windows.Forms.Button btnCV;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI.WinForms.GunaGradientPanel pnlFunc;
+        private System.Windows.Forms.Button btnPost;
     }
 }

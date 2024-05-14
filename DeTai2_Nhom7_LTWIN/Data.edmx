@@ -79,12 +79,24 @@
           <Property Name="Education" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="Type" Type="nvarchar" MaxLength="50" Nullable="false" />
         </EntityType>
+        <EntityType Name="Post">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CanID" Type="int" />
+          <Property Name="CvID" Type="int" />
+          <Property Name="Content" Type="nvarchar" MaxLength="2000" />
+          <Property Name="CreateDate" Type="date" />
+          <Property Name="Picture" Type="image" />
+        </EntityType>
         <EntityContainer Name="Detai2_DBModelStoreContainer">
           <EntitySet Name="Application" EntityType="Self.Application" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Candidate" EntityType="Self.Candidate" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="CV" EntityType="Self.CV" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Employer" EntityType="Self.Employer" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Job" EntityType="Self.Job" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Post" EntityType="Self.Post" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->
@@ -155,6 +167,7 @@
           <EntitySet Name="Employers" EntityType="Self.Employer" />
           <EntitySet Name="Jobs" EntityType="Self.Job" />
           <EntitySet Name="CVs" EntityType="Detai2_DBModel.CV" />
+          <EntitySet Name="Posts" EntityType="Detai2_DBModel.Post" />
         </EntityContainer>
         <EntityType Name="CV">
           <Key>
@@ -170,6 +183,17 @@
           <Property Name="Certificate" Type="String" Nullable="false" MaxLength="1000" FixedLength="false" Unicode="true" />
           <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="0" />
           <Property Name="Avatar" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Post">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CanID" Type="Int32" />
+          <Property Name="CvID" Type="Int32" />
+          <Property Name="Content" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+          <Property Name="CreateDate" Type="DateTime" Precision="0" />
+          <Property Name="Picture" Type="Binary" MaxLength="Max" FixedLength="false" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -253,6 +277,18 @@
                 <ScalarProperty Name="Title" ColumnName="Title" />
                 <ScalarProperty Name="CanID" ColumnName="CanID" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Posts">
+            <EntityTypeMapping TypeName="Detai2_DBModel.Post">
+              <MappingFragment StoreEntitySet="Post">
+                <ScalarProperty Name="Picture" ColumnName="Picture" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="Content" ColumnName="Content" />
+                <ScalarProperty Name="CvID" ColumnName="CvID" />
+                <ScalarProperty Name="CanID" ColumnName="CanID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

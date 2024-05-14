@@ -74,6 +74,7 @@
     <Compile Include="DAO\CvDAO.cs" />
     <Compile Include="DAO\EmployerDAO.cs" />
     <Compile Include="DAO\JobDAO.cs" />
+    <Compile Include="DAO\PostDAO.cs" />
     <Compile Include="Data.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -93,6 +94,7 @@
     <Compile Include="DTO\CandidateDTO.cs" />
     <Compile Include="DTO\CvDTO.cs" />
     <Compile Include="DTO\EmployerDTO.cs" />
+    <Compile Include="DTO\PostDTO.cs" />
     <Compile Include="Employer.cs">
       <DependentUpon>Data.tt</DependentUpon>
     </Compile>
@@ -169,6 +171,12 @@
     <Compile Include="FLogin.Designer.cs">
       <DependentUpon>FLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FManagePost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FManagePost.Designer.cs">
+      <DependentUpon>FManagePost.cs</DependentUpon>
+    </Compile>
     <Compile Include="FUserInfor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -200,6 +208,9 @@
       <DependentUpon>FViewPost.cs</DependentUpon>
     </Compile>
     <Compile Include="Job.cs">
+      <DependentUpon>Data.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Post.cs">
       <DependentUpon>Data.tt</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -275,6 +286,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FManageCV.resx">
       <DependentUpon>FManageCV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FManagePost.resx">
+      <DependentUpon>FManagePost.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FUserInfor.resx">
       <DependentUpon>FUserInfor.cs</DependentUpon>

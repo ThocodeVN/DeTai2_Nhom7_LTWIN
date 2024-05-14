@@ -30,5 +30,6 @@ namespace DeTai2_Nhom7_LTWIN
         public virtual DbSet<Employer> Employers { get; set; }
         public virtual DbSet<Job> Jobs { get; set; }
         public virtual DbSet<CV> CVs { get; set; }
+        public virtual DbSet<Post> Posts { get; set; }
     }
 }

@@ -84,5 +84,15 @@ namespace DeTai2_Nhom7_LTWIN
             jobDTO.Type = cbxType.Text;
             jobDAO.Update(jobDTO);
         }
+
+        private void cbDefault_CheckedChanged(object sender, EventArgs e)
+        {
+            string[] address = empDTO.Address.Split(',');
+            txtProvince.Text = address[0];
+            txtDistrict.Text = address[1];
+            txtCommune.Text = address[2];
+            txtHome.Text = address[3];
+            txtHome.Text = address[4];
+        }
     }
 }

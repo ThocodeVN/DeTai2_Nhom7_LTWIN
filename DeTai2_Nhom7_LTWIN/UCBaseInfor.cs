@@ -30,7 +30,11 @@ namespace DeTai2_Nhom7_LTWIN
             txtEmail.Text = canDTO.Email;
             txtPhone.Text = canDTO.Phone;
             txtAddress.Text = canDTO.Address;
-            cbxSex.SelectedText = canDTO.Sex;
+            for(int i = 0; i < cbxSex.Items.Count; i++)
+            {
+                if (cbxSex.Items[i].ToString().Trim().ToLower() == canDTO.Sex.Trim().ToLower())
+                    cbxSex.SelectedItem = cbxSex.Items[i];
+            }    
 
             if (canDTO.Avatar != null)
             {

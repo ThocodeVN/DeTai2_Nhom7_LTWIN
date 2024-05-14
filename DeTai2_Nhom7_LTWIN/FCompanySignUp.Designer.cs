@@ -175,7 +175,7 @@
             this.txtHome.BorderColor = System.Drawing.Color.Silver;
             this.txtHome.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtHome.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtHome.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtHome.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(195)))), ((int)(((byte)(41)))));
             this.txtHome.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtHome.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtHome.ForeColor = System.Drawing.SystemColors.ControlDark;
@@ -186,6 +186,7 @@
             this.txtHome.Size = new System.Drawing.Size(76, 30);
             this.txtHome.TabIndex = 54;
             this.txtHome.Text = "Số nhà";
+            this.txtHome.TextChanged += new System.EventHandler(this.txtHome_TextChanged);
             // 
             // txtStreet
             // 
@@ -193,7 +194,7 @@
             this.txtStreet.BorderColor = System.Drawing.Color.Silver;
             this.txtStreet.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtStreet.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtStreet.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtStreet.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(195)))), ((int)(((byte)(41)))));
             this.txtStreet.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtStreet.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtStreet.ForeColor = System.Drawing.SystemColors.ControlDark;
@@ -204,6 +205,7 @@
             this.txtStreet.Size = new System.Drawing.Size(120, 30);
             this.txtStreet.TabIndex = 53;
             this.txtStreet.Text = "Tên đường";
+            this.txtStreet.TextChanged += new System.EventHandler(this.txtStreet_TextChanged);
             // 
             // txtCommune
             // 
@@ -211,7 +213,7 @@
             this.txtCommune.BorderColor = System.Drawing.Color.Silver;
             this.txtCommune.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtCommune.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtCommune.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtCommune.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(195)))), ((int)(((byte)(41)))));
             this.txtCommune.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtCommune.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtCommune.ForeColor = System.Drawing.SystemColors.ControlDark;
@@ -222,6 +224,7 @@
             this.txtCommune.Size = new System.Drawing.Size(123, 30);
             this.txtCommune.TabIndex = 52;
             this.txtCommune.Text = "Xã/phường";
+            this.txtCommune.TextChanged += new System.EventHandler(this.txtCommune_TextChanged);
             // 
             // txtDistrict
             // 
@@ -229,7 +232,7 @@
             this.txtDistrict.BorderColor = System.Drawing.Color.Silver;
             this.txtDistrict.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDistrict.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtDistrict.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtDistrict.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(195)))), ((int)(((byte)(41)))));
             this.txtDistrict.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtDistrict.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtDistrict.ForeColor = System.Drawing.SystemColors.ControlDark;
@@ -240,6 +243,7 @@
             this.txtDistrict.Size = new System.Drawing.Size(120, 30);
             this.txtDistrict.TabIndex = 51;
             this.txtDistrict.Text = "Quận/huyện";
+            this.txtDistrict.TextChanged += new System.EventHandler(this.txtDistrict_TextChanged);
             // 
             // txtProvince
             // 
@@ -247,7 +251,7 @@
             this.txtProvince.BorderColor = System.Drawing.Color.Silver;
             this.txtProvince.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtProvince.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtProvince.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtProvince.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(195)))), ((int)(((byte)(41)))));
             this.txtProvince.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtProvince.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtProvince.ForeColor = System.Drawing.SystemColors.ControlDark;
@@ -258,6 +262,7 @@
             this.txtProvince.Size = new System.Drawing.Size(123, 30);
             this.txtProvince.TabIndex = 50;
             this.txtProvince.Text = "Tỉnh/thành";
+            this.txtProvince.TextChanged += new System.EventHandler(this.txtProvince_TextChanged);
             // 
             // label3
             // 
@@ -276,7 +281,7 @@
             this.txtCompanyName.BorderColor = System.Drawing.Color.Silver;
             this.txtCompanyName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtCompanyName.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtCompanyName.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtCompanyName.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(195)))), ((int)(((byte)(41)))));
             this.txtCompanyName.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtCompanyName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtCompanyName.Location = new System.Drawing.Point(184, 240);
@@ -285,6 +290,7 @@
             this.txtCompanyName.SelectedText = "";
             this.txtCompanyName.Size = new System.Drawing.Size(288, 30);
             this.txtCompanyName.TabIndex = 48;
+            this.txtCompanyName.TextChanged += new System.EventHandler(this.txtCompanyName_TextChanged);
             // 
             // label6
             // 
@@ -316,7 +322,7 @@
             this.txtRePassword.BorderColor = System.Drawing.Color.Silver;
             this.txtRePassword.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtRePassword.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtRePassword.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtRePassword.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(195)))), ((int)(((byte)(41)))));
             this.txtRePassword.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtRePassword.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtRePassword.Location = new System.Drawing.Point(182, 776);
@@ -325,6 +331,7 @@
             this.txtRePassword.SelectedText = "";
             this.txtRePassword.Size = new System.Drawing.Size(288, 30);
             this.txtRePassword.TabIndex = 45;
+            this.txtRePassword.TextChanged += new System.EventHandler(this.txtRePassword_TextChanged);
             // 
             // txtPassword
             // 
@@ -332,7 +339,7 @@
             this.txtPassword.BorderColor = System.Drawing.Color.Silver;
             this.txtPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPassword.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtPassword.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtPassword.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(195)))), ((int)(((byte)(41)))));
             this.txtPassword.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtPassword.Location = new System.Drawing.Point(182, 710);
@@ -341,6 +348,7 @@
             this.txtPassword.SelectedText = "";
             this.txtPassword.Size = new System.Drawing.Size(288, 30);
             this.txtPassword.TabIndex = 44;
+            this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
             // 
             // txtLoginName
             // 
@@ -348,7 +356,7 @@
             this.txtLoginName.BorderColor = System.Drawing.Color.Silver;
             this.txtLoginName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtLoginName.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtLoginName.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtLoginName.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(195)))), ((int)(((byte)(41)))));
             this.txtLoginName.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtLoginName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtLoginName.Location = new System.Drawing.Point(182, 651);
@@ -357,6 +365,7 @@
             this.txtLoginName.SelectedText = "";
             this.txtLoginName.Size = new System.Drawing.Size(288, 30);
             this.txtLoginName.TabIndex = 43;
+            this.txtLoginName.TextChanged += new System.EventHandler(this.txtLoginName_TextChanged);
             // 
             // label9
             // 
@@ -397,7 +406,7 @@
             this.txtIndustry.BorderColor = System.Drawing.Color.Silver;
             this.txtIndustry.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtIndustry.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtIndustry.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtIndustry.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(195)))), ((int)(((byte)(41)))));
             this.txtIndustry.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtIndustry.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtIndustry.Location = new System.Drawing.Point(182, 587);
@@ -406,6 +415,7 @@
             this.txtIndustry.SelectedText = "";
             this.txtIndustry.Size = new System.Drawing.Size(288, 30);
             this.txtIndustry.TabIndex = 20;
+            this.txtIndustry.TextChanged += new System.EventHandler(this.txtIndustry_TextChanged);
             // 
             // txtEmail
             // 
@@ -413,7 +423,7 @@
             this.txtEmail.BorderColor = System.Drawing.Color.Silver;
             this.txtEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtEmail.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtEmail.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtEmail.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(195)))), ((int)(((byte)(41)))));
             this.txtEmail.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtEmail.Location = new System.Drawing.Point(182, 526);
@@ -422,6 +432,7 @@
             this.txtEmail.SelectedText = "";
             this.txtEmail.Size = new System.Drawing.Size(288, 30);
             this.txtEmail.TabIndex = 19;
+            this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
             // 
             // txtPhone
             // 
@@ -429,7 +440,7 @@
             this.txtPhone.BorderColor = System.Drawing.Color.Silver;
             this.txtPhone.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPhone.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtPhone.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtPhone.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(195)))), ((int)(((byte)(41)))));
             this.txtPhone.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtPhone.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtPhone.Location = new System.Drawing.Point(182, 365);
@@ -438,6 +449,7 @@
             this.txtPhone.SelectedText = "";
             this.txtPhone.Size = new System.Drawing.Size(288, 30);
             this.txtPhone.TabIndex = 17;
+            this.txtPhone.TextChanged += new System.EventHandler(this.txtPhone_TextChanged);
             // 
             // txtName
             // 
@@ -445,7 +457,7 @@
             this.txtName.BorderColor = System.Drawing.Color.Silver;
             this.txtName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtName.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtName.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtName.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(195)))), ((int)(((byte)(41)))));
             this.txtName.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtName.Location = new System.Drawing.Point(182, 304);
@@ -454,6 +466,7 @@
             this.txtName.SelectedText = "";
             this.txtName.Size = new System.Drawing.Size(288, 30);
             this.txtName.TabIndex = 16;
+            this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
             // 
             // label5
             // 

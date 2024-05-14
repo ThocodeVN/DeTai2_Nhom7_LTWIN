@@ -47,7 +47,8 @@ namespace DeTai2_Nhom7_LTWIN
             txtPhone.Enabled = false;
             txtAddress.Text = canDTO.Address;
             txtAddress.Enabled = false;
-            cbxSex.Text = canDTO.Sex;
+            cbxSex.Items[0] = canDTO.Sex;
+            cbxSex.SelectedItem = cbxSex.Items[0];
             cbxSex.Enabled = false;
             dtpBirth.Value = canDTO.Birth;
             dtpBirth.Enabled = false;
@@ -63,6 +64,7 @@ namespace DeTai2_Nhom7_LTWIN
                 btnUpdate.Show();
                 btnCreateCV.Hide();
 
+                txtTitle.Text = cvDTO.Title;
                 string[] education = ConvertData(cvDTO.Education);
                 txtSchool.Text = education[0];
                 txtStudyIndus.Text = education[1];
@@ -197,6 +199,97 @@ namespace DeTai2_Nhom7_LTWIN
             cvDTO.Title = txtTitle.Text;
             cvDTO.Introduce = rtxtIntroduce.Text;
             cvDAO.Update(cvDTO);
+        }
+
+        private void txtTitle_TextChanged(object sender, EventArgs e)
+        {
+            if (txtTitle.Text == "")
+            {
+                txtTitle.BorderColor = Color.Red;
+            }
+            else
+            {
+                txtTitle.BorderColor = Color.FromArgb(33, 195, 41);
+            }
+        }
+
+        private void txtSchool_TextChanged(object sender, EventArgs e)
+        {
+            if (txtSchool.Text == "")
+            {
+                txtSchool.BorderColor = Color.Red;
+            }
+            else
+            {
+                txtSchool.BorderColor = Color.FromArgb(33, 195, 41);
+            }
+        }
+
+        private void txtStudyIndus_TextChanged(object sender, EventArgs e)
+        {
+            if (txtStudyIndus.Text == "")
+            {
+                txtStudyIndus.BorderColor = Color.Red;
+            }
+            else
+            {
+                txtStudyIndus.BorderColor = Color.FromArgb(33, 195, 41);
+            }
+        }
+
+        private void txtCompany_TextChanged(object sender, EventArgs e)
+        {
+            if (txtCompany.Text == "")
+            {
+                txtCompany.BorderColor = Color.Red;
+            }
+            else
+            {
+                txtCompany.BorderColor = Color.FromArgb(33, 195, 41);
+            }
+        }
+
+        private void txtWorkIndus_TextChanged(object sender, EventArgs e)
+        {
+            if (txtWorkIndus.Text == "")
+            {
+                txtWorkIndus.BorderColor = Color.Red;
+            }
+            else
+            {
+                txtWorkIndus.BorderColor = Color.FromArgb(33, 195, 41);
+            }
+        }
+
+        private void rtxtIntroduce_TextChanged(object sender, EventArgs e)
+        {
+            if (rtxtIntroduce.Text == "")
+            {
+            }
+            else
+            {
+            }
+        }
+
+        private void rtxtSkills_TextChanged(object sender, EventArgs e)
+        {
+            if (rtxtSkills.Text == "")
+            {
+            }
+            else
+            {
+            }
+        }
+
+        private void rtxtCertificate_TextChanged(object sender, EventArgs e)
+        {
+            if (rtxtCertificate.Text == "")
+            {
+
+            }
+            else
+            {
+            }
         }
     }
 }

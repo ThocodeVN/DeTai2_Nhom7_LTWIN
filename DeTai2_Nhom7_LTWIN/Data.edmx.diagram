@@ -10,6 +10,7 @@
         <EntityTypeShape EntityType="Detai2_DBModel.Employer" Width="1.5" PointX="9.125" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="Detai2_DBModel.Job" Width="1.5" PointX="6.875" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="Detai2_DBModel.CV" Width="1.5" PointX="4.875" PointY="0.75" />
+        <EntityTypeShape EntityType="Detai2_DBModel.Post" Width="1.5" PointX="4.875" PointY="4" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

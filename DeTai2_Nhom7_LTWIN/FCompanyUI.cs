@@ -42,5 +42,11 @@ namespace DeTai2_Nhom7_LTWIN
         {
             btnComInfor_Click(sender, e);
         }
+
+        private void btnViewPost_Click(object sender, EventArgs e)
+        {
+            FViewPost fView = new FViewPost();
+            fView.Show();
+        }
     }
 }

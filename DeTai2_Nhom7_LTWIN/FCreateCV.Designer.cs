@@ -322,6 +322,7 @@
             this.txtWorkIndus.Size = new System.Drawing.Size(278, 32);
             this.txtWorkIndus.TabIndex = 31;
             this.txtWorkIndus.Text = "Vị trí làm việc";
+            this.txtWorkIndus.TextChanged += new System.EventHandler(this.txtWorkIndus_TextChanged);
             // 
             // txtCompany
             // 
@@ -340,6 +341,7 @@
             this.txtCompany.Size = new System.Drawing.Size(278, 32);
             this.txtCompany.TabIndex = 30;
             this.txtCompany.Text = "Tên công ty";
+            this.txtCompany.TextChanged += new System.EventHandler(this.txtCompany_TextChanged);
             // 
             // rtxtCertificate
             // 
@@ -348,6 +350,7 @@
             this.rtxtCertificate.Size = new System.Drawing.Size(693, 141);
             this.rtxtCertificate.TabIndex = 29;
             this.rtxtCertificate.Text = "";
+            this.rtxtCertificate.TextChanged += new System.EventHandler(this.rtxtCertificate_TextChanged);
             // 
             // rtxtSkills
             // 
@@ -356,6 +359,7 @@
             this.rtxtSkills.Size = new System.Drawing.Size(693, 141);
             this.rtxtSkills.TabIndex = 28;
             this.rtxtSkills.Text = "";
+            this.rtxtSkills.TextChanged += new System.EventHandler(this.rtxtSkills_TextChanged);
             // 
             // label14
             // 
@@ -438,6 +442,7 @@
             this.txtStudyIndus.Size = new System.Drawing.Size(278, 32);
             this.txtStudyIndus.TabIndex = 23;
             this.txtStudyIndus.Text = "Tên ngành học";
+            this.txtStudyIndus.TextChanged += new System.EventHandler(this.txtStudyIndus_TextChanged);
             // 
             // txtSchool
             // 
@@ -456,6 +461,7 @@
             this.txtSchool.Size = new System.Drawing.Size(278, 32);
             this.txtSchool.TabIndex = 22;
             this.txtSchool.Text = "Tên trường học";
+            this.txtSchool.TextChanged += new System.EventHandler(this.txtSchool_TextChanged);
             // 
             // rtxtIntroduce
             // 
@@ -464,6 +470,7 @@
             this.rtxtIntroduce.Size = new System.Drawing.Size(693, 141);
             this.rtxtIntroduce.TabIndex = 21;
             this.rtxtIntroduce.Text = "";
+            this.rtxtIntroduce.TextChanged += new System.EventHandler(this.rtxtIntroduce_TextChanged);
             // 
             // txtTitle
             // 
@@ -480,6 +487,7 @@
             this.txtTitle.SelectedText = "";
             this.txtTitle.Size = new System.Drawing.Size(497, 32);
             this.txtTitle.TabIndex = 20;
+            this.txtTitle.TextChanged += new System.EventHandler(this.txtTitle_TextChanged);
             // 
             // label12
             // 

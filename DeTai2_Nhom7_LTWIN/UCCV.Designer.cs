@@ -46,6 +46,8 @@
             this.lbCreateDate = new System.Windows.Forms.Label();
             this.lbTitle = new System.Windows.Forms.Label();
             this.ptbAvt = new System.Windows.Forms.PictureBox();
+            this.btnPost = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -80,6 +82,8 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.White;
+            this.panel7.Controls.Add(this.btnDelete);
+            this.panel7.Controls.Add(this.btnPost);
             this.panel7.Controls.Add(this.btnUpdate);
             this.panel7.Controls.Add(this.btnBrowse);
             this.panel7.Controls.Add(this.btnViewCV);
@@ -241,6 +245,34 @@
             this.ptbAvt.TabIndex = 0;
             this.ptbAvt.TabStop = false;
             // 
+            // btnPost
+            // 
+            this.btnPost.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnPost.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(98)))), ((int)(((byte)(63)))));
+            this.btnPost.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPost.ForeColor = System.Drawing.Color.White;
+            this.btnPost.Location = new System.Drawing.Point(71, 68);
+            this.btnPost.Name = "btnPost";
+            this.btnPost.Size = new System.Drawing.Size(98, 45);
+            this.btnPost.TabIndex = 19;
+            this.btnPost.Text = "Đăng bài";
+            this.btnPost.UseVisualStyleBackColor = false;
+            this.btnPost.Click += new System.EventHandler(this.btnPost_Click);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(98)))), ((int)(((byte)(63)))));
+            this.btnDelete.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.ForeColor = System.Drawing.Color.White;
+            this.btnDelete.Location = new System.Drawing.Point(0, 68);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(65, 45);
+            this.btnDelete.TabIndex = 20;
+            this.btnDelete.Text = "Xóa";
+            this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
             // UCCV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -280,5 +312,7 @@
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Button btnBrowse;
         private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Button btnPost;
+        private System.Windows.Forms.Button btnDelete;
     }
 }

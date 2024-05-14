@@ -31,19 +31,19 @@
             this.lbDateCreate = new System.Windows.Forms.Label();
             this.lbName = new System.Windows.Forms.Label();
             this.ptrbAvt = new Guna.UI.WinForms.GunaCirclePictureBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.rtxtContent = new System.Windows.Forms.RichTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnAddCV = new System.Windows.Forms.Button();
+            this.btnDelImagePost = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.pnlCV = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
             this.ptrbPost = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnPost = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.ofdOpenImage = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.ptrbAvt)).BeginInit();
             this.panel1.SuspendLayout();
-            this.pnlCV.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptrbPost)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -78,22 +78,23 @@
             this.ptrbAvt.TabStop = false;
             this.ptrbAvt.UseTransfarantBackground = false;
             // 
-            // richTextBox1
+            // rtxtContent
             // 
-            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox1.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.ForeColor = System.Drawing.Color.DarkGray;
-            this.richTextBox1.Location = new System.Drawing.Point(12, 173);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(659, 247);
-            this.richTextBox1.TabIndex = 8;
-            this.richTextBox1.Text = " ơi, bạn đang nghĩ gì thế?";
+            this.rtxtContent.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.rtxtContent.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtxtContent.ForeColor = System.Drawing.Color.DarkGray;
+            this.rtxtContent.Location = new System.Drawing.Point(12, 173);
+            this.rtxtContent.Name = "rtxtContent";
+            this.rtxtContent.Size = new System.Drawing.Size(659, 247);
+            this.rtxtContent.TabIndex = 8;
+            this.rtxtContent.Text = " ơi, bạn đang nghĩ gì thế?";
             // 
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.btnAddCV);
+            this.panel1.Controls.Add(this.btnDelImagePost);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.pnlCV);
             this.panel1.Controls.Add(this.ptrbPost);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(12, 441);
@@ -101,35 +102,40 @@
             this.panel1.Size = new System.Drawing.Size(659, 57);
             this.panel1.TabIndex = 9;
             // 
+            // btnAddCV
+            // 
+            this.btnAddCV.AutoEllipsis = true;
+            this.btnAddCV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(195)))), ((int)(((byte)(41)))));
+            this.btnAddCV.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddCV.ForeColor = System.Drawing.Color.White;
+            this.btnAddCV.Location = new System.Drawing.Point(430, -1);
+            this.btnAddCV.Name = "btnAddCV";
+            this.btnAddCV.Size = new System.Drawing.Size(228, 57);
+            this.btnAddCV.TabIndex = 17;
+            this.btnAddCV.Text = "+ CV";
+            this.btnAddCV.UseVisualStyleBackColor = false;
+            this.btnAddCV.Click += new System.EventHandler(this.btnAddCV_Click);
+            // 
+            // btnDelImagePost
+            // 
+            this.btnDelImagePost.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btnDelImagePost.Location = new System.Drawing.Point(405, -1);
+            this.btnDelImagePost.Name = "btnDelImagePost";
+            this.btnDelImagePost.Size = new System.Drawing.Size(27, 23);
+            this.btnDelImagePost.TabIndex = 17;
+            this.btnDelImagePost.Text = "X";
+            this.btnDelImagePost.UseVisualStyleBackColor = true;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label3.Location = new System.Drawing.Point(318, 17);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(57, 21);
             this.label3.TabIndex = 18;
             this.label3.Text = "+ Ảnh";
-            // 
-            // pnlCV
-            // 
-            this.pnlCV.Controls.Add(this.label4);
-            this.pnlCV.Location = new System.Drawing.Point(427, 3);
-            this.pnlCV.Name = "pnlCV";
-            this.pnlCV.Size = new System.Drawing.Size(227, 50);
-            this.pnlCV.TabIndex = 17;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label4.Location = new System.Drawing.Point(86, 14);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(50, 21);
-            this.label4.TabIndex = 19;
-            this.label4.Text = "+ CV";
             // 
             // ptrbPost
             // 
@@ -138,6 +144,7 @@
             this.ptrbPost.Size = new System.Drawing.Size(152, 50);
             this.ptrbPost.TabIndex = 1;
             this.ptrbPost.TabStop = false;
+            this.ptrbPost.Click += new System.EventHandler(this.ptrbPost_Click);
             // 
             // label1
             // 
@@ -160,6 +167,7 @@
             this.btnPost.TabIndex = 15;
             this.btnPost.Text = "Đăng";
             this.btnPost.UseVisualStyleBackColor = false;
+            this.btnPost.Click += new System.EventHandler(this.btnPost_Click);
             // 
             // panel2
             // 
@@ -181,6 +189,10 @@
             this.label2.TabIndex = 17;
             this.label2.Text = "Tạo bài viết";
             // 
+            // ofdOpenImage
+            // 
+            this.ofdOpenImage.FileName = "openFileDialog1";
+            // 
             // FCreatePost
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -190,18 +202,18 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.btnPost);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.rtxtContent);
             this.Controls.Add(this.lbDateCreate);
             this.Controls.Add(this.lbName);
             this.Controls.Add(this.ptrbAvt);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FCreatePost";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FCreatePost";
+            this.Load += new System.EventHandler(this.FCreatePost_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ptrbAvt)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.pnlCV.ResumeLayout(false);
-            this.pnlCV.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptrbPost)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -215,15 +227,16 @@
         private System.Windows.Forms.Label lbDateCreate;
         private System.Windows.Forms.Label lbName;
         private Guna.UI.WinForms.GunaCirclePictureBox ptrbAvt;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox rtxtContent;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnPost;
         private System.Windows.Forms.PictureBox ptrbPost;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel pnlCV;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.OpenFileDialog ofdOpenImage;
+        private System.Windows.Forms.Button btnDelImagePost;
+        private System.Windows.Forms.Button btnAddCV;
     }
 }

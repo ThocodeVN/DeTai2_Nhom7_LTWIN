@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FCreateJob));
             this.pnlFunc = new Guna.UI.WinForms.GunaGradientPanel();
             this.txtJobName = new Guna.UI.WinForms.GunaTextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.cbDefault = new System.Windows.Forms.CheckBox();
             this.txtHome = new Guna.UI.WinForms.GunaTextBox();
             this.txtStreet = new Guna.UI.WinForms.GunaTextBox();
             this.txtCommune = new Guna.UI.WinForms.GunaTextBox();
@@ -70,7 +70,7 @@
             this.pnlFunc.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlFunc.BackgroundImage")));
             this.pnlFunc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlFunc.Controls.Add(this.txtJobName);
-            this.pnlFunc.Controls.Add(this.checkBox1);
+            this.pnlFunc.Controls.Add(this.cbDefault);
             this.pnlFunc.Controls.Add(this.txtHome);
             this.pnlFunc.Controls.Add(this.txtStreet);
             this.pnlFunc.Controls.Add(this.txtCommune);
@@ -128,16 +128,17 @@
             this.txtJobName.TabIndex = 77;
             this.txtJobName.Text = "gunaTextBox3";
             // 
-            // checkBox1
+            // cbDefault
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox1.Location = new System.Drawing.Point(862, 665);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(83, 20);
-            this.checkBox1.TabIndex = 76;
-            this.checkBox1.Text = "Mặc định";
-            this.checkBox1.UseVisualStyleBackColor = false;
+            this.cbDefault.AutoSize = true;
+            this.cbDefault.BackColor = System.Drawing.Color.Transparent;
+            this.cbDefault.Location = new System.Drawing.Point(862, 665);
+            this.cbDefault.Name = "cbDefault";
+            this.cbDefault.Size = new System.Drawing.Size(83, 20);
+            this.cbDefault.TabIndex = 76;
+            this.cbDefault.Text = "Mặc định";
+            this.cbDefault.UseVisualStyleBackColor = false;
+            this.cbDefault.CheckedChanged += new System.EventHandler(this.cbDefault_CheckedChanged);
             // 
             // txtHome
             // 
@@ -681,7 +682,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox cbDefault;
         private Guna.UI.WinForms.GunaTextBox txtHome;
         private Guna.UI.WinForms.GunaTextBox txtStreet;
         private Guna.UI.WinForms.GunaTextBox txtCommune;

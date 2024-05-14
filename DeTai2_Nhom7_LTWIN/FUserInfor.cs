@@ -49,5 +49,14 @@ namespace DeTai2_Nhom7_LTWIN
             pnlFunc.Controls.Add(fHistory);
             fHistory.Show();
         }
+
+        private void btnPost_Click(object sender, EventArgs e)
+        {
+            pnlFunc.Controls.Clear();
+            FManagePost fvp = new FManagePost(canDTO);
+            fvp.TopLevel = false;
+            pnlFunc.Controls.Add(fvp);
+            fvp.Show();
+        }
     }
 }
